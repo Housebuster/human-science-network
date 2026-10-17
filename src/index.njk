@@ -1,0 +1,108 @@
+---
+layout: base.njk
+description: Find scholarly conferences, congresses and workshops in psychology and the wider human sciences. Every listing is vetted and its dates checked against the official source.
+---
+{% from "card.njk" import card %}
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Psychology · Anthropology · Behavioral economics · Linguistics · and more</p>
+    <h1>Scholarly conferences across the human sciences, vetted and kept up to date.</h1>
+    <p class="lede">A curated directory of meetings hosted by learned societies and universities. No commercial conference mills. Dates are checked against each organizer's official site.</p>
+    <div class="hero-stats">
+      <div><strong>{{ catalog.upcoming.length }}</strong><span>upcoming events</span></div>
+      <div><strong>{{ catalog.deadlines.length }}</strong><span>open calls for submissions</span></div>
+      <div><strong>{{ catalog.fieldGroups[0].fields.length + catalog.fieldGroups[1].fields.length }}</strong><span>fields covered</span></div>
+    </div>
+  </div>
+</section>
+
+{% if catalog.deadlines.length %}
+<section class="wrap deadlines-strip" aria-labelledby="dl-h">
+  <h2 id="dl-h" class="section-label">Closing soon</h2>
+  <ol class="dl-list">
+    {% for l in catalog.deadlines | batch(4) | first %}
+    <li><a href="/events/{{ l.id }}/"><span class="dl-date">{{ l.abstract_deadline | date }}</span><span class="dl-name">{{ l.short_name or l.name }}</span><span class="dl-left">{{ l.abstract_deadline | daysUntil(catalog.today) }} days left</span></a></li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+<section class="wrap directory" aria-labelledby="up-h">
+  <form class="filters" id="filters" role="search" aria-label="Filter conferences" onsubmit="return false">
+    <div class="f-search">
+      <label for="q">Search</label>
+      <input id="q" type="search" placeholder="Conference, society, city…" autocomplete="off">
+    </div>
+    <div>
+      <label for="f-field">Field</label>
+      <select id="f-field">
+        <option value="">All fields</option>
+        {% for g in catalog.fieldGroups %}
+        <optgroup label="{{ g.label }}">
+          {% for f in g.fields %}<option value="{{ f.id }}">{{ f.label }}</option>{% endfor %}
+        </optgroup>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="f-format">Format</label>
+      <select id="f-format">
+        <option value="">Any format</option>
+        {% for f in taxonomy.formats %}<option value="{{ f.id }}">{{ f.label }}</option>{% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="f-region">Region</label>
+      <select id="f-region">
+        <option value="">Anywhere</option>
+        {% for r in catalog.regionsUsed %}<option value="{{ r.id }}">{{ r.label }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="f-check">
+      <input id="f-deadline" type="checkbox">
+      <label for="f-deadline">Open calls only</label>
+    </div>
+    <div>
+      <label for="f-sort">Sort by</label>
+      <select id="f-sort">
+        <option value="start">Event date</option>
+        <option value="deadline">Submission deadline</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="list-head">
+    <h2 id="up-h">Upcoming conferences</h2>
+    <p class="count" id="count" aria-live="polite">{{ catalog.upcoming.length }} events</p>
+  </div>
+  <ol class="cards" id="upcoming-list">
+    {% for l in catalog.upcoming %}{{ card(l, catalog.today) }}{% endfor %}
+  </ol>
+  <p class="empty" id="empty" hidden>No events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
+
+  {% if catalog.tbc.length %}
+  <div class="list-head tbc-head">
+    <h2 id="tbc-h">Next edition to be confirmed</h2>
+    <p class="count" id="count-tbc">{{ catalog.tbc.length }} recurring events</p>
+  </div>
+  <p class="muted">These recurring meetings are in our directory, but the organizer hasn't confirmed dates for the next edition yet. We won't guess dates.</p>
+  <ol class="cards cards-compact" id="tbc-list">
+    {% for l in catalog.tbc %}{{ card(l, catalog.today) }}{% endfor %}
+  </ol>
+  {% endif %}
+  <p class="past-link"><a href="/past/">Browse {{ catalog.past.length }} past events →</a></p>
+</section>
+
+<section class="wrap cta-row">
+  <div class="cta">
+    <h2>Organizing a scholarly meeting?</h2>
+    <p>Society, university and research-network events can be listed for free once they pass our <a href="/about/#criteria">vetting criteria</a>.</p>
+    <a class="btn" href="/submit/">Submit an event</a>
+  </div>
+  <div class="cta cta-alt">
+    <h2>Never miss a deadline</h2>
+    <p>A free email digest of upcoming submission deadlines in your fields is coming soon. You can subscribe to the <a href="/deadlines.ics">calendar feed</a> now.</p>
+    <a class="btn btn-ghost" href="/digest/">Join the digest list</a>
+  </div>
+</section>
+<script src="/assets/filter.js" defer></script>

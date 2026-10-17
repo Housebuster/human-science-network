@@ -1,0 +1,45 @@
+{
+  "note": "Not rendered on the site. Kept for audit trail.",
+  "excluded": [
+    {
+      "id": "scap-2024",
+      "name": "Singapore Conference on Applied Psychology",
+      "organizer": "East Asia Research",
+      "url": "https://scap.ear.com.sg",
+      "decision": "excluded",
+      "reason": "Commercial for-profit conference organizer, not a scholarly society or university host (fails vetting criterion A1). Generic multi-topic event model.",
+      "decided": "2026-10-11",
+      "source": "listings-audit.csv"
+    },
+    {
+      "id": "leg-2024",
+      "name": "Learning, Evolution, and Games (LEG) 2024",
+      "organizer": "Human Behavior and Evolution Society (HBES) (as listed)",
+      "url": "https://sites.google.com/view/leg2024/home",
+      "decision": "archived",
+      "reason": "One-off workshop (8–9 July 2024, Brisbane); not recurring.",
+      "decided": "2026-10-11",
+      "source": "listings-audit.csv"
+    },
+    {
+      "id": "gversity-2024",
+      "name": "Gender Diversity Across Europe – Devising Solutions from Interdisciplinary & Intersectoral Perspectives",
+      "organizer": "G-VERSITY European Research and Training Network",
+      "url": "https://gversity-2020.eu/final-conference.html",
+      "decision": "archived",
+      "reason": "One-off final conference of an EU-funded project (12–14 June 2024, Bern).",
+      "decided": "2026-10-11",
+      "source": "listings-audit.csv"
+    },
+    {
+      "id": "icsih-2024",
+      "name": "6th International Conference on Social Identity and Health",
+      "organizer": "European Association of Social Psychology (small group meeting)",
+      "url": "https://www.easp.eu/news/itm/6th_international_conference_on_-1859.html",
+      "decision": "archived",
+      "reason": "One-off EASP small-group meeting (18–20 June 2024, Limerick); recurrence unknown. Re-add if a new edition is announced.",
+      "decided": "2026-10-11",
+      "source": "listings-audit.csv"
+    }
+  ]
+}

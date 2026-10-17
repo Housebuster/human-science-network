@@ -1,0 +1,17 @@
+{
+  "name": "human-science-network",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static site for Human Science Network: a curated directory of scholarly conferences in the human sciences.",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/validate.js && eleventy",
+    "start": "eleventy --serve --port=8080",
+    "preview": "npx --no-install eleventy --serve --port=8080"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  }
+}

@@ -1,0 +1,16 @@
+{% macro fieldpicker(name, legend, required) %}
+<fieldset class="field-picker">
+  <legend>{{ legend }}{% if required %} <span class="req">*</span>{% endif %}</legend>
+  <p class="help">Choose every field that applies. There is no default.</p>
+  {% for g in taxonomy.groups %}
+  <div class="fp-group">
+    <p class="fp-group-label">{{ g.label }}</p>
+    <div class="fp-options">
+    {% for f in g.fields %}
+      <label class="chip"><input type="checkbox" name="{{ name }}" value="{{ f.id }}"><span>{{ f.label }}</span></label>
+    {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</fieldset>
+{% endmacro %}

@@ -1,0 +1,24 @@
+---
+permalink: /deadlines.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Human Science Network – open calls for submissions</title>
+  <link>{{ site.url }}/</link>
+  <atom:link href="{{ site.url }}/deadlines.xml" rel="self" type="application/rss+xml"/>
+  <description>Upcoming submission deadlines for vetted human-science conferences.</description>
+  <language>en</language>
+  <lastBuildDate>{{ catalog.today | rfc822 }}</lastBuildDate>
+  {%- for l in catalog.deadlines %}
+  <item>
+    <title>{{ l.short_name or l.name }}: submissions due {{ l.abstract_deadline | date }}</title>
+    <link>{{ site.url }}/events/{{ l.id }}/</link>
+    <guid isPermaLink="false">deadline-{{ l.id }}-{{ l.abstract_deadline }}</guid>
+    <pubDate>{{ l.last_verified | rfc822 }}</pubDate>
+    <description>{{ l.name }} ({{ l.organizer }}), {{ l.start_date | dateRange(l.end_date) }}{% if l.place %}, {{ l.place }}{% endif %}. Fields: {{ l.field_labels | join(", ") }}.</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

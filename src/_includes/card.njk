@@ -1,0 +1,29 @@
+{% macro card(l, today) %}
+<li class="card" data-search="{{ (l.name + ' ' + l.short_name + ' ' + l.organizer + ' ' + l.place + ' ' + (l.location.venue or '') + ' ' + (l.field_labels | join(' '))) | lower }}"
+    data-fields="{{ l.fields | join(' ') }}" data-format="{{ l.format }}" data-region="{{ l.region }}"
+    data-start="{{ l.start_date or '9999-12-31' }}" data-deadline="{{ l.abstract_deadline if l.deadline_open else '' }}">
+  <div class="card-date">
+    {% if l.start_date %}
+      <span class="cd-day">{{ l.start_date | dayNum }}</span><span class="cd-month">{{ l.start_date | monYear }}</span>
+    {% else %}
+      <span class="cd-tbc">TBC</span>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    <h3 class="card-title"><a href="/events/{{ l.id }}/">{{ l.name }}</a></h3>
+    <p class="card-org">{{ l.organizer }}</p>
+    <p class="card-meta">
+      <span>{{ l.start_date | dateRange(l.end_date) }}</span>
+      {% if l.place or l.location.venue %}<span>{{ l.place or l.location.venue }}</span>{% endif %}
+      <span>{{ l.format_label }}</span>
+    </p>
+    {% if l.deadline_open %}
+      {% set dleft = l.abstract_deadline | daysUntil(today) %}
+      <p class="deadline{% if dleft <= 30 %} soon{% endif %}"><strong>Submissions due {{ l.abstract_deadline | date }}</strong> · {{ dleft }} day{% if dleft != 1 %}s{% endif %} left</p>
+    {% elif l.status == "tbc" and l.public_note %}
+      <p class="card-note">{{ l.public_note }}</p>
+    {% endif %}
+    <ul class="tags" aria-label="Fields">{% for f in l.field_labels %}<li>{{ f }}</li>{% endfor %}</ul>
+  </div>
+</li>
+{% endmacro %}

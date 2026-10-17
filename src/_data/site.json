@@ -1,0 +1,12 @@
+{
+  "title": "Human Science Network",
+  "tagline": "A curated directory of scholarly conferences across the human sciences",
+  "url": "https://humansciencenetwork.com",
+  "lang": "en",
+  "forms": {
+    "submit": "https://formspree.io/f/YOUR_SUBMIT_FORM_ID",
+    "contact": "https://formspree.io/f/YOUR_CONTACT_FORM_ID",
+    "digest": "https://formspree.io/f/YOUR_DIGEST_FORM_ID"
+  },
+  "contact_email": ""
+}

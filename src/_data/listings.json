@@ -1,0 +1,1204 @@
+{
+  "$schema_doc": "See README.md#listing-schema",
+  "listings": [
+    {
+      "id": "adaa-2027",
+      "name": "ADAA Annual Conference 2027",
+      "short_name": "ADAA 2027",
+      "organizer": "Anxiety and Depression Association of America",
+      "organizer_type": "society",
+      "url": "https://adaa.org/adaa-conference",
+      "cfp_url": "",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-03",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Atlanta Marriott Marquis",
+        "city": "Atlanta",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-clinical",
+        "public-health"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://adaa.org/conference/future-past-conferences",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Old listing linked to the 2021 virtual meeting page; URL corrected."
+    },
+    {
+      "id": "scp-2027",
+      "name": "Society for Consumer Psychology Annual Conference 2027",
+      "short_name": "SCP 2027",
+      "organizer": "Society for Consumer Psychology",
+      "organizer_type": "society",
+      "url": "https://myscp.org/events/annual27/",
+      "cfp_url": "https://myscp.org/news/30724/",
+      "start_date": "2027-03-11",
+      "end_date": "2027-03-14",
+      "abstract_deadline": "2026-08-15",
+      "location": {
+        "venue": "JW Marriott Cancún Resort & Spa",
+        "city": "Cancún",
+        "country": "Mexico",
+        "country_code": "MX"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-consumer",
+        "behavioral-economics"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://myscp.org/events/annual27/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Doctoral consortium Mar 11; main conference Mar 12-14. Old listing linked to the 2021 page."
+    },
+    {
+      "id": "aps-2027",
+      "name": "APS Annual Convention 2027",
+      "short_name": "APS 2027",
+      "organizer": "Association for Psychological Science",
+      "organizer_type": "society",
+      "url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention",
+      "cfp_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention/call-for-submissions",
+      "start_date": "2027-05-27",
+      "end_date": "2027-05-30",
+      "abstract_deadline": "2026-12-01",
+      "location": {
+        "venue": "Hyatt Regency Seattle",
+        "city": "Seattle",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-15",
+      "verified_source_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention/call-for-submissions",
+      "date_confidence": "verified",
+      "public_note": "Submission deadline: 1 December 2026, 5:00 PM ET.",
+      "notes": "Was mislabeled Clinical. Call for submissions confirmed open 2026-10-15."
+    },
+    {
+      "id": "cpa-2027",
+      "name": "Canadian Psychological Association Annual Convention 2027",
+      "short_name": "CPA 2027",
+      "organizer": "Canadian Psychological Association",
+      "organizer_type": "society",
+      "url": "https://convention.cpa.ca/",
+      "cfp_url": "",
+      "start_date": "2027-06-03",
+      "end_date": "2027-06-05",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Victoria",
+        "country": "Canada",
+        "country_code": "CA"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://convention.cpa.ca/about/important-dates/",
+      "date_confidence": "verified",
+      "public_note": "Pre-convention workshops on 2 June 2027.",
+      "notes": "Typo 'Covention' fixed. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-dhp-2026",
+      "name": "BPS Division of Health Psychology Annual Conference 2026",
+      "short_name": "BPS DHP 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/division-health-psychology-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-11",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Liverpool",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-health"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.bps.org.uk/event/division-health-psychology-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "2027 edition not yet announced.",
+      "notes": "Recheck for 2027 dates."
+    },
+    {
+      "id": "ispa-2026",
+      "name": "ISPA Annual Conference 2026",
+      "short_name": "ISPA 2026",
+      "organizer": "International School Psychology Association",
+      "organizer_type": "society",
+      "url": "https://2026.ispaweb.org/",
+      "cfp_url": "",
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-11",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Université Lumière Lyon 2",
+        "city": "Lyon",
+        "country": "France",
+        "country_code": "FR"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-educational"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://2026.ispaweb.org/",
+      "date_confidence": "verified",
+      "public_note": "Next edition not yet announced.",
+      "notes": "Was mislabeled Clinical. Old sheet had Last Date before start date."
+    },
+    {
+      "id": "aasp-2027",
+      "name": "Asian Association of Social Psychology Biennial Conference 2027",
+      "short_name": "AASP 2027",
+      "organizer": "Asian Association of Social Psychology",
+      "organizer_type": "society",
+      "url": "https://www.asiansocialpsych.org/aasp-2027-conference-news/",
+      "cfp_url": "",
+      "start_date": "2027-08-06",
+      "end_date": "2027-08-08",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Hosted by James Cook University",
+        "city": "Cairns",
+        "country": "Australia",
+        "country_code": "AU"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social",
+        "psy-cultural"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.asiansocialpsych.org/aasp-2027-conference-news/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": ""
+    },
+    {
+      "id": "sesp-2026",
+      "name": "SESP Annual Conference 2026",
+      "short_name": "SESP 2026",
+      "organizer": "Society of Experimental Social Psychology",
+      "organizer_type": "society",
+      "url": "https://www.sesp.org/annualconference",
+      "cfp_url": "",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-03",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Le Westin Montréal",
+        "city": "Montréal",
+        "country": "Canada",
+        "country_code": "CA"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.sesp.org/annualconference",
+      "date_confidence": "verified",
+      "public_note": "2027 edition not yet announced.",
+      "notes": ""
+    },
+    {
+      "id": "eawop-2027",
+      "name": "EAWOP Congress 2027",
+      "short_name": "EAWOP 2027",
+      "organizer": "European Association of Work and Organizational Psychology",
+      "organizer_type": "society",
+      "url": "https://eawop.org/upcoming-events/2027-eawop-congress",
+      "cfp_url": "https://eawop2027.inviteo.fr/callfor/",
+      "start_date": "2027-05-26",
+      "end_date": "2027-05-29",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Centre de Congrès de Lyon",
+        "city": "Lyon",
+        "country": "France",
+        "country_code": "FR"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-io"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://eawop.org/upcoming-events/2027-eawop-congress",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Old listing named BPS as co-organizer; not verified, removed. Abstract deadline not confirmed."
+    },
+    {
+      "id": "easp-gm-2026",
+      "name": "EASP General Meeting 2026",
+      "short_name": "EASP 2026",
+      "organizer": "European Association of Social Psychology",
+      "organizer_type": "society",
+      "url": "https://easp2026strasbourg.com/",
+      "cfp_url": "",
+      "start_date": "2026-06-30",
+      "end_date": "2026-07-04",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Strasbourg",
+        "country": "France",
+        "country_code": "FR"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://easp2026strasbourg.com/",
+      "date_confidence": "verified",
+      "public_note": "Pre-conferences 30 June; main meeting 1–4 July. The General Meeting is held every three years.",
+      "notes": "Old listing showed '2026 / TBC'. Triennial cadence is general knowledge; recheck the next GM year on easp.eu."
+    },
+    {
+      "id": "iclasp-2026",
+      "name": "19th International Conference on Language and Social Psychology (ICLASP19)",
+      "short_name": "ICLASP19",
+      "organizer": "International Association of Language and Social Psychology",
+      "organizer_type": "society",
+      "url": "https://sites.google.com/view/iclasp19-tucson/home",
+      "cfp_url": "",
+      "start_date": "2026-05-19",
+      "end_date": "2026-05-22",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "University of Arizona",
+        "city": "Tucson",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "linguistics",
+        "psy-social"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://sites.google.com/view/iclasp19-tucson/home",
+      "date_confidence": "verified",
+      "public_note": "Next edition not yet announced.",
+      "notes": "Typo 'Internatonal' fixed. Was mislabeled Clinical."
+    },
+    {
+      "id": "iaccp-2026",
+      "name": "IACCP International Congress 2026",
+      "short_name": "IACCP 2026",
+      "organizer": "International Association for Cross-Cultural Psychology",
+      "organizer_type": "society",
+      "url": "https://iaccp2026.com/",
+      "cfp_url": "",
+      "start_date": "2026-07-14",
+      "end_date": "2026-07-18",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "KU Leuven, Faculty of Social Sciences",
+        "city": "Leuven",
+        "country": "Belgium",
+        "country_code": "BE"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://iaccp2026.com/",
+      "date_confidence": "verified",
+      "public_note": "Next congress not yet announced.",
+      "notes": "Was mislabeled Clinical."
+    },
+    {
+      "id": "icap-2026",
+      "name": "31st International Congress of Applied Psychology (ICAP 2026)",
+      "short_name": "ICAP 2026",
+      "organizer": "International Association of Applied Psychology",
+      "organizer_type": "society",
+      "url": "https://www.icap2026.org/",
+      "cfp_url": "",
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-25",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Florence",
+        "country": "Italy",
+        "country_code": "IT"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.iaapsy.org/events/icap-2026",
+      "date_confidence": "verified",
+      "public_note": "ICAP is held every four years.",
+      "notes": "Old listing said Jul 20-26; official dates Jul 21-25. Was mislabeled Clinical."
+    },
+    {
+      "id": "ispp-2027",
+      "name": "ISPP Annual Scientific Meeting 2027",
+      "short_name": "ISPP 2027",
+      "organizer": "International Society of Political Psychology",
+      "organizer_type": "society",
+      "url": "https://ispp.org/meetings/",
+      "cfp_url": "https://ispp.org/meetings/",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "abstract_deadline": "2026-11-27",
+      "location": {
+        "venue": "Postillion Hotel",
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "country_code": "NL"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-political",
+        "political-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-15",
+      "verified_source_url": "https://ispp.org/meetings/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Deadline reconfirmed on official page 2026-10-15. Was mislabeled Clinical."
+    },
+    {
+      "id": "spsp-2027",
+      "name": "SPSP Annual Convention 2027",
+      "short_name": "SPSP 2027",
+      "organizer": "Society for Personality and Social Psychology",
+      "organizer_type": "society",
+      "url": "https://spsp.org/events/annual-convention",
+      "cfp_url": "",
+      "start_date": "2027-02-11",
+      "end_date": "2027-02-13",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Pennsylvania Convention Center",
+        "city": "Philadelphia",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social",
+        "psy-personality"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://spsp.org/events/past-and-future-conventions",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Was mislabeled Clinical. Submission deadline not captured (portal opened 2026-06-16; likely closed)."
+    },
+    {
+      "id": "apa-2027",
+      "name": "APA Convention 2027",
+      "short_name": "APA 2027",
+      "organizer": "American Psychological Association",
+      "organizer_type": "society",
+      "url": "https://convention.apa.org/",
+      "cfp_url": "",
+      "start_date": "2027-08-12",
+      "end_date": "2027-08-14",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "San Francisco",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general",
+        "psy-clinical"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://convention.apa.org/attend/future-conventions",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Format (hybrid/virtual component) for 2027 not confirmed; 2026 was in-person + virtual. Was tagged Clinical only."
+    },
+    {
+      "id": "sjdm-2026",
+      "name": "SJDM Annual Meeting 2026",
+      "short_name": "SJDM 2026",
+      "organizer": "Society for Judgment and Decision Making",
+      "organizer_type": "society",
+      "url": "https://sjdm.org/",
+      "cfp_url": "https://sjdm.org/pipermail/jdm-society/2026-May/010558.html",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "abstract_deadline": "2026-06-16",
+      "location": {
+        "venue": "Marriott Marquis San Diego Marina",
+        "city": "San Diego",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "behavioral-economics",
+        "psy-cognitive"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://sjdm.org/",
+      "date_confidence": "verified",
+      "public_note": "Held alongside the Psychonomic Society annual meeting. 2027 (tentative): New Orleans, 18–20 November.",
+      "notes": "Was mislabeled Clinical. After this edition passes, roll forward to 2027 once confirmed."
+    },
+    {
+      "id": "sips-2027",
+      "name": "SIPS Annual Conference 2027",
+      "short_name": "SIPS 2027",
+      "organizer": "Society for the Improvement of Psychological Science",
+      "organizer_type": "society",
+      "url": "https://www.improvingpsych.org/",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "University of Melbourne",
+        "city": "Melbourne",
+        "country": "Australia",
+        "country_code": "AU"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-methods"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.linkedin.com/posts/society-for-the-improvement-of-psychological-science_sips2027-activity-7421935546899304449-qVrF",
+      "date_confidence": "low",
+      "public_note": "Announced for November 2027 at the University of Melbourne; exact dates to be confirmed.",
+      "notes": "LOW CONFIDENCE: month/venue from SIPS LinkedIn post only. Do NOT confuse with sips2027.com (Society for Interdisciplinary Placebo Studies, Sydney Feb 2027). Was mislabeled Clinical."
+    },
+    {
+      "id": "esplat-2027",
+      "name": "ESPLAT Conference 2027",
+      "short_name": "ESPLAT 2027",
+      "organizer": "European Society of Psychology Learning and Teaching",
+      "organizer_type": "society",
+      "url": "https://www.esplat.org/esplat-2027",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "",
+        "country_code": ""
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-teaching"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.esplat.org/esplat-2027",
+      "date_confidence": "verified",
+      "public_note": "Dates and host to be announced. Previous edition: Münster, 1–3 September 2025.",
+      "notes": "Format assumed in-person (historic). Was mislabeled Clinical."
+    },
+    {
+      "id": "atp-2026",
+      "name": "ATP International Teachers' Conference 2026",
+      "short_name": "ATP 2026",
+      "organizer": "Association for the Teaching of Psychology",
+      "organizer_type": "society",
+      "url": "https://www.theatp.uk/events/atp-international-teachers-conference-2026/",
+      "cfp_url": "",
+      "start_date": "2026-07-09",
+      "end_date": "2026-07-11",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "University of Winchester",
+        "city": "Winchester",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-teaching"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.theatp.uk/events/atp-international-teachers-conference-2026/",
+      "date_confidence": "verified",
+      "public_note": "2027 edition not yet announced.",
+      "notes": "Audience mainly school/college psychology teachers; consider whether in scope."
+    },
+    {
+      "id": "iarep-2026",
+      "name": "50th IAREP Conference 2026",
+      "short_name": "IAREP 2026",
+      "organizer": "International Association for Research in Economic Psychology",
+      "organizer_type": "society",
+      "url": "https://iarep2026.com/",
+      "cfp_url": "",
+      "start_date": "2026-06-09",
+      "end_date": "2026-06-12",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Universitat Jaume I",
+        "city": "Castellón de la Plana",
+        "country": "Spain",
+        "country_code": "ES"
+      },
+      "format": "in-person",
+      "fields": [
+        "behavioral-economics"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://iarep2026.com/",
+      "date_confidence": "verified",
+      "public_note": "IAREP and SABE held separate meetings in 2026.",
+      "notes": "Old listing was joint 'IAREP/SABE'; split. SABE 2026: Jun 23-25, Dearborn MI (could be its own listing). Was mislabeled Clinical."
+    },
+    {
+      "id": "mb-2027",
+      "name": "Measuring Behavior 2027",
+      "short_name": "MB 2027",
+      "organizer": "Measuring Behavior",
+      "organizer_type": "research-network",
+      "url": "https://www.measuringbehavior.org/",
+      "cfp_url": "",
+      "start_date": "2027-04-28",
+      "end_date": "2027-04-30",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Clayton Hotel",
+        "city": "Düsseldorf",
+        "country": "Germany",
+        "country_code": "DE"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-methods",
+        "cognitive-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.measuringbehavior.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "International Conference on Methods and Techniques in Behavioral Research. Historic ties to a commercial vendor (Noldus); academic programme committee. Minor concern only. Was mislabeled Clinical."
+    },
+    {
+      "id": "issp-2029",
+      "name": "17th ISSP World Congress of Sport Psychology",
+      "short_name": "ISSP 2029",
+      "organizer": "International Society of Sport Psychology",
+      "organizer_type": "society",
+      "url": "https://issponline.org/meetings-resources/world-congress/",
+      "cfp_url": "",
+      "start_date": "2029-07-30",
+      "end_date": "2029-08-03",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Cologne",
+        "country": "Germany",
+        "country_code": "DE"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-sport"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.facebook.com/ISSPonline/posts/it-is-with-great-pleasure-that-issp-announces-that-the-2029-world-congress-of-sp/514626807798619/",
+      "date_confidence": "medium",
+      "public_note": "Previous congress: Hong Kong, 8–12 December 2025.",
+      "notes": "MEDIUM CONFIDENCE: dates from ISSP's official Facebook announcement; not yet on issponline.org. Was mislabeled Clinical."
+    },
+    {
+      "id": "sas-2027",
+      "name": "Society for Affective Science Annual Conference 2027",
+      "short_name": "SAS 2027",
+      "organizer": "Society for Affective Science",
+      "organizer_type": "society",
+      "url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
+      "cfp_url": "https://society-for-affective-science.org/abstracts/",
+      "start_date": "2027-03-04",
+      "end_date": "2027-03-06",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "San Diego",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-affective"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
+      "date_confidence": "verified",
+      "public_note": "Pre-conferences on 4 March.",
+      "notes": "Was mislabeled Clinical. Abstract deadline not captured."
+    },
+    {
+      "id": "arp-2027",
+      "name": "Biennial Meeting of the Association for Research in Personality",
+      "short_name": "ARP",
+      "organizer": "Association for Research in Personality",
+      "organizer_type": "society",
+      "url": "https://www.personality-arp.org/conference/",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-personality"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.personality-arp.org/conference/",
+      "date_confidence": "verified",
+      "public_note": "Next meeting dates to be announced.",
+      "notes": "Audit's 'Jun 24-26 2027, Evanston' came from a search summary citing arpconferences.org, which is an UNRELATED organisation; not verified on personality-arp.org (2026-10-17). Left TBC."
+    },
+    {
+      "id": "bspa-2027",
+      "name": "BSPA Annual Conference 2027",
+      "short_name": "BSPA 2027",
+      "organizer": "Behavioral Science & Policy Association",
+      "organizer_type": "society",
+      "url": "https://behavioralpolicy.org/",
+      "cfp_url": "",
+      "start_date": "2027-05-13",
+      "end_date": "2027-05-14",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Cornell Tech, Roosevelt Island",
+        "city": "New York",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "behavioral-economics",
+        "political-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://behavioralpolicy.org/",
+      "date_confidence": "verified",
+      "public_note": "Previous edition: Harvard Kennedy School, 7–8 June 2026.",
+      "notes": "Organizer name corrected (was 'Behavioral Science in Policy & Application'); old URL behavioralscienceconference.com is a BSPA microsite, replaced with behavioralpolicy.org. From 'save the date' on homepage."
+    },
+    {
+      "id": "iaccp-regional",
+      "name": "IACCP Regional Conference",
+      "short_name": "IACCP Regional",
+      "organizer": "International Association for Cross-Cultural Psychology",
+      "organizer_type": "society",
+      "url": "https://www.iaccp.org/conferences/",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "",
+        "country_code": ""
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://www.iaccp.org/conferences/",
+      "date_confidence": "verified",
+      "public_note": "Next regional conference to be announced.",
+      "notes": "Old listing: 2025, Brisbane, co-organised with the International Academy for Intercultural Research; no verified dates found."
+    },
+    {
+      "id": "iafor-acp-2027",
+      "name": "Asian Conference on Psychology & the Behavioral Sciences 2027",
+      "short_name": "ACP 2027",
+      "organizer": "The International Academic Forum (IAFOR)",
+      "organizer_type": "commercial",
+      "url": "https://acp.iafor.org/",
+      "cfp_url": "https://acp.iafor.org/call-for-papers/",
+      "start_date": "2027-03-31",
+      "end_date": "2027-04-04",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "Tokyo",
+        "country": "Japan",
+        "country_code": "JP"
+      },
+      "format": "hybrid",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://acp.iafor.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Kept pending editorial review.",
+      "review": {
+        "needs_review": true,
+        "reason": "IAFOR runs many generic multi-discipline conferences; not a disciplinary society. Claims double-blind review; not clearly predatory. Apply vetting criteria section A/B before next publish."
+      }
+    },
+    {
+      "id": "hbes-2027",
+      "name": "HBES Annual Conference 2027",
+      "short_name": "HBES 2027",
+      "organizer": "Human Behavior and Evolution Society",
+      "organizer_type": "society",
+      "url": "https://www.hbes.com/conference/",
+      "cfp_url": "https://indico.global/event/18583/abstracts/",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-15",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Arizona State University",
+        "city": "",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "evolutionary",
+        "anthropology"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://indico.global/event/18583/",
+      "date_confidence": "verified",
+      "public_note": "Call for abstracts open; no deadline published yet.",
+      "notes": "hbes.com/conference still shows 2026 (Rabat) on 2026-10-17; dates from official Indico event page. Was mislabeled Clinical."
+    },
+    {
+      "id": "ces-2026",
+      "name": "Cultural Evolution Society Conference 2026",
+      "short_name": "CES 2026",
+      "organizer": "Cultural Evolution Society",
+      "organizer_type": "society",
+      "url": "https://culturalevolutionsociety.org/conference/",
+      "cfp_url": "",
+      "start_date": "2026-05-11",
+      "end_date": "2026-05-13",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "Mohammed VI Polytechnic University (UM6P)",
+        "city": "Rabat",
+        "country": "Morocco",
+        "country_code": "MA"
+      },
+      "format": "hybrid",
+      "fields": [
+        "evolutionary",
+        "anthropology",
+        "psy-cultural"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-11",
+      "verified_source_url": "https://culturalevolutionsociety.org/conference/",
+      "date_confidence": "verified",
+      "public_note": "Next conference not yet announced.",
+      "notes": "Was tagged 'Cultural Psychology' only."
+    },
+    {
+      "id": "bps-cyber-2026",
+      "name": "BPS Cyberpsychology Section Annual Conference 2026",
+      "short_name": "BPS Cyber 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/cyberpsychology-section-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-07",
+      "abstract_deadline": "2026-04-19",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cyber",
+        "hci"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/cyberpsychology-section-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "Held in North East England.",
+      "notes": "City not stated in captured text. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-dfp-2026",
+      "name": "BPS Division of Forensic Psychology Annual Conference 2026",
+      "short_name": "BPS DFP 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/division-forensic-psychology-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-09",
+      "abstract_deadline": "2026-04-02",
+      "location": {
+        "venue": "Manchester Metropolitan University",
+        "city": "Manchester",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-forensic"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/division-forensic-psychology-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-dcop",
+      "name": "BPS Division of Counselling Psychology Annual Conference",
+      "short_name": "BPS DCoP",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/events",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-clinical"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/events",
+      "date_confidence": "verified",
+      "public_note": "Next conference dates to be announced.",
+      "notes": "No 2025/2026/2027 event page found by URL pattern (2026-10-17). Check BPS events listing."
+    },
+    {
+      "id": "bps-powes-2026",
+      "name": "BPS Psychology of Women and Equalities Section Conference 2026",
+      "short_name": "BPS POWES 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/psychology-women-and-equalities-section-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-03",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "gender-studies",
+        "psy-social"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/psychology-women-and-equalities-section-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "Held in South East England.",
+      "notes": "City not stated in captured text. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-pes-2026",
+      "name": "BPS Psychology of Education Section Annual Conference 2026",
+      "short_name": "BPS PES 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/psychology-education-section-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-11",
+      "abstract_deadline": "2026-07-05",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-educational",
+        "education"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/psychology-education-section-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "Held in North West England.",
+      "notes": "City not stated in captured text. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-psychobiology",
+      "name": "BPS Psychobiology Section Annual Scientific Meeting",
+      "short_name": "BPS Psychobiology",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/events",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-biological"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/events",
+      "date_confidence": "verified",
+      "public_note": "Next meeting dates to be announced.",
+      "notes": "Old listing: Sep 5-6 2024, Cambridge. Not rechecked for 2026/27."
+    },
+    {
+      "id": "bps-social",
+      "name": "BPS Social Psychology Section Annual Conference",
+      "short_name": "BPS Social",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/events",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/events",
+      "date_confidence": "verified",
+      "public_note": "Next conference dates to be announced.",
+      "notes": "2026 URL returned 401 (possibly unpublished draft) on 2026-10-17. Recheck."
+    },
+    {
+      "id": "bps-cognitive-2026",
+      "name": "BPS Cognitive Section Annual Conference 2026",
+      "short_name": "BPS Cognitive 2026",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/cognitive-section-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-08-26",
+      "end_date": "2026-08-28",
+      "abstract_deadline": "2026-04-24",
+      "location": {
+        "venue": "Liverpool Hope University",
+        "city": "Liverpool",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cognitive",
+        "cognitive-science"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/cognitive-section-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Deadline is the extended deadline. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-dev-2025",
+      "name": "BPS Developmental Psychology Section Annual Conference 2025",
+      "short_name": "BPS Developmental 2025",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/developmental-psychology-section-annual-conference-2025",
+      "cfp_url": "",
+      "start_date": "2025-09-10",
+      "end_date": "2025-09-11",
+      "abstract_deadline": "2025-05-13",
+      "location": {
+        "venue": "Royal Holloway, University of London",
+        "city": "London",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/developmental-psychology-section-annual-conference-2025",
+      "date_confidence": "verified",
+      "public_note": "2026/2027 edition not yet found.",
+      "notes": "No 2026 page by URL pattern on 2026-10-17. Was mislabeled Clinical."
+    },
+    {
+      "id": "bps-welsh",
+      "name": "BPS Welsh Branch Annual Conference",
+      "short_name": "BPS Wales",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/events",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/events",
+      "date_confidence": "verified",
+      "public_note": "Next conference dates to be announced.",
+      "notes": "No 2025-2027 page found by URL pattern. Regional branch event; consider scope."
+    },
+    {
+      "id": "bps-don",
+      "name": "BPS Division of Neuropsychology Summit",
+      "short_name": "BPS DoN",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/events",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-biological",
+        "psy-clinical"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/events",
+      "date_confidence": "verified",
+      "public_note": "Next summit dates to be announced.",
+      "notes": "No 2025-2027 page found by URL pattern."
+    },
+    {
+      "id": "bps-decp-2027",
+      "name": "BPS Division of Educational and Child Psychology Annual Conference 2027",
+      "short_name": "BPS DECP 2027",
+      "organizer": "The British Psychological Society",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/division-educational-and-child-psychology-annual-conference-2027",
+      "cfp_url": "",
+      "start_date": "2027-01-07",
+      "end_date": "2027-01-08",
+      "abstract_deadline": "",
+      "location": {
+        "venue": "",
+        "city": "",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-educational",
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-17",
+      "verified_source_url": "https://www.bps.org.uk/event/division-educational-and-child-psychology-annual-conference-2027",
+      "date_confidence": "verified",
+      "public_note": "Held in the West Midlands. Registration deadline: 14 December 2026.",
+      "notes": "Page mentions an application deadline of 22 Oct 2026 (context unclear; possibly bursaries); not entered as abstract deadline. Was mislabeled Clinical."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Past events
+permalink: /past/
+description: Recent editions of conferences in the Human Science Network directory.
+---
+{% from "card.njk" import card %}
+<section class="wrap page">
+  <h1>Past events</h1>
+  <p class="lede">The most recent editions of meetings in our directory. Events move here automatically once their end date has passed. When the next edition is confirmed, it appears under <a href="/">upcoming conferences</a>.</p>
+  <form class="filters filters-slim" role="search" aria-label="Search past events" onsubmit="return false">
+    <div class="f-search"><label for="q">Search</label><input id="q" type="search" placeholder="Conference, society, city…"></div>
+  </form>
+  <p class="count" id="count" aria-live="polite">{{ catalog.past.length }} events</p>
+  <ol class="cards cards-compact" id="upcoming-list">
+    {% for l in catalog.past %}{{ card(l, catalog.today) }}{% endfor %}
+  </ol>
+  <p class="empty" id="empty" hidden>No past events match.</p>
+</section>
+<script src="/assets/filter.js" defer></script>

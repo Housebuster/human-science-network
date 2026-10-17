@@ -1,0 +1,48 @@
+---
+layout: base.njk
+pagination:
+  data: catalog.all
+  size: 1
+  alias: l
+permalink: "/events/{{ l.id }}/"
+eleventyComputed:
+  title: "{{ l.name }}"
+  description: "{{ l.name }}, organized by {{ l.organizer }}. {{ l.start_date | dateRange(l.end_date) }}{% if l.place %}, {{ l.place }}{% endif %}."
+---
+<article class="wrap page listing">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Conferences</a> <span aria-hidden="true">/</span> {% if l.status == "past" %}<a href="/past/">Past events</a>{% else %}<span>{{ l.short_name }}</span>{% endif %}</nav>
+  <header class="listing-head">
+    <p class="status status-{{ l.status }}">{% if l.status == "upcoming" %}Upcoming{% elif l.status == "past" %}Past event{% else %}Dates to be confirmed{% endif %}</p>
+    <h1>{{ l.name }}</h1>
+    <p class="listing-org">{{ l.organizer }}</p>
+    <ul class="tags" aria-label="Fields">{% for f in l.field_labels %}<li>{{ f }}</li>{% endfor %}</ul>
+  </header>
+
+  <div class="listing-grid">
+    <dl class="facts">
+      <div><dt>Dates</dt><dd>{{ l.start_date | dateRange(l.end_date) }}{% if l.date_confidence != "verified" and l.start_date %} <span class="hint">(organizer announcement; final confirmation pending)</span>{% endif %}</dd></div>
+      <div><dt>Location</dt><dd>{% if l.location.venue %}{{ l.location.venue }}{% if l.place %}<br>{% endif %}{% endif %}{{ l.place or ("To be announced" if not l.location.venue) }}</dd></div>
+      <div><dt>Format</dt><dd>{{ l.format_label }}</dd></div>
+      <div><dt>Submission deadline</dt><dd>{% if l.abstract_deadline %}{{ l.abstract_deadline | date }}{% if not l.deadline_open %} <span class="hint">(closed)</span>{% else %} <span class="hint">({{ l.abstract_deadline | daysUntil(catalog.today) }} days left)</span>{% endif %}{% else %}Not announced{% endif %}</dd></div>
+      <div><dt>Organizer type</dt><dd>{{ {"society":"Scholarly society","university":"University","research-network":"Research network","government":"Public body","commercial":"Independent organizer","other":"Other"}[l.organizer_type] }}</dd></div>
+    </dl>
+    <aside class="listing-actions">
+      <a class="btn" href="{{ l.url }}" rel="noopener">Official website ↗</a>
+      {% if l.cfp_url and l.cfp_url != l.url %}<a class="btn btn-ghost" href="{{ l.cfp_url }}" rel="noopener">Call for submissions ↗</a>{% endif %}
+      <p class="verified">Last checked {{ l.last_verified | date }} against <a href="{{ l.verified_source_url }}" rel="noopener nofollow">the source</a>. Always confirm details with the organizer.</p>
+    </aside>
+  </div>
+  {% if l.public_note %}<p class="listing-note">{{ l.public_note }}</p>{% endif %}
+  <p class="report">Spotted something out of date? <a href="/contact/?topic=correction&listing={{ l.id }}">Report a correction</a>.</p>
+</article>
+{% if l.start_date %}
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org", "@type": "Event", "name": l.name,
+  "startDate": l.start_date, "endDate": l.end_date,
+  "eventAttendanceMode": ("https://schema.org/MixedEventAttendanceMode" if l.format == "hybrid" else ("https://schema.org/OnlineEventAttendanceMode" if l.format == "online" else "https://schema.org/OfflineEventAttendanceMode")),
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {"@type": "Place", "name": (l.location.venue or l.place or "TBA"), "address": l.place or l.location.country},
+  "organizer": {"@type": "Organization", "name": l.organizer},
+  "url": l.url
+} | json | safe }}</script>
+{% endif %}

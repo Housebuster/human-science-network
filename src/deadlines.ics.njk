@@ -1,0 +1,34 @@
+---
+permalink: /deadlines.ics
+eleventyExcludeFromCollections: true
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Human Science Network//Deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Human Science Network – conferences & deadlines
+X-PUBLISHED-TTL:PT12H
+{%- for l in catalog.deadlines %}
+BEGIN:VEVENT
+UID:deadline-{{ l.id }}@humansciencenetwork.com
+DTSTAMP:{{ catalog.today | icsDate }}T000000Z
+DTSTART;VALUE=DATE:{{ l.abstract_deadline | icsDate }}
+DTEND;VALUE=DATE:{{ l.abstract_deadline | icsDate(1) }}
+SUMMARY:{{ ("Submission deadline: " + l.name) | icsText }}
+URL:{{ l.cfp_url or l.url }}
+DESCRIPTION:{{ ("Confirm the exact time and time zone with the organizer. " + site.url + "/events/" + l.id + "/") | icsText }}
+END:VEVENT
+{%- endfor %}
+{%- for l in catalog.upcoming %}
+BEGIN:VEVENT
+UID:event-{{ l.id }}@humansciencenetwork.com
+DTSTAMP:{{ catalog.today | icsDate }}T000000Z
+DTSTART;VALUE=DATE:{{ l.start_date | icsDate }}
+DTEND;VALUE=DATE:{{ l.end_date | icsDate(1) }}
+SUMMARY:{{ l.name | icsText }}
+LOCATION:{{ (l.location.venue + ", " + l.place if l.location.venue and l.place else (l.place or l.location.venue)) | icsText }}
+URL:{{ l.url }}
+END:VEVENT
+{%- endfor %}
+END:VCALENDAR

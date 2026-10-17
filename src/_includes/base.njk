@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ description or site.tagline }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="Upcoming deadlines (RSS)" href="/deadlines.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231c2b45'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='%23f4efe6' font-family='Georgia,serif'>H</text></svg>">
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description or site.tagline }}">
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="{{ site.title }} home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-text">Human Science<br><span>Network</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        {% set nav = [["/", "Conferences"], ["/past/", "Past events"], ["/about/", "About & vetting"], ["/digest/", "Deadline digest"], ["/submit/", "Submit an event"]] %}
+        {% for item in nav %}
+        <li><a href="{{ item[0] }}"{% if page.url == item[0] %} aria-current="page"{% endif %}{% if item[0] == "/submit/" %} class="nav-cta"{% endif %}>{{ item[1] }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-brand">{{ site.title }}</p>
+      <p>{{ site.tagline }}. Every listing is checked against the organizer's official site. No tracking, no cookies.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/about/">About & vetting criteria</a></li>
+      <li><a href="/submit/">Submit an event</a></li>
+      <li><a href="/contact/">Contact & advertising</a></li>
+      <li><a href="/deadlines.ics">Deadlines calendar (ICS)</a></li>
+      <li><a href="/deadlines.xml">Deadlines feed (RSS)</a></li>
+    </ul>
+  </div>
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

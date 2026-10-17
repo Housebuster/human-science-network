@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Deadline digest
+permalink: /digest/
+description: A free email digest of upcoming conference submission deadlines in your fields.
+---
+{% from "fieldpicker.njk" import fieldpicker %}
+<section class="wrap page narrow">
+  <h1>Deadline digest</h1>
+  <p class="lede">A free, occasional email listing calls for submissions that close soon in the fields you choose. No tracking pixels, and you can unsubscribe in one click.</p>
+  <div class="note"><strong>Coming soon.</strong> Join the list now and we'll send the first issue when the digest launches. In the meantime, subscribe to the <a href="/deadlines.ics">deadlines calendar</a> or the <a href="/deadlines.xml">RSS feed</a>.</div>
+  <form class="form js-form" method="post" action="{{ site.forms.digest }}" data-required-group="digest_fields">
+    <input type="hidden" name="_subject" value="Digest signup">
+    <div class="row"><label for="d-email">Email <span class="req">*</span></label><input id="d-email" name="email" type="email" required autocomplete="email"></div>
+    {{ fieldpicker("digest_fields", "Fields you follow", true) }}
+    <label class="consent"><input type="checkbox" name="consent" required> Email me the deadline digest. I can unsubscribe at any time.</label>
+    {% include "formnotice.njk" %}
+    <button class="btn" type="submit">Join the list</button>
+  </form>
+</section>
+<script src="/assets/forms.js" defer></script>
