@@ -73,12 +73,12 @@ collections:
                 name: organizer_type
                 widget: select
                 options:
-      - { label: "Society", value: "society" }
-      - { label: "University", value: "university" }
-      - { label: "Research Network", value: "research-network" }
-      - { label: "Government", value: "government" }
-      - { label: "Commercial", value: "commercial" }
-      - { label: "Other", value: "other" }
+                  - { label: "Society", value: "society" }
+                  - { label: "University", value: "university" }
+                  - { label: "Research Network", value: "research-network" }
+                  - { label: "Government", value: "government" }
+                  - { label: "Commercial", value: "commercial" }
+                  - { label: "Other", value: "other" }
               - { label: Official URL, name: url, widget: string }
               - { label: Call for papers URL, name: cfp_url, widget: string, required: false, default: "" }
               - { label: Start date (YYYY-MM-DD), name: start_date, widget: string, required: false, default: "", hint: "Leave blank if not verified. Give both start and end, or neither." }
@@ -96,52 +96,52 @@ collections:
                 name: format
                 widget: select
                 options:
-      - { label: "In person", value: "in-person" }
-      - { label: "Hybrid", value: "hybrid" }
-      - { label: "Online", value: "online" }
+                  - { label: "In person", value: "in-person" }
+                  - { label: "Hybrid", value: "hybrid" }
+                  - { label: "Online", value: "online" }
               - label: Fields
                 name: fields
                 widget: select
                 multiple: true
                 options:
-      - { label: "General & multi-area psychology", value: "psy-general" }
-      - { label: "Clinical & counselling psychology", value: "psy-clinical" }
-      - { label: "Health psychology", value: "psy-health" }
-      - { label: "Social psychology", value: "psy-social" }
-      - { label: "Personality psychology", value: "psy-personality" }
-      - { label: "Cognitive psychology", value: "psy-cognitive" }
-      - { label: "Developmental psychology", value: "psy-developmental" }
-      - { label: "Biological psychology & neuropsychology", value: "psy-biological" }
-      - { label: "Affective science", value: "psy-affective" }
-      - { label: "Educational & school psychology", value: "psy-educational" }
-      - { label: "Work & organizational psychology", value: "psy-io" }
-      - { label: "Consumer psychology", value: "psy-consumer" }
-      - { label: "Forensic psychology", value: "psy-forensic" }
-      - { label: "Sport & exercise psychology", value: "psy-sport" }
-      - { label: "Cultural & cross-cultural psychology", value: "psy-cultural" }
-      - { label: "Political psychology", value: "psy-political" }
-      - { label: "Cyberpsychology", value: "psy-cyber" }
-      - { label: "Teaching of psychology", value: "psy-teaching" }
-      - { label: "Research methods & meta-science", value: "psy-methods" }
-      - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
-      - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
-      - { label: "Evolutionary behavioral science", value: "evolutionary" }
-      - { label: "Anthropology", value: "anthropology" }
-      - { label: "Sociology & demography", value: "sociology" }
-      - { label: "Political science", value: "political-science" }
-      - { label: "Linguistics & communication", value: "linguistics" }
-      - { label: "Education research", value: "education" }
-      - { label: "Public health, medicine & psychiatry", value: "public-health" }
-      - { label: "Human–computer interaction", value: "hci" }
-      - { label: "Gender & diversity studies", value: "gender-studies" }
-      - { label: "Human geography", value: "geography" }
+                  - { label: "General & multi-area psychology", value: "psy-general" }
+                  - { label: "Clinical & counselling psychology", value: "psy-clinical" }
+                  - { label: "Health psychology", value: "psy-health" }
+                  - { label: "Social psychology", value: "psy-social" }
+                  - { label: "Personality psychology", value: "psy-personality" }
+                  - { label: "Cognitive psychology", value: "psy-cognitive" }
+                  - { label: "Developmental psychology", value: "psy-developmental" }
+                  - { label: "Biological psychology & neuropsychology", value: "psy-biological" }
+                  - { label: "Affective science", value: "psy-affective" }
+                  - { label: "Educational & school psychology", value: "psy-educational" }
+                  - { label: "Work & organizational psychology", value: "psy-io" }
+                  - { label: "Consumer psychology", value: "psy-consumer" }
+                  - { label: "Forensic psychology", value: "psy-forensic" }
+                  - { label: "Sport & exercise psychology", value: "psy-sport" }
+                  - { label: "Cultural & cross-cultural psychology", value: "psy-cultural" }
+                  - { label: "Political psychology", value: "psy-political" }
+                  - { label: "Cyberpsychology", value: "psy-cyber" }
+                  - { label: "Teaching of psychology", value: "psy-teaching" }
+                  - { label: "Research methods & meta-science", value: "psy-methods" }
+                  - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
+                  - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
+                  - { label: "Evolutionary behavioral science", value: "evolutionary" }
+                  - { label: "Anthropology", value: "anthropology" }
+                  - { label: "Sociology & demography", value: "sociology" }
+                  - { label: "Political science", value: "political-science" }
+                  - { label: "Linguistics & communication", value: "linguistics" }
+                  - { label: "Education research", value: "education" }
+                  - { label: "Public health, medicine & psychiatry", value: "public-health" }
+                  - { label: "Human–computer interaction", value: "hci" }
+                  - { label: "Gender & diversity studies", value: "gender-studies" }
+                  - { label: "Human geography", value: "geography" }
               - label: Status
                 name: status
                 widget: select
                 options:
-      - { label: "Upcoming", value: "upcoming" }
-      - { label: "Past", value: "past" }
-      - { label: "To be confirmed", value: "tbc" }
+                  - { label: "Upcoming", value: "upcoming" }
+                  - { label: "Past", value: "past" }
+                  - { label: "To be confirmed", value: "tbc" }
                 hint: "Recomputed from dates at build time; keep this roughly in sync."
               - { label: Last verified (YYYY-MM-DD), name: last_verified, widget: string }
               - { label: Verified source URL, name: verified_source_url, widget: string }
@@ -150,9 +150,9 @@ collections:
                 widget: select
                 default: verified
                 options:
-      - { label: "Verified", value: "verified" }
-      - { label: "Medium confidence", value: "medium" }
-      - { label: "Low confidence", value: "low" }
+                  - { label: "Verified", value: "verified" }
+                  - { label: "Medium confidence", value: "medium" }
+                  - { label: "Low confidence", value: "low" }
               - { label: Public note, name: public_note, widget: text, required: false, default: "" }
               - { label: Internal notes (never shown), name: notes, widget: text, required: false, default: "" }
               - label: Editorial review flag
