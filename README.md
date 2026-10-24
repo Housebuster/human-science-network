@@ -4,6 +4,7 @@ A curated directory of legitimate scholarly conferences across the human science
 
 ```
 site/
+├─ functions/api/auth.js  ← Decap GitHub OAuth (Pages Function; not in _site)
 ├─ src/
 │  ├─ _data/
 │  │  ├─ listings.json    ← THE listings data file (edit this)
@@ -11,6 +12,7 @@ site/
 │  │  ├─ taxonomy.json    ← fields, formats, organizer types, regions
 │  │  ├─ site.json        ← site URL + form endpoints
 │  │  └─ catalog.js       ← build-time logic: upcoming/past/tbc by date, sorting
+│  ├─ admin/              ← Decap CMS UI (/admin/)
 │  ├─ _includes/          ← layout + components (Nunjucks)
 │  ├─ assets/             ← style.css, filter.js, forms.js
 │  ├─ index.njk           ← home: search + filters (field, format, region, open calls)
