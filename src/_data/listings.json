@@ -1778,6 +1778,100 @@
       "date_confidence": "verified",
       "public_note": "",
       "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
+    },
+    {
+      "id": "iapr-2027",
+      "name": "International Association for the Psychology of Religion Conference 2027",
+      "short_name": "IAPR",
+      "organizer": "International Association for the Psychology of Religion",
+      "organizer_type": "society",
+      "url": "https://www.iaprweb.org/conferences/",
+      "cfp_url": "",
+      "start_date": "",
+      "end_date": "",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "",
+        "city": "Brasília",
+        "country": "Brazil",
+        "country_code": "BR"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural",
+        "psy-social"
+      ],
+      "status": "tbc",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.iaprweb.org/conferences/",
+      "date_confidence": "unconfirmed",
+      "public_note": "",
+      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Brasília; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
+    },
+    {
+      "id": "asrec-2027",
+      "name": "Association for the Study of Religion, Economics, and Culture 2027 Annual Conference",
+      "short_name": "ASREC",
+      "organizer": "Association for the Study of Religion, Economics, and Culture",
+      "organizer_type": "society",
+      "url": "https://www.asrec.org/",
+      "cfp_url": "",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-06",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "George Mason University",
+        "city": "Arlington",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "behavioral-economics",
+        "psy-cultural",
+        "sociology"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.asrec.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Celebrating 25 years. Full papers only (no abstracts). Keynote: Robert J. Barro. Includes graduate workshop March 4-6. Interdisciplinary social science focus on religion, economics, and culture."
+    },
+    {
+      "id": "psprs-2026",
+      "name": "7th International Conference of the Polish Society for the Psychology of Religion and Spirituality",
+      "short_name": "PSPRS",
+      "organizer": "Polish Society for the Psychology of Religion and Spirituality",
+      "organizer_type": "society",
+      "url": "https://krakow2026.ptprid.org.pl/",
+      "cfp_url": "",
+      "start_date": "2026-09-24",
+      "end_date": "2026-09-26",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Ignatianum University",
+        "city": "Kraków",
+        "country": "Poland",
+        "country_code": "PL"
+      },
+      "format": "hybrid",
+      "fields": [
+        "psy-cultural",
+        "psy-health"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://krakow2026.ptprid.org.pl/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?"
     }
   ]
 }
