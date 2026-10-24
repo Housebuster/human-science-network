@@ -122,17 +122,17 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
 .crumbs { font-size: .9rem; color: var(--muted); margin-bottom: 1.2rem; }
 .listing-head { border-bottom: 1px solid var(--line); padding-bottom: 1.2rem; margin-bottom: 1.6rem; }
 .listing-pills { margin-top: .35rem; align-items: center; }
-.listing-pills .abbr-pill {
+/* Higher specificity than `.tags li` so cream field styles cannot win */
+.tags.listing-pills > li.abbr-pill {
   font-size: .82rem;
   font-weight: 700;
-  padding: .28rem .7rem;
-  color: #f4efe6;
-  background: var(--ink);
-  border: 1px solid #152238;
+  padding: .28rem .75rem;
+  color: #fff;
+  background: #243044;
+  border: 1px solid #1a2436;
   letter-spacing: .03em;
 }
-.listing-title { }
-.listing-title .title-break { display: block; }
+.listing-title br { display: block; content: ""; }
 input[readonly] { background: #f3f1ec; color: var(--ink-2); cursor: default; }
 .status { display: inline-block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: .2rem .6rem; border-radius: 6px; margin: 0 0 .8rem; }
 .status-upcoming { background: var(--accent-soft); color: var(--accent-2); }

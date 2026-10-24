@@ -51,7 +51,7 @@ export default function (eleventyConfig) {
     for (const p of phrases) {
       const i = s.lastIndexOf(" " + p);
       if (i > 0) {
-        return s.slice(0, i) + '<span class="title-break">' + s.slice(i + 1) + "</span>";
+        return s.slice(0, i) + "<br>" + s.slice(i + 1);
       }
     }
     return s;
