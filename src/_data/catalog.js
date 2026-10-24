@@ -37,6 +37,8 @@ const all = listings.map((l) => {
     format_label: fmtLabel[l.format] || l.format,
     field_labels: l.fields.map((f) => fieldLabel[f] || f),
     deadline_open: !!l.abstract_deadline && l.abstract_deadline >= today,
+    deadline_early_open: !!l.deadline_early && l.deadline_early >= today,
+    deadline_late_open: !!l.deadline_late && l.deadline_late >= today,
     place: [l.location.city, l.location.country].filter(Boolean).join(", "),
   };
 });

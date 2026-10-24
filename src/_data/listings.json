@@ -3,7 +3,7 @@
   "listings": [
     {
       "id": "adaa-2027",
-      "name": "ADAA Annual Conference 2027",
+      "name": "Anxiety and Depression Association of America Annual Conference 2027",
       "short_name": "ADAA 2027",
       "organizer": "Anxiety and Depression Association of America",
       "organizer_type": "society",
@@ -11,7 +11,9 @@
       "cfp_url": "",
       "start_date": "2027-04-01",
       "end_date": "2027-04-03",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Atlanta Marriott Marquis",
         "city": "Atlanta",
@@ -40,7 +42,9 @@
       "cfp_url": "https://myscp.org/news/30724/",
       "start_date": "2027-03-11",
       "end_date": "2027-03-14",
+      "deadline_early": "",
       "abstract_deadline": "2026-08-15",
+      "deadline_late": "",
       "location": {
         "venue": "JW Marriott Cancún Resort & Spa",
         "city": "Cancún",
@@ -61,7 +65,7 @@
     },
     {
       "id": "aps-2027",
-      "name": "APS Annual Convention 2027",
+      "name": "Association for Psychological Science Annual Convention 2027",
       "short_name": "APS 2027",
       "organizer": "Association for Psychological Science",
       "organizer_type": "society",
@@ -69,7 +73,9 @@
       "cfp_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention/call-for-submissions",
       "start_date": "2027-05-27",
       "end_date": "2027-05-30",
+      "deadline_early": "",
       "abstract_deadline": "2026-12-01",
+      "deadline_late": "",
       "location": {
         "venue": "Hyatt Regency Seattle",
         "city": "Seattle",
@@ -97,7 +103,9 @@
       "cfp_url": "",
       "start_date": "2027-06-03",
       "end_date": "2027-06-05",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Victoria",
@@ -117,7 +125,7 @@
     },
     {
       "id": "bps-dhp-2026",
-      "name": "BPS Division of Health Psychology Annual Conference 2026",
+      "name": "British Psychological Society Division of Health Psychology Annual Conference 2026",
       "short_name": "BPS DHP 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -125,7 +133,9 @@
       "cfp_url": "",
       "start_date": "2026-06-09",
       "end_date": "2026-06-11",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Liverpool",
@@ -145,7 +155,7 @@
     },
     {
       "id": "ispa-2026",
-      "name": "ISPA Annual Conference 2026",
+      "name": "International School Psychology Association Annual Conference 2026",
       "short_name": "ISPA 2026",
       "organizer": "International School Psychology Association",
       "organizer_type": "society",
@@ -153,7 +163,9 @@
       "cfp_url": "",
       "start_date": "2026-07-08",
       "end_date": "2026-07-11",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Université Lumière Lyon 2",
         "city": "Lyon",
@@ -181,7 +193,9 @@
       "cfp_url": "",
       "start_date": "2027-08-06",
       "end_date": "2027-08-08",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Hosted by James Cook University",
         "city": "Cairns",
@@ -202,7 +216,7 @@
     },
     {
       "id": "sesp-2026",
-      "name": "SESP Annual Conference 2026",
+      "name": "Society of Experimental Social Psychology Annual Conference 2026",
       "short_name": "SESP 2026",
       "organizer": "Society of Experimental Social Psychology",
       "organizer_type": "society",
@@ -210,7 +224,9 @@
       "cfp_url": "",
       "start_date": "2026-10-01",
       "end_date": "2026-10-03",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Le Westin Montréal",
         "city": "Montréal",
@@ -230,7 +246,7 @@
     },
     {
       "id": "eawop-2027",
-      "name": "EAWOP Congress 2027",
+      "name": "European Association of Work and Organizational Psychology Congress 2027",
       "short_name": "EAWOP 2027",
       "organizer": "European Association of Work and Organizational Psychology",
       "organizer_type": "society",
@@ -238,7 +254,9 @@
       "cfp_url": "https://eawop2027.inviteo.fr/callfor/",
       "start_date": "2027-05-26",
       "end_date": "2027-05-29",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Centre de Congrès de Lyon",
         "city": "Lyon",
@@ -258,7 +276,7 @@
     },
     {
       "id": "easp-gm-2026",
-      "name": "EASP General Meeting 2026",
+      "name": "European Association of Social Psychology General Meeting 2026",
       "short_name": "EASP 2026",
       "organizer": "European Association of Social Psychology",
       "organizer_type": "society",
@@ -266,7 +284,9 @@
       "cfp_url": "",
       "start_date": "2026-06-30",
       "end_date": "2026-07-04",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Strasbourg",
@@ -294,7 +314,9 @@
       "cfp_url": "",
       "start_date": "2026-05-19",
       "end_date": "2026-05-22",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "University of Arizona",
         "city": "Tucson",
@@ -315,7 +337,7 @@
     },
     {
       "id": "iaccp-2026",
-      "name": "IACCP International Congress 2026",
+      "name": "International Association for Cross-Cultural Psychology Congress 2026",
       "short_name": "IACCP 2026",
       "organizer": "International Association for Cross-Cultural Psychology",
       "organizer_type": "society",
@@ -323,7 +345,9 @@
       "cfp_url": "",
       "start_date": "2026-07-14",
       "end_date": "2026-07-18",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "KU Leuven, Faculty of Social Sciences",
         "city": "Leuven",
@@ -351,7 +375,9 @@
       "cfp_url": "",
       "start_date": "2026-07-21",
       "end_date": "2026-07-25",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Florence",
@@ -371,7 +397,7 @@
     },
     {
       "id": "ispp-2027",
-      "name": "ISPP Annual Scientific Meeting 2027",
+      "name": "International Society of Political Psychology Annual Scientific Meeting 2027",
       "short_name": "ISPP 2027",
       "organizer": "International Society of Political Psychology",
       "organizer_type": "society",
@@ -379,7 +405,9 @@
       "cfp_url": "https://ispp.org/meetings/",
       "start_date": "2027-07-06",
       "end_date": "2027-07-09",
+      "deadline_early": "",
       "abstract_deadline": "2026-11-27",
+      "deadline_late": "",
       "location": {
         "venue": "Postillion Hotel",
         "city": "Amsterdam",
@@ -400,7 +428,7 @@
     },
     {
       "id": "spsp-2027",
-      "name": "SPSP Annual Convention 2027",
+      "name": "Society for Personality and Social Psychology Annual Convention 2027",
       "short_name": "SPSP 2027",
       "organizer": "Society for Personality and Social Psychology",
       "organizer_type": "society",
@@ -408,7 +436,9 @@
       "cfp_url": "",
       "start_date": "2027-02-11",
       "end_date": "2027-02-13",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Pennsylvania Convention Center",
         "city": "Philadelphia",
@@ -429,7 +459,7 @@
     },
     {
       "id": "apa-2027",
-      "name": "APA Convention 2027",
+      "name": "American Psychological Association Convention 2027",
       "short_name": "APA 2027",
       "organizer": "American Psychological Association",
       "organizer_type": "society",
@@ -437,7 +467,9 @@
       "cfp_url": "",
       "start_date": "2027-08-12",
       "end_date": "2027-08-14",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "San Francisco",
@@ -458,7 +490,7 @@
     },
     {
       "id": "sjdm-2026",
-      "name": "SJDM Annual Meeting 2026",
+      "name": "Society for Judgment and Decision Making Annual Meeting 2026",
       "short_name": "SJDM 2026",
       "organizer": "Society for Judgment and Decision Making",
       "organizer_type": "society",
@@ -466,7 +498,9 @@
       "cfp_url": "https://sjdm.org/pipermail/jdm-society/2026-May/010558.html",
       "start_date": "2026-11-20",
       "end_date": "2026-11-22",
+      "deadline_early": "",
       "abstract_deadline": "2026-06-16",
+      "deadline_late": "",
       "location": {
         "venue": "Marriott Marquis San Diego Marina",
         "city": "San Diego",
@@ -487,7 +521,7 @@
     },
     {
       "id": "sips-2027",
-      "name": "SIPS Annual Conference 2027",
+      "name": "Society for the Improvement of Psychological Science Annual Conference 2027",
       "short_name": "SIPS 2027",
       "organizer": "Society for the Improvement of Psychological Science",
       "organizer_type": "society",
@@ -495,7 +529,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "University of Melbourne",
         "city": "Melbourne",
@@ -515,7 +551,7 @@
     },
     {
       "id": "esplat-2027",
-      "name": "ESPLAT Conference 2027",
+      "name": "European Society of Psychology Learning and Teaching Conference 2027",
       "short_name": "ESPLAT 2027",
       "organizer": "European Society of Psychology Learning and Teaching",
       "organizer_type": "society",
@@ -523,7 +559,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -543,7 +581,7 @@
     },
     {
       "id": "atp-2026",
-      "name": "ATP International Teachers' Conference 2026",
+      "name": "Association for the Teaching of Psychology International Teachers' Conference 2026",
       "short_name": "ATP 2026",
       "organizer": "Association for the Teaching of Psychology",
       "organizer_type": "society",
@@ -551,7 +589,9 @@
       "cfp_url": "",
       "start_date": "2026-07-09",
       "end_date": "2026-07-11",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "University of Winchester",
         "city": "Winchester",
@@ -579,7 +619,9 @@
       "cfp_url": "",
       "start_date": "2026-06-09",
       "end_date": "2026-06-12",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Universitat Jaume I",
         "city": "Castellón de la Plana",
@@ -607,7 +649,9 @@
       "cfp_url": "",
       "start_date": "2027-04-28",
       "end_date": "2027-04-30",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Clayton Hotel",
         "city": "Düsseldorf",
@@ -636,7 +680,9 @@
       "cfp_url": "",
       "start_date": "2029-07-30",
       "end_date": "2029-08-03",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Cologne",
@@ -664,7 +710,9 @@
       "cfp_url": "https://society-for-affective-science.org/abstracts/",
       "start_date": "2027-03-04",
       "end_date": "2027-03-06",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "San Diego",
@@ -692,7 +740,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -712,7 +762,7 @@
     },
     {
       "id": "bspa-2027",
-      "name": "BSPA Annual Conference 2027",
+      "name": "Behavioral Science & Policy Association Annual Conference 2027",
       "short_name": "BSPA 2027",
       "organizer": "Behavioral Science & Policy Association",
       "organizer_type": "society",
@@ -720,7 +770,9 @@
       "cfp_url": "",
       "start_date": "2027-05-13",
       "end_date": "2027-05-14",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Cornell Tech, Roosevelt Island",
         "city": "New York",
@@ -741,7 +793,7 @@
     },
     {
       "id": "iaccp-regional",
-      "name": "IACCP Regional Conference",
+      "name": "International Association for Cross-Cultural Psychology Regional Conference",
       "short_name": "IACCP Regional",
       "organizer": "International Association for Cross-Cultural Psychology",
       "organizer_type": "society",
@@ -749,7 +801,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -777,7 +831,9 @@
       "cfp_url": "https://acp.iafor.org/call-for-papers/",
       "start_date": "2027-03-31",
       "end_date": "2027-04-04",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "Tokyo",
@@ -801,7 +857,7 @@
     },
     {
       "id": "hbes-2027",
-      "name": "HBES Annual Conference 2027",
+      "name": "Human Behavior and Evolution Society Annual Conference 2027",
       "short_name": "HBES 2027",
       "organizer": "Human Behavior and Evolution Society",
       "organizer_type": "society",
@@ -809,7 +865,9 @@
       "cfp_url": "https://indico.global/event/18583/abstracts/",
       "start_date": "2027-05-12",
       "end_date": "2027-05-15",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Arizona State University",
         "city": "",
@@ -838,7 +896,9 @@
       "cfp_url": "",
       "start_date": "2026-05-11",
       "end_date": "2026-05-13",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "Mohammed VI Polytechnic University (UM6P)",
         "city": "Rabat",
@@ -860,7 +920,7 @@
     },
     {
       "id": "bps-cyber-2026",
-      "name": "BPS Cyberpsychology Section Annual Conference 2026",
+      "name": "British Psychological Society Cyberpsychology Section Annual Conference 2026",
       "short_name": "BPS Cyber 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -868,7 +928,9 @@
       "cfp_url": "",
       "start_date": "2026-07-06",
       "end_date": "2026-07-07",
+      "deadline_early": "",
       "abstract_deadline": "2026-04-19",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -889,7 +951,7 @@
     },
     {
       "id": "bps-dfp-2026",
-      "name": "BPS Division of Forensic Psychology Annual Conference 2026",
+      "name": "British Psychological Society Division of Forensic Psychology Annual Conference 2026",
       "short_name": "BPS DFP 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -897,7 +959,9 @@
       "cfp_url": "",
       "start_date": "2026-07-07",
       "end_date": "2026-07-09",
+      "deadline_early": "",
       "abstract_deadline": "2026-04-02",
+      "deadline_late": "",
       "location": {
         "venue": "Manchester Metropolitan University",
         "city": "Manchester",
@@ -917,7 +981,7 @@
     },
     {
       "id": "bps-dcop",
-      "name": "BPS Division of Counselling Psychology Annual Conference",
+      "name": "British Psychological Society Division of Counselling Psychology Annual Conference",
       "short_name": "BPS DCoP",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -925,7 +989,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -945,7 +1011,7 @@
     },
     {
       "id": "bps-powes-2026",
-      "name": "BPS Psychology of Women and Equalities Section Conference 2026",
+      "name": "British Psychological Society Psychology of Women and Equalities Section Conference 2026",
       "short_name": "BPS POWES 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -953,7 +1019,9 @@
       "cfp_url": "",
       "start_date": "2026-07-01",
       "end_date": "2026-07-03",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -974,7 +1042,7 @@
     },
     {
       "id": "bps-pes-2026",
-      "name": "BPS Psychology of Education Section Annual Conference 2026",
+      "name": "British Psychological Society Psychology of Education Section Annual Conference 2026",
       "short_name": "BPS PES 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -982,7 +1050,9 @@
       "cfp_url": "",
       "start_date": "2026-09-10",
       "end_date": "2026-09-11",
+      "deadline_early": "",
       "abstract_deadline": "2026-07-05",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -1003,7 +1073,7 @@
     },
     {
       "id": "bps-psychobiology",
-      "name": "BPS Psychobiology Section Annual Scientific Meeting",
+      "name": "British Psychological Society Psychobiology Section Annual Scientific Meeting",
       "short_name": "BPS Psychobiology",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1011,7 +1081,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -1031,7 +1103,7 @@
     },
     {
       "id": "bps-social",
-      "name": "BPS Social Psychology Section Annual Conference",
+      "name": "British Psychological Society Social Psychology Section Annual Conference",
       "short_name": "BPS Social",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1039,7 +1111,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -1059,7 +1133,7 @@
     },
     {
       "id": "bps-cognitive-2026",
-      "name": "BPS Cognitive Section Annual Conference 2026",
+      "name": "British Psychological Society Cognitive Section Annual Conference 2026",
       "short_name": "BPS Cognitive 2026",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1067,7 +1141,9 @@
       "cfp_url": "",
       "start_date": "2026-08-26",
       "end_date": "2026-08-28",
+      "deadline_early": "",
       "abstract_deadline": "2026-04-24",
+      "deadline_late": "",
       "location": {
         "venue": "Liverpool Hope University",
         "city": "Liverpool",
@@ -1088,7 +1164,7 @@
     },
     {
       "id": "bps-dev-2025",
-      "name": "BPS Developmental Psychology Section Annual Conference 2025",
+      "name": "British Psychological Society Developmental Psychology Section Annual Conference 2025",
       "short_name": "BPS Developmental 2025",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1096,7 +1172,9 @@
       "cfp_url": "",
       "start_date": "2025-09-10",
       "end_date": "2025-09-11",
+      "deadline_early": "",
       "abstract_deadline": "2025-05-13",
+      "deadline_late": "",
       "location": {
         "venue": "Royal Holloway, University of London",
         "city": "London",
@@ -1116,7 +1194,7 @@
     },
     {
       "id": "bps-welsh",
-      "name": "BPS Welsh Branch Annual Conference",
+      "name": "British Psychological Society Welsh Branch Annual Conference",
       "short_name": "BPS Wales",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1124,7 +1202,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -1144,7 +1224,7 @@
     },
     {
       "id": "bps-don",
-      "name": "BPS Division of Neuropsychology Summit",
+      "name": "British Psychological Society Division of Neuropsychology Summit",
       "short_name": "BPS DoN",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1152,7 +1232,9 @@
       "cfp_url": "",
       "start_date": "",
       "end_date": "",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",
@@ -1173,7 +1255,7 @@
     },
     {
       "id": "bps-decp-2027",
-      "name": "BPS Division of Educational and Child Psychology Annual Conference 2027",
+      "name": "British Psychological Society Division of Educational and Child Psychology Annual Conference 2027",
       "short_name": "BPS DECP 2027",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
@@ -1181,7 +1263,9 @@
       "cfp_url": "",
       "start_date": "2027-01-07",
       "end_date": "2027-01-08",
+      "deadline_early": "",
       "abstract_deadline": "",
+      "deadline_late": "",
       "location": {
         "venue": "",
         "city": "",

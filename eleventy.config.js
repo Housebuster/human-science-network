@@ -22,6 +22,16 @@ export default function (eleventyConfig) {
     if (a.m !== b.m) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]} ${b.y}`;
     return `${a.d}–${b.d} ${MONTHS[a.m - 1]} ${a.y}`;
   });
+  // "Thursday, 11 February 2027"
+  const WEEKDAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const MONTHS_LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  eleventyConfig.addFilter("dateWeekday", (iso) => {
+    if (!iso) return "";
+    const { y, m, d } = parts(iso);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    return `${WEEKDAYS[dt.getUTCDay()]}, ${d} ${MONTHS_LONG[m - 1]} ${y}`;
+  });
+  eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(String(s ?? "")));
   eleventyConfig.addFilter("dayNum", (iso) => String(parts(iso).d));
   eleventyConfig.addFilter("monYear", (iso) => { const { y, m } = parts(iso); return `${MONTHS[m - 1]} ${y}`; });
   eleventyConfig.addFilter("daysUntil", (iso, today) => Math.round((Date.parse(iso) - Date.parse(today)) / 864e5));

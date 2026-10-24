@@ -14,16 +14,22 @@ eleventyComputed:
   <header class="listing-head">
     <p class="status status-{{ l.status }}">{% if l.status == "upcoming" %}Upcoming{% elif l.status == "past" %}Past event{% else %}Dates to be confirmed{% endif %}</p>
     <h1>{{ l.name }}</h1>
-    <p class="listing-org">{{ l.organizer }}</p>
+    {% if l.short_name %}<p class="abbr-pill" aria-label="Common abbreviation">{{ l.short_name }}</p>{% endif %}
     <ul class="tags" aria-label="Fields">{% for f in l.field_labels %}<li>{{ f }}</li>{% endfor %}</ul>
   </header>
 
   <div class="listing-grid">
     <dl class="facts">
-      <div><dt>Dates</dt><dd>{{ l.start_date | dateRange(l.end_date) }}{% if l.date_confidence != "verified" and l.start_date %} <span class="hint">(organizer announcement; final confirmation pending)</span>{% endif %}</dd></div>
+      <div><dt>Organized by</dt><dd>{{ l.organizer }}</dd></div>
+      {% if l.start_date or l.end_date %}
+      {% if l.start_date %}<div><dt>Starts</dt><dd>{{ l.start_date | dateWeekday }}{% if l.date_confidence != "verified" %} <span class="hint">(organizer announcement; final confirmation pending)</span>{% endif %}</dd></div>{% endif %}
+      {% if l.end_date %}<div><dt>Ends</dt><dd>{{ l.end_date | dateWeekday }}</dd></div>{% endif %}
+      {% else %}
+      <div><dt>Dates</dt><dd>To be announced</dd></div>
+      {% endif %}
       <div><dt>Location</dt><dd>{% if l.location.venue %}{{ l.location.venue }}{% if l.place %}<br>{% endif %}{% endif %}{{ l.place or ("To be announced" if not l.location.venue) }}</dd></div>
       <div><dt>Format</dt><dd>{{ l.format_label }}</dd></div>
-      <div><dt>Submission deadline</dt><dd>{% if l.abstract_deadline %}{{ l.abstract_deadline | date }}{% if not l.deadline_open %} <span class="hint">(closed)</span>{% else %} <span class="hint">({{ l.abstract_deadline | daysUntil(catalog.today) }} days left)</span>{% endif %}{% else %}Not announced{% endif %}</dd></div>
+      <div><dt>Submission deadlines</dt><dd>{% if l.deadline_early or l.abstract_deadline or l.deadline_late %}{% if l.deadline_early %}Early: {{ l.deadline_early | date }}{% if l.deadline_early_open %} <span class="hint">({{ l.deadline_early | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% if l.abstract_deadline or l.deadline_late %}<br>{% endif %}{% endif %}{% if l.abstract_deadline %}Regular: {{ l.abstract_deadline | date }}{% if l.deadline_open %} <span class="hint">({{ l.abstract_deadline | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% if l.deadline_late %}<br>{% endif %}{% endif %}{% if l.deadline_late %}Late: {{ l.deadline_late | date }}{% if l.deadline_late_open %} <span class="hint">({{ l.deadline_late | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% endif %}{% else %}Not announced{% endif %}</dd></div>
       <div><dt>Organizer type</dt><dd>{{ {"society":"Scholarly society","university":"University","research-network":"Research network","government":"Public body","commercial":"Independent organizer","other":"Other"}[l.organizer_type] }}</dd></div>
     </dl>
     <aside class="listing-actions">
@@ -33,7 +39,7 @@ eleventyComputed:
     </aside>
   </div>
   {% if l.public_note %}<p class="listing-note">{{ l.public_note }}</p>{% endif %}
-  <p class="report">Spotted something out of date? <a href="/contact/?topic=correction&listing={{ l.id }}">Report a correction</a>.</p>
+  <p class="report">Spotted that needs to be changed? <a href="/contact/?topic=correction&listing={{ l.id }}&name={{ l.name | urlencode }}">Report a correction or update</a>.</p>
 </article>
 {% if l.start_date %}
 <script type="application/ld+json">{{ {

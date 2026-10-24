@@ -130,7 +130,9 @@ collections:
               - { label: Call for papers URL, name: cfp_url, widget: string, required: false, default: "" }
               - { label: Start date (YYYY-MM-DD), name: start_date, widget: string, required: false, default: "", hint: "Leave blank if not verified. Give both start and end, or neither." }
               - { label: End date (YYYY-MM-DD), name: end_date, widget: string, required: false, default: "" }
-              - { label: Abstract deadline (YYYY-MM-DD), name: abstract_deadline, widget: string, required: false, default: "" }
+              - { label: Early abstract deadline (YYYY-MM-DD), name: deadline_early, widget: string, required: false, default: "" }
+              - { label: Regular abstract deadline (YYYY-MM-DD), name: abstract_deadline, widget: string, required: false, default: "" }
+              - { label: Late abstract deadline (YYYY-MM-DD), name: deadline_late, widget: string, required: false, default: "" }
               - label: Location
                 name: location
                 widget: object

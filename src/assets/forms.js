@@ -1,13 +1,30 @@
 // Progressive enhancement for forms that post to a configurable endpoint (see src/_data/site.json).
 (() => {
   const params = new URLSearchParams(location.search);
-  const topic = document.getElementById("c-topic"), listing = document.getElementById("c-listing");
+  const topic = document.getElementById("c-topic");
+  const listing = document.getElementById("c-listing");
+  const listingName = document.getElementById("c-listing-name");
+  const listingRow = document.getElementById("c-listing-row");
+  const msg = document.getElementById("c-msg");
+
   if (topic && params.get("topic")) topic.value = params.get("topic");
   if (listing && params.get("listing")) listing.value = params.get("listing");
 
+  const confName = params.get("name");
+  const listingId = params.get("listing");
+  if (listingName && (confName || listingId)) {
+    listingName.value = confName || listingId;
+    if (listingRow) listingRow.hidden = false;
+  }
+  if (msg && (confName || listingId) && !msg.value) {
+    const label = confName || "listing";
+    const idPart = listingId ? ` (${listingId})` : "";
+    msg.value = `Correction for: ${label}${idPart}\n\n`;
+  }
+
   for (const form of document.querySelectorAll("form.js-form")) {
     const status = form.querySelector(".form-status");
-    const show = (msg, err) => { status.hidden = false; status.textContent = msg; status.classList.toggle("error", !!err); status.focus?.(); };
+    const show = (msgText, err) => { status.hidden = false; status.textContent = msgText; status.classList.toggle("error", !!err); status.focus?.(); };
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const group = form.dataset.requiredGroup;
