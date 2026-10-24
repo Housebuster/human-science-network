@@ -34,8 +34,8 @@ h2 { font-size: 1.5rem; margin: 0 0 .5rem; }
 .nav a { display: block; padding: .45rem .75rem; border-radius: 7px; color: var(--ink-2); text-decoration: none; font-size: .95rem; }
 .nav a:hover { background: var(--hero); color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); font-weight: 600; box-shadow: inset 0 -2px 0 var(--accent); border-radius: 0; }
-.nav a.nav-cta { background: var(--accent); color: #fff; font-weight: 600; }
-.nav a.nav-cta:hover, .nav a.nav-cta[aria-current="page"] { background: var(--accent-2); color: #fff; box-shadow: none; border-radius: 7px; }
+.nav a.nav-cta { background: var(--ink); color: #fff; font-weight: 600; }
+.nav a.nav-cta:hover, .nav a.nav-cta[aria-current="page"] { background: #152238; color: #fff; box-shadow: none; border-radius: 7px; }
 
 /* Hero */
 .hero { background: var(--hero); border-bottom: 1px solid var(--line); padding: 3.2rem 0 2.6rem; }
@@ -128,8 +128,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
   font-weight: 700;
   padding: .28rem .75rem;
   color: #fff;
-  background: #243044;
-  border: 1px solid #1a2436;
+  background: #5a8078;
+  border: 1px solid #4a6d66;
   letter-spacing: .03em;
 }
 .listing-title br { display: block; content: ""; }
