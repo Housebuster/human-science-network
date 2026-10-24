@@ -1,0 +1,13 @@
+{
+  "name": "hsn-decap-oauth",
+  "private": true,
+  "version": "1.0.0",
+  "description": "GitHub OAuth proxy for Decap CMS on Cloudflare Pages",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

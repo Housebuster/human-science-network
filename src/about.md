@@ -1,10 +1,9 @@
 ---
-layout: base.njk
+layout: prose.njk
 title: About & vetting criteria
 permalink: /about/
 description: How Human Science Network selects and verifies conference listings.
 ---
-<div class="wrap page prose">
 
 # About Human Science Network
 
@@ -14,12 +13,14 @@ Our aim is simple: one place where researchers can find **legitimate** meetings 
 
 <h2 id="accuracy">How we keep listings accurate</h2>
 
+
 - Every listing links to the organizer's official page, and we record when we last checked it.
 - We never carry dates forward or guess them. If the next edition hasn't been announced, the event is marked **"to be confirmed"**.
 - Events move to [Past events](/past/) automatically once they end.
 - We recheck upcoming events and deadlines every month, and every organizer once a year.
 
 <h2 id="criteria">Inclusion criteria</h2>
+
 
 An event is listed only if **all** of the following apply:
 
@@ -30,6 +31,7 @@ An event is listed only if **all** of the following apply:
 5. **Verifiable.** We can confirm the details on the host's own website or official channels.
 
 <h2 id="screened">What we screen out</h2>
+
 
 We don't list events that show signs of being commercial or pseudo-academic, including:
 
@@ -47,5 +49,3 @@ This site uses no analytics, no tracking scripts, no cookies and no third-party 
 ## Corrections
 
 If you spot an error, please [let us know](/contact/?topic=correction). Organizers can [submit an event](/submit/) for review.
-
-</div>

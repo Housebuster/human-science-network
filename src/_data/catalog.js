@@ -9,8 +9,12 @@ const today = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
 
 const fieldLabel = {};
 for (const g of taxonomy.groups) for (const f of g.fields) fieldLabel[f.id] = f.label;
+const regionList = Array.isArray(taxonomy.regions)
+  ? taxonomy.regions
+  : Object.entries(taxonomy.regions).map(([id, r]) => ({ id, ...r }));
+const regionById = Object.fromEntries(regionList.map((r) => [r.id, r]));
 const regionOf = (cc) => {
-  for (const [id, r] of Object.entries(taxonomy.regions)) if (r.countries.includes(cc)) return id;
+  for (const r of regionList) if (r.countries.includes(cc)) return r.id;
   return "";
 };
 const fmtLabel = Object.fromEntries(taxonomy.formats.map((f) => [f.id, f.label]));
@@ -29,7 +33,7 @@ const all = listings.map((l) => {
     status,
     stored_status: l.status,
     region,
-    region_label: region === "online" ? "Online" : taxonomy.regions[region]?.label || "",
+    region_label: region === "online" ? "Online" : regionById[region]?.label || "",
     format_label: fmtLabel[l.format] || l.format,
     field_labels: l.fields.map((f) => fieldLabel[f] || f),
     deadline_open: !!l.abstract_deadline && l.abstract_deadline >= today,
@@ -52,7 +56,7 @@ const fieldGroups = taxonomy.groups
   .filter((g) => g.fields.length);
 const regionsUsed = [...new Set([...upcoming, ...tbc].map((l) => l.region).filter(Boolean))].map((id) => ({
   id,
-  label: id === "online" ? "Online" : taxonomy.regions[id].label,
+  label: id === "online" ? "Online" : regionById[id].label,
 }));
 
 export default { today, all, upcoming, tbc, past, deadlines, fieldGroups, regionsUsed, fieldLabel };

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Content admin · Human Science Network</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    /* Brief note shown before Decap JS loads / if CDN is blocked */
+    .boot { font: 15px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1.25rem; color: #1c2b45; }
+    .boot a { color: #0f6b62; }
+  </style>
+</head>
+<body>
+  <div class="boot">
+    <p>Loading the content editor…</p>
+    <p>If nothing appears, check your network connection, then open the
+      <a href="/admin/config.yml">config</a>. Locally, also run
+      <code>npx decap-server</code> in another terminal (see README).</p>
+  </div>
+  <!-- Decap CMS from the official CDN (free, no npm build step). -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+# Decap CMS (formerly Netlify CMS) — visual editor for this site.
+# Open /admin/ after deploy. Sign-in needs the Cloudflare Worker OAuth proxy
+# (see README → "Decap CMS" and workers/decap-oauth/).
+
+backend:
+  name: github
+  repo: Housebuster/human-science-network
+  branch: main
+  # After you deploy the OAuth Worker, replace PLACEHOLDER with your workers.dev subdomain
+  # (or custom domain). No trailing slash. Example:
+  #   https://hsn-decap-oauth.your-account.workers.dev
+  base_url: https://hsn-decap-oauth.PLACEHOLDER.workers.dev
+  auth_endpoint: auth
+
+# Local editing without OAuth: run `npx decap-server` in another terminal, then open /admin/
+local_backend: true
+
+publish_mode: simple
+media_folder: src/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: settings
+    label: Site settings
+    files:
+      - name: site
+        label: Site settings
+        file: src/_data/site.json
+        fields:
+          - { label: Site title, name: title, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Canonical site URL, name: url, widget: string, hint: "https://humansciencenetwork.com (no trailing slash)" }
+          - { label: Language, name: lang, widget: string, default: en }
+          - { label: Contact email, name: contact_email, widget: string, required: false }
+          - label: Form endpoints
+            name: forms
+            widget: object
+            fields:
+              - { label: Submit-event form URL, name: submit, widget: string, hint: "Formspree or Cloudflare Function URL" }
+              - { label: Contact form URL, name: contact, widget: string }
+              - { label: Digest signup form URL, name: digest, widget: string }
+
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About & vetting
+        file: src/about.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description (SEO), name: description, widget: string }
+          - { label: Permalink, name: permalink, widget: hidden, default: "/about/" }
+          - { label: Layout, name: layout, widget: hidden, default: "prose.njk" }
+          - { label: Body, name: body, widget: markdown }
+
+  - name: listings
+    label: Conference listings
+    description: "All conference listings. Status is recomputed from dates at build time; leave dates blank when unknown."
+    files:
+      - name: listings
+        label: All listings
+        file: src/_data/listings.json
+        fields:
+          - { label: Schema note, name: "$schema_doc", widget: hidden, default: "See README.md#listing-schema" }
+          - label: Listings
+            name: listings
+            widget: list
+            summary: "{{short_name}} — {{name}}"
+            identifier_field: id
+            fields:
+              - { label: ID (URL slug), name: id, widget: string, hint: "lowercase-kebab, e.g. spsp-2027. Keep stable." }
+              - { label: Full name, name: name, widget: string }
+              - { label: Short name, name: short_name, widget: string, required: false }
+              - { label: Organizer, name: organizer, widget: string }
+              - label: Organizer type
+                name: organizer_type
+                widget: select
+                options:
+      - { label: "Society", value: "society" }
+      - { label: "University", value: "university" }
+      - { label: "Research Network", value: "research-network" }
+      - { label: "Government", value: "government" }
+      - { label: "Commercial", value: "commercial" }
+      - { label: "Other", value: "other" }
+              - { label: Official URL, name: url, widget: string }
+              - { label: Call for papers URL, name: cfp_url, widget: string, required: false, default: "" }
+              - { label: Start date (YYYY-MM-DD), name: start_date, widget: string, required: false, default: "", hint: "Leave blank if not verified. Give both start and end, or neither." }
+              - { label: End date (YYYY-MM-DD), name: end_date, widget: string, required: false, default: "" }
+              - { label: Abstract deadline (YYYY-MM-DD), name: abstract_deadline, widget: string, required: false, default: "" }
+              - label: Location
+                name: location
+                widget: object
+                fields:
+                  - { label: Venue, name: venue, widget: string, required: false, default: "" }
+                  - { label: City, name: city, widget: string, required: false, default: "" }
+                  - { label: Country, name: country, widget: string, required: false, default: "" }
+                  - { label: Country code (ISO), name: country_code, widget: string, required: false, default: "", hint: "e.g. US, GB, DE — drives the Region filter" }
+              - label: Format
+                name: format
+                widget: select
+                options:
+      - { label: "In person", value: "in-person" }
+      - { label: "Hybrid", value: "hybrid" }
+      - { label: "Online", value: "online" }
+              - label: Fields
+                name: fields
+                widget: select
+                multiple: true
+                options:
+      - { label: "General & multi-area psychology", value: "psy-general" }
+      - { label: "Clinical & counselling psychology", value: "psy-clinical" }
+      - { label: "Health psychology", value: "psy-health" }
+      - { label: "Social psychology", value: "psy-social" }
+      - { label: "Personality psychology", value: "psy-personality" }
+      - { label: "Cognitive psychology", value: "psy-cognitive" }
+      - { label: "Developmental psychology", value: "psy-developmental" }
+      - { label: "Biological psychology & neuropsychology", value: "psy-biological" }
+      - { label: "Affective science", value: "psy-affective" }
+      - { label: "Educational & school psychology", value: "psy-educational" }
+      - { label: "Work & organizational psychology", value: "psy-io" }
+      - { label: "Consumer psychology", value: "psy-consumer" }
+      - { label: "Forensic psychology", value: "psy-forensic" }
+      - { label: "Sport & exercise psychology", value: "psy-sport" }
+      - { label: "Cultural & cross-cultural psychology", value: "psy-cultural" }
+      - { label: "Political psychology", value: "psy-political" }
+      - { label: "Cyberpsychology", value: "psy-cyber" }
+      - { label: "Teaching of psychology", value: "psy-teaching" }
+      - { label: "Research methods & meta-science", value: "psy-methods" }
+      - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
+      - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
+      - { label: "Evolutionary behavioral science", value: "evolutionary" }
+      - { label: "Anthropology", value: "anthropology" }
+      - { label: "Sociology & demography", value: "sociology" }
+      - { label: "Political science", value: "political-science" }
+      - { label: "Linguistics & communication", value: "linguistics" }
+      - { label: "Education research", value: "education" }
+      - { label: "Public health, medicine & psychiatry", value: "public-health" }
+      - { label: "Human–computer interaction", value: "hci" }
+      - { label: "Gender & diversity studies", value: "gender-studies" }
+      - { label: "Human geography", value: "geography" }
+              - label: Status
+                name: status
+                widget: select
+                options:
+      - { label: "Upcoming", value: "upcoming" }
+      - { label: "Past", value: "past" }
+      - { label: "To be confirmed", value: "tbc" }
+                hint: "Recomputed from dates at build time; keep this roughly in sync."
+              - { label: Last verified (YYYY-MM-DD), name: last_verified, widget: string }
+              - { label: Verified source URL, name: verified_source_url, widget: string }
+              - label: Date confidence
+                name: date_confidence
+                widget: select
+                default: verified
+                options:
+      - { label: "Verified", value: "verified" }
+      - { label: "Medium confidence", value: "medium" }
+      - { label: "Low confidence", value: "low" }
+              - { label: Public note, name: public_note, widget: text, required: false, default: "" }
+              - { label: Internal notes (never shown), name: notes, widget: text, required: false, default: "" }
+              - label: Editorial review flag
+                name: review
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - { label: Needs review, name: needs_review, widget: boolean, default: false }
+                  - { label: Reason, name: reason, widget: text, required: false, default: "" }
+
+  - name: taxonomy
+    label: Field taxonomy
+    description: "Field tags, formats, organizer types and regions used by listings and filters. Changing a field id breaks listings that use it."
+    files:
+      - name: taxonomy
+        label: Taxonomy
+        file: src/_data/taxonomy.json
+        fields:
+          - label: Field groups
+            name: groups
+            widget: list
+            summary: "{{label}}"
+            fields:
+              - { label: Group id, name: id, widget: string }
+              - { label: Group label, name: label, widget: string }
+              - label: Fields
+                name: fields
+                widget: list
+                summary: "{{id}} — {{label}}"
+                fields:
+                  - { label: Field id, name: id, widget: string, hint: "Used in listings.fields; keep stable once in use." }
+                  - { label: Field label, name: label, widget: string }
+          - label: Formats
+            name: formats
+            widget: list
+            fields:
+              - { label: Id, name: id, widget: string }
+              - { label: Label, name: label, widget: string }
+          - label: Organizer types
+            name: organizer_types
+            widget: list
+            field:
+              label: Type id
+              name: type
+              widget: string
+          - label: Regions
+            name: regions
+            widget: list
+            summary: "{{id}} — {{label}}"
+            fields:
+              - { label: Region id, name: id, widget: string }
+              - { label: Label, name: label, widget: string }
+              - label: Country codes
+                name: countries
+                widget: list
+                field:
+                  label: ISO code
+                  name: code
+                  widget: string

@@ -23,6 +23,56 @@ site/
 └─ eleventy.config.js
 ```
 
+
+## Decap CMS (visual editor)
+
+Editors can change listings, the About page, site settings and the field taxonomy in the browser — no local checkout required once OAuth is set up. Decap is free and open source; it commits straight to the GitHub repo, and Cloudflare Pages rebuilds the site.
+
+### Open the admin
+
+- Production: `https://human-science-network.pages.dev/admin/` (or `https://humansciencenetwork.com/admin/` after the domain is connected)
+- Local: `http://localhost:8080/admin/` (with `npx decap-server` running — see below)
+
+### What you can edit
+
+| Collection | File | Notes |
+|---|---|---|
+| **Site settings** | `src/_data/site.json` | Title, tagline, contact email, form endpoints |
+| **About & vetting** | `src/about.md` | Public About page body |
+| **Conference listings** | `src/_data/listings.json` | The full list of events (add / edit / remove) |
+| **Field taxonomy** | `src/_data/taxonomy.json` | Field tags, formats, regions (edit carefully — field ids are used by listings) |
+
+Excluded / archived events stay in `src/_data/excluded.json` and are **not** in the CMS (edit that file in git if needed).
+
+### Sign in with GitHub (Cloudflare Pages)
+
+Decap’s GitHub backend needs a tiny OAuth proxy. Netlify provides one automatically; **Cloudflare Pages does not**, so this repo includes a Worker under `workers/decap-oauth/`.
+
+**Status today:** the `/admin/` UI is deployed, but login will fail until you finish the one-time Worker + GitHub OAuth App setup (about 10 minutes, free). Full steps: [`workers/decap-oauth/README.md`](workers/decap-oauth/README.md).
+
+Short version:
+
+1. Create a GitHub OAuth App.
+2. `cd workers/decap-oauth && npm i && npx wrangler secret put GITHUB_CLIENT_ID && npx wrangler secret put GITHUB_CLIENT_SECRET && npx wrangler deploy`
+3. Set the OAuth App callback to `https://hsn-decap-oauth.<account>.workers.dev/callback`
+4. Put that Worker URL in `src/admin/config.yml` → `backend.base_url`, commit and push.
+
+After that, open `/admin/` → **Login with GitHub**. You need push access to `Housebuster/human-science-network`.
+
+### Local editing (no OAuth)
+
+```bash
+npm start                 # site on :8080
+npx decap-server          # another terminal — local Git proxy
+# open http://localhost:8080/admin/
+```
+
+Saves write into your working tree; commit and push as usual.
+
+### WordPress later?
+
+You do **not** need WordPress for editing. Decap already gives a browser UI. If you ever wanted WordPress again, you’d either reverse-proxy a WP install or rebuild around its REST API — a large step backwards for a static directory. Prefer staying on Decap + git.
+
 ## Build and run locally
 
 Requires Node 18+ (Node 20 recommended; see `.nvmrc`).

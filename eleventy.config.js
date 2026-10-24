@@ -1,5 +1,8 @@
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
+  // Serve Decap's static files as-is (do not run them through Nunjucks).
+  eleventyConfig.ignores.add("src/admin/**");
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
 
   const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
