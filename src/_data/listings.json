@@ -1283,6 +1283,501 @@
       "date_confidence": "verified",
       "public_note": "Held in the West Midlands. Registration deadline: 14 December 2026.",
       "notes": "Page mentions an application deadline of 22 Oct 2026 (context unclear; possibly bursaries); not entered as abstract deadline. Was mislabeled Clinical."
+    },
+    {
+      "id": "psychonomic-2026",
+      "name": "Psychonomic Society 67th Annual Meeting 2026",
+      "short_name": "Psychonomic",
+      "organizer": "Psychonomic Society",
+      "organizer_type": "society",
+      "url": "https://www.psychonomic.org/2026annualmeeting",
+      "cfp_url": "",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-22",
+      "deadline_early": "",
+      "abstract_deadline": "2026-06-01",
+      "deadline_late": "",
+      "location": {
+        "venue": "Marriott Marquis San Diego Marina",
+        "city": "San Diego",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cognitive",
+        "cognitive-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.psychonomic.org/futuremeetings",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Premier international meeting for experimental cognitive psychology. Keynote Gordon Logan."
+    },
+    {
+      "id": "psychonomic-2027",
+      "name": "Psychonomic Society 68th Annual Meeting 2027",
+      "short_name": "Psychonomic",
+      "organizer": "Psychonomic Society",
+      "organizer_type": "society",
+      "url": "https://www.psychonomic.org/futuremeetings",
+      "cfp_url": "",
+      "start_date": "2027-11-18",
+      "end_date": "2027-11-21",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Sheraton New Orleans",
+        "city": "New Orleans",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cognitive",
+        "cognitive-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.psychonomic.org/futuremeetings",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Confirmed future meeting."
+    },
+    {
+      "id": "srcd-2027",
+      "name": "Society for Research in Child Development 2027 Biennial Meeting",
+      "short_name": "SRCD",
+      "organizer": "Society for Research in Child Development",
+      "organizer_type": "society",
+      "url": "https://www.srcd.org/event/srcd-2027-biennial-meeting",
+      "cfp_url": "",
+      "start_date": "2027-04-08",
+      "end_date": "2027-04-10",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "",
+        "city": "Atlanta",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.srcd.org/event/srcd-2027-biennial-meeting",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Biennial meeting. Pre-conference April 7."
+    },
+    {
+      "id": "siop-2027",
+      "name": "Society for Industrial and Organizational Psychology 2027 Annual Conference",
+      "short_name": "SIOP",
+      "organizer": "Society for Industrial and Organizational Psychology",
+      "organizer_type": "society",
+      "url": "https://www.siop.org/events/the-annual-conference/",
+      "cfp_url": "https://www.siop.org/events/the-annual-conference/program/call-for-proposals/",
+      "start_date": "2027-04-14",
+      "end_date": "2027-04-17",
+      "deadline_early": "",
+      "abstract_deadline": "2026-10-07",
+      "deadline_late": "",
+      "location": {
+        "venue": "Gaylord National Resort & Convention Center",
+        "city": "National Harbor",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-io"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.siop.org/events/the-annual-conference/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "In-person only. Proposal deadline passed."
+    },
+    {
+      "id": "cns-2027",
+      "name": "Cognitive Neuroscience Society 2027 Annual Meeting",
+      "short_name": "CNS",
+      "organizer": "Cognitive Neuroscience Society",
+      "organizer_type": "society",
+      "url": "https://www.cogneurosociety.org/annual-meeting/",
+      "cfp_url": "https://www.cogneurosociety.org/submissions/",
+      "start_date": "2027-03-20",
+      "end_date": "2027-03-23",
+      "deadline_early": "",
+      "abstract_deadline": "2026-11-03",
+      "deadline_late": "",
+      "location": {
+        "venue": "Boston Marriott Copley Place",
+        "city": "Boston",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cognitive",
+        "cognitive-science",
+        "psy-biological"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.cogneurosociety.org/meeting-information/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Poster deadline November 3, 2026."
+    },
+    {
+      "id": "abct-2026",
+      "name": "Association for Behavioral and Cognitive Therapies 60th Annual Convention 2026",
+      "short_name": "ABCT",
+      "organizer": "Association for Behavioral and Cognitive Therapies",
+      "organizer_type": "society",
+      "url": "https://www.abct.org/2026-convention/",
+      "cfp_url": "",
+      "start_date": "2026-11-12",
+      "end_date": "2026-11-15",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Hilton Baltimore Inner Harbor / Baltimore Convention Center",
+        "city": "Baltimore",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-clinical",
+        "psy-health"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.abct.org/convention-ce/annual-conventions/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Theme: Integrating Compassion and Science."
+    },
+    {
+      "id": "epa-2027",
+      "name": "Eastern Psychological Association 98th Annual Meeting 2027",
+      "short_name": "EPA",
+      "organizer": "Eastern Psychological Association",
+      "organizer_type": "society",
+      "url": "https://www.easternpsychological.org/",
+      "cfp_url": "",
+      "start_date": "2027-02-25",
+      "end_date": "2027-02-27",
+      "deadline_early": "",
+      "abstract_deadline": "2026-12-01",
+      "deadline_late": "",
+      "location": {
+        "venue": "Downtown Marriott",
+        "city": "Philadelphia",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.easternpsychological.org/i4a/pages/index.cfm?pageID=3502&activateFull=true",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Oldest US regional psychological association."
+    },
+    {
+      "id": "mpa-2027",
+      "name": "Midwestern Psychological Association Annual Meeting 2027",
+      "short_name": "MPA",
+      "organizer": "Midwestern Psychological Association",
+      "organizer_type": "society",
+      "url": "https://midwesternpsych.org/",
+      "cfp_url": "",
+      "start_date": "2027-04-15",
+      "end_date": "2027-04-17",
+      "deadline_early": "",
+      "abstract_deadline": "2026-11-04",
+      "deadline_late": "",
+      "location": {
+        "venue": "Palmer House Hilton",
+        "city": "Chicago",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://midwesternpsych.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Hosts affiliate meetings including Psi Chi."
+    },
+    {
+      "id": "sepa-2027",
+      "name": "Southeastern Psychological Association 73rd Annual Meeting 2027",
+      "short_name": "SEPA",
+      "organizer": "Southeastern Psychological Association",
+      "organizer_type": "society",
+      "url": "https://sepaonline.com/",
+      "cfp_url": "",
+      "start_date": "2027-04-07",
+      "end_date": "2027-04-10",
+      "deadline_early": "",
+      "abstract_deadline": "2026-10-13",
+      "deadline_late": "",
+      "location": {
+        "venue": "Hyatt Regency Greenville",
+        "city": "Greenville",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://sepaonline.com/upcoming-events/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": ""
+    },
+    {
+      "id": "cogsci-2027",
+      "name": "Cognitive Science Society Annual Meeting 2027 (CogSci 2027)",
+      "short_name": "CogSci",
+      "organizer": "Cognitive Science Society",
+      "organizer_type": "society",
+      "url": "https://cognitivesciencesociety.org/cogsci-2027/",
+      "cfp_url": "",
+      "start_date": "2027-07-28",
+      "end_date": "2027-07-31",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Euskalduna Bilbao Convention Centre",
+        "city": "Bilbao",
+        "country": "Spain",
+        "country_code": "ES"
+      },
+      "format": "in-person",
+      "fields": [
+        "cognitive-science",
+        "psy-cognitive"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://cognitivesciencesociety.org/cogsci-2027/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Theme: Human Cognition in the Age of AI."
+    },
+    {
+      "id": "scsc-2027",
+      "name": "Society for the Cognitive Science of Culture 9th Annual Meeting 2027",
+      "short_name": "SCSC",
+      "organizer": "Society for the Cognitive Science of Culture",
+      "organizer_type": "society",
+      "url": "https://rptu.de/center-for-cognitive-science/events/scsc2027",
+      "cfp_url": "",
+      "start_date": "2027-04-08",
+      "end_date": "2027-04-10",
+      "deadline_early": "2027-02-15",
+      "abstract_deadline": "2026-11-01",
+      "deadline_late": "2027-03-15",
+      "location": {
+        "venue": "RPTU University Kaiserslautern-Landau",
+        "city": "Kaiserslautern",
+        "country": "Germany",
+        "country_code": "DE"
+      },
+      "format": "in-person",
+      "fields": [
+        "cognitive-science",
+        "psy-cultural",
+        "anthropology"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://rptu.de/center-for-cognitive-science/events/scsc2027",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Keynotes include Michael Tomasello. Cognition-culture focus."
+    },
+    {
+      "id": "ccn-2027",
+      "name": "Cognitive Computational Neuroscience 2027",
+      "short_name": "CCN",
+      "organizer": "Cognitive Computational Neuroscience",
+      "organizer_type": "research-network",
+      "url": "https://www.ccneuro.org/",
+      "cfp_url": "",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-29",
+      "deadline_early": "2027-05-20",
+      "abstract_deadline": "2027-02-01",
+      "deadline_late": "",
+      "location": {
+        "venue": "Edinburgh International Conference Centre",
+        "city": "Edinburgh",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "cognitive-science",
+        "psy-cognitive",
+        "psy-biological"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.ccneuro.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Intersection of cognitive science, neuroscience, and AI."
+    },
+    {
+      "id": "escop-2027",
+      "name": "European Society for Cognitive Psychology 25th Conference 2027",
+      "short_name": "ESCoP",
+      "organizer": "European Society for Cognitive Psychology",
+      "organizer_type": "society",
+      "url": "https://escop2027.org/",
+      "cfp_url": "https://escop2027.org/symposium-proposal",
+      "start_date": "2027-08-30",
+      "end_date": "2027-09-04",
+      "deadline_early": "",
+      "abstract_deadline": "2026-11-30",
+      "deadline_late": "",
+      "location": {
+        "venue": "Babeș-Bolyai University",
+        "city": "Cluj-Napoca",
+        "country": "Romania",
+        "country_code": "RO"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cognitive",
+        "cognitive-science"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.escop.eu/news/news/escop-news/discover-transylvania-the-escop-2027-website-is-officially-live",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Biennial conference. Pre-conference satellites August 30-31."
+    },
+    {
+      "id": "iacesr-2026",
+      "name": "International Association for the Cognitive and Evolutionary Sciences of Religion 10th Biennial Meeting 2026",
+      "short_name": "IACESR",
+      "organizer": "International Association for the Cognitive and Evolutionary Sciences of Religion",
+      "organizer_type": "society",
+      "url": "https://iacesr.com/conferences/",
+      "cfp_url": "",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-03",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Masaryk University",
+        "city": "Brno",
+        "country": "Czech Republic",
+        "country_code": "CZ"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural",
+        "evolutionary",
+        "cognitive-science"
+      ],
+      "status": "past",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://iacesr.com/conferences/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Included per request even though past. Special IAHR Conference status. 2028 not yet announced."
+    },
+    {
+      "id": "sssr-2026",
+      "name": "Society for the Scientific Study of Religion Annual Meeting 2026",
+      "short_name": "SSSR",
+      "organizer": "Society for the Scientific Study of Religion",
+      "organizer_type": "society",
+      "url": "https://sssreligion.org/annual-meeting/meeting-info/",
+      "cfp_url": "https://sssreligion.org/annual-meeting/call-for-papers/",
+      "start_date": "2026-10-30",
+      "end_date": "2026-11-01",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Denver Marriott Tech Center",
+        "city": "Denver",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural",
+        "sociology"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://sssreligion.org/annual-meeting/meeting-info/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Joint with Religious Research Association (RRA). Theme: Rethinking Religion for the 21st Century."
+    },
+    {
+      "id": "apa-div36-2027",
+      "name": "APA Division 36 Mid-Year Conference 2027",
+      "short_name": "APA Div 36",
+      "organizer": "American Psychological Association Division 36 (Society for the Psychology of Religion and Spirituality)",
+      "organizer_type": "society",
+      "url": "https://div36.org/mid-year-conference-2027",
+      "cfp_url": "https://forms.gle/7HChiQ8ahFQnGKU37",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-02",
+      "deadline_early": "",
+      "abstract_deadline": "2026-11-01",
+      "deadline_late": "",
+      "location": {
+        "venue": "Cleone Peterson Eccles Alumni House, University of Utah",
+        "city": "Salt Lake City",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-cultural",
+        "psy-health"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://div36.org/mid-year-conference-2027",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
     }
   ]
 }
