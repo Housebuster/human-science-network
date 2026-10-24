@@ -1,0 +1,51 @@
+{% from "fieldpicker.njk" import fieldpicker %}
+<form class="form js-form" method="post" action="{{ site.forms.submit }}" data-required-group="fields">
+  <input type="hidden" name="_subject" value="New event submission">
+  <h2 class="form-section">The event</h2>
+  <div class="row"><label for="s-name">Conference or workshop name <span class="req">*</span></label><input id="s-name" name="conference_name" required></div>
+  <div class="row"><label for="s-url">Event website <span class="req">*</span></label><input id="s-url" name="conference_url" type="url" required placeholder="https://"></div>
+  <div class="row"><label for="s-desc">Short description <span class="req">*</span></label><textarea id="s-desc" name="description" rows="4" required maxlength="1200"></textarea><p class="help">Up to about 150 words: scope, audience, and what makes it a scholarly meeting.</p></div>
+  {{ fieldpicker("fields", "Fields", true) }}
+  <div class="row-2">
+    <div class="row"><label for="s-start">Start date <span class="req">*</span></label><input id="s-start" name="start_date" type="date" required></div>
+    <div class="row"><label for="s-end">End date <span class="req">*</span></label><input id="s-end" name="end_date" type="date" required></div>
+  </div>
+  <div class="row-2">
+    <div class="row"><label for="s-dl">Abstract or submission deadline</label><input id="s-dl" name="abstract_deadline" type="date"></div>
+    <div class="row"><label for="s-cfp">Call for papers URL</label><input id="s-cfp" name="cfp_url" type="url" placeholder="https://"></div>
+  </div>
+  <div class="row-2">
+    <div class="row"><label for="s-city">City</label><input id="s-city" name="city"></div>
+    <div class="row"><label for="s-country">Country</label><input id="s-country" name="country"></div>
+  </div>
+  <fieldset class="row radios"><legend>Format <span class="req">*</span></legend>
+    {% for f in taxonomy.formats %}<label><input type="radio" name="format" value="{{ f.id }}" required> {{ f.label }}</label>{% endfor %}
+  </fieldset>
+
+  <h2 class="form-section">The organizer</h2>
+  <div class="row"><label for="s-org">Organizing body <span class="req">*</span></label><input id="s-org" name="organizer" required><p class="help">For example, the society, university department or research network that owns the event.</p></div>
+  <div class="row"><label for="s-orgurl">Organizer website <span class="req">*</span></label><input id="s-orgurl" name="organizer_url" type="url" required placeholder="https://"></div>
+  <div class="row"><label for="s-otype">Organizer type <span class="req">*</span></label>
+    <select id="s-otype" name="organizer_type" required>
+      <option value="">Select…</option>
+      <option value="society">Scholarly society / professional association</option>
+      <option value="university">University or research institute</option>
+      <option value="research-network">Research network or consortium</option>
+      <option value="government">Public research body / funder</option>
+      <option value="other">Other (please explain in description)</option>
+    </select>
+  </div>
+  <div class="row"><label for="s-review">How are submissions reviewed?</label><textarea id="s-review" name="review_process" rows="2" placeholder="For example, double-blind review of abstracts by the programme committee"></textarea></div>
+  <div class="row"><label for="s-fees">Registration fees page</label><input id="s-fees" name="fees_url" type="url" placeholder="https://"></div>
+
+  <h2 class="form-section">Your details</h2>
+  <p class="help">Used only to follow up on this submission. Never published or shared.</p>
+  <div class="row-2">
+    <div class="row"><label for="s-cname">Name <span class="req">*</span></label><input id="s-cname" name="contact_name" required autocomplete="name"></div>
+    <div class="row"><label for="s-role">Role <span class="req">*</span></label><input id="s-role" name="contact_role" required placeholder="For example, programme chair"></div>
+  </div>
+  <div class="row"><label for="s-email">Email <span class="req">*</span></label><input id="s-email" name="contact_email" type="email" required autocomplete="email"></div>
+  <label class="consent"><input type="checkbox" name="confirm_host" required> I confirm this event is organized or owned by the academic body named above.</label>
+  {% include "formnotice.njk" %}
+  <button class="btn" type="submit">{{ submit_label or "Submit for review" }}</button>
+</form>

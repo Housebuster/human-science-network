@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+{# Shared chrome for Submit / Contact / Digest: editable intro from the .md page, form from a partial. #}
+<section class="wrap page narrow">
+  <h1>{{ title }}</h1>
+  {% if content %}
+  <div class="page-intro">
+{{ content | safe }}
+  </div>
+  {% endif %}
+  {% if note %}
+  <div class="note">{{ note | safe }}</div>
+  {% endif %}
+  {% if form == "submit" %}
+    {% include "forms/submit-form.njk" %}
+  {% elif form == "contact" %}
+    {% include "forms/contact-form.njk" %}
+  {% elif form == "digest" %}
+    {% include "forms/digest-form.njk" %}
+  {% endif %}
+</section>
+<script src="/assets/forms.js" defer></script>

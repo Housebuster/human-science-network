@@ -50,6 +50,9 @@ Cloudflare Pages rebuilds from that commit. Field tags come from `src/_data/taxo
 |---|---|---|
 | **Site settings** | `src/_data/site.json` | Title, tagline, contact email, form endpoints |
 | **About & vetting** | `src/about.md` | Public About page body |
+| **Submit page** | `src/submit.md` | Title, intro, optional note, button label (form fields stay fixed) |
+| **Contact page** | `src/contact.md` | Title, intro, note callout, button label |
+| **Digest page** | `src/digest.md` | Title, intro, note callout, button label |
 | **Conference listings** | `src/_data/listings.json` | The full list of events (add / edit / remove) |
 | **Field taxonomy** | `src/_data/taxonomy.json` | Field tags, formats, regions (edit carefully — field ids are used by listings) |
 

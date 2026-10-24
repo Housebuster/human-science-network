@@ -1,0 +1,21 @@
+<form class="form js-form" method="post" action="{{ site.forms.contact }}">
+  <input type="hidden" name="_subject" value="Contact form">
+  <div class="row"><label for="c-topic">Topic <span class="req">*</span></label>
+    <select id="c-topic" name="topic" required>
+      <option value="">Select…</option>
+      <option value="correction">Correction to a listing</option>
+      <option value="advertise">Advertising / sponsorship</option>
+      <option value="partnership">Society partnership</option>
+      <option value="other">Something else</option>
+    </select>
+  </div>
+  <input type="hidden" name="listing" id="c-listing">
+  <div class="row-2">
+    <div class="row"><label for="c-name">Name <span class="req">*</span></label><input id="c-name" name="name" required autocomplete="name"></div>
+    <div class="row"><label for="c-org">Organization</label><input id="c-org" name="organization" autocomplete="organization"></div>
+  </div>
+  <div class="row"><label for="c-email">Email <span class="req">*</span></label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+  <div class="row"><label for="c-msg">Message <span class="req">*</span></label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+  {% include "formnotice.njk" %}
+  <button class="btn" type="submit">{{ submit_label or "Send message" }}</button>
+</form>

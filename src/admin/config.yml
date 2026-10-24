@@ -50,6 +50,45 @@ collections:
           - { label: Layout, name: layout, widget: hidden, default: "prose.njk" }
           - { label: Body, name: body, widget: markdown }
 
+      - name: submit
+        label: Submit page
+        file: src/submit.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description (SEO), name: description, widget: string }
+          - { label: Intro, name: body, widget: markdown, hint: "Lead paragraph above the form. Links allowed." }
+          - { label: Note callout, name: note, widget: text, required: false, hint: "Optional highlighted box under the intro. HTML allowed (e.g. links)." }
+          - { label: Submit button label, name: submit_label, widget: string, default: "Submit for review" }
+          - { label: Permalink, name: permalink, widget: hidden, default: "/submit/" }
+          - { label: Layout, name: layout, widget: hidden, default: "form-page.njk" }
+          - { label: Form, name: form, widget: hidden, default: "submit" }
+
+      - name: contact
+        label: Contact page
+        file: src/contact.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description (SEO), name: description, widget: string }
+          - { label: Intro, name: body, widget: markdown, hint: "Lead paragraph above the form." }
+          - { label: Note callout, name: note, widget: text, required: false, hint: "Highlighted box (sponsorship policy, etc.). HTML allowed." }
+          - { label: Submit button label, name: submit_label, widget: string, default: "Send message" }
+          - { label: Permalink, name: permalink, widget: hidden, default: "/contact/" }
+          - { label: Layout, name: layout, widget: hidden, default: "form-page.njk" }
+          - { label: Form, name: form, widget: hidden, default: "contact" }
+
+      - name: digest
+        label: Digest page
+        file: src/digest.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description (SEO), name: description, widget: string }
+          - { label: Intro, name: body, widget: markdown, hint: "Lead paragraph above the form." }
+          - { label: Note callout, name: note, widget: text, required: false, hint: "Highlighted box (e.g. Coming soon). HTML allowed." }
+          - { label: Submit button label, name: submit_label, widget: string, default: "Join the list" }
+          - { label: Permalink, name: permalink, widget: hidden, default: "/digest/" }
+          - { label: Layout, name: layout, widget: hidden, default: "form-page.njk" }
+          - { label: Form, name: form, widget: hidden, default: "digest" }
+
   - name: listings
     label: Conference listings
     description: "All conference listings. Status is recomputed from dates at build time; leave dates blank when unknown."

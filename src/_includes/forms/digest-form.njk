@@ -1,0 +1,9 @@
+{% from "fieldpicker.njk" import fieldpicker %}
+<form class="form js-form" method="post" action="{{ site.forms.digest }}" data-required-group="digest_fields">
+  <input type="hidden" name="_subject" value="Digest signup">
+  <div class="row"><label for="d-email">Email <span class="req">*</span></label><input id="d-email" name="email" type="email" required autocomplete="email"></div>
+  {{ fieldpicker("digest_fields", "Fields you follow", true) }}
+  <label class="consent"><input type="checkbox" name="consent" required> Email me the deadline digest. I can unsubscribe at any time.</label>
+  {% include "formnotice.njk" %}
+  <button class="btn" type="submit">{{ submit_label or "Join the list" }}</button>
+</form>

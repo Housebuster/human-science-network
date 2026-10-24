@@ -42,6 +42,9 @@ h2 { font-size: 1.5rem; margin: 0 0 .5rem; }
 .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--accent); font-weight: 600; margin: 0 0 .8rem; }
 .hero h1 { max-width: 26ch; }
 .lede { font-size: 1.12rem; color: var(--ink-2); max-width: 62ch; margin: 0 0 1rem; }
+.page-intro { font-size: 1.12rem; color: var(--ink-2); max-width: 62ch; margin: 0 0 1rem; }
+.page-intro > p { margin: 0 0 0.75rem; }
+.page-intro > p:last-child { margin-bottom: 0; }
 .hero-stats { display: flex; gap: 2.5rem; flex-wrap: wrap; margin-top: 1.6rem; }
 .hero-stats strong { display: block; font: 600 2rem/1 var(--serif); }
 .hero-stats span { color: var(--muted); font-size: .9rem; }
