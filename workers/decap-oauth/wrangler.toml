@@ -1,8 +1,0 @@
-# Deploy: npx wrangler deploy
-# Secrets: npx wrangler secret put GITHUB_CLIENT_ID
-#          npx wrangler secret put GITHUB_CLIENT_SECRET
-name = "hsn-decap-oauth"
-main = "src/index.js"
-compatibility_date = "2024-10-01"
-
-# Optional: bind a custom route later, e.g. oauth.humansciencenetwork.com/*

@@ -28,10 +28,19 @@ site/
 
 Editors can change listings, the About page, site settings and the field taxonomy in the browser — no local checkout required once OAuth is set up. Decap is free and open source; it commits straight to the GitHub repo, and Cloudflare Pages rebuilds the site.
 
+### How to update conference listings
+
+There is no separate database or Google Sheet. **`src/_data/listings.json` is the source of truth** (the replacement for the old Ninja Tables / spreadsheet). To add or correct an event:
+
+1. Open `/admin/` → **Conference listings** → edit a row or add one → **Publish**.
+2. Or edit `src/_data/listings.json` in git / locally and push.
+
+Cloudflare Pages rebuilds from that commit. Field tags come from `src/_data/taxonomy.json` (also editable in `/admin/`).
+
 ### Open the admin
 
-- Production: `https://human-science-network.pages.dev/admin/` (or `https://humansciencenetwork.com/admin/` after the domain is connected)
-- Local: `http://localhost:8080/admin/` (with `npx decap-server` running — see below)
+- Production: https://human-science-network.pages.dev/admin/
+- Local: http://localhost:8080/admin/ (with `npx decap-server` — see below)
 
 ### What you can edit
 
@@ -44,20 +53,25 @@ Editors can change listings, the About page, site settings and the field taxonom
 
 Excluded / archived events stay in `src/_data/excluded.json` and are **not** in the CMS (edit that file in git if needed).
 
-### Sign in with GitHub (Cloudflare Pages)
+### Sign in with GitHub (Cloudflare Pages Function)
 
-Decap’s GitHub backend needs a tiny OAuth proxy. Netlify provides one automatically; **Cloudflare Pages does not**, so this repo includes a Worker under `workers/decap-oauth/`.
+OAuth runs as a **Pages Function** in this same project (`functions/api/auth.js`) — no separate Worker to deploy. Decap opens `/api/auth`; that function redirects to GitHub and, on return with `?code=`, exchanges the code and `postMessage`s the token back to the admin popup.
 
-**Status today:** the `/admin/` UI is deployed, but login will fail until you finish the one-time Worker + GitHub OAuth App setup (about 10 minutes, free). Full steps: [`workers/decap-oauth/README.md`](workers/decap-oauth/README.md).
+**Status today:** `/admin/` and `/api/auth` are in the repo, but login needs a one-time GitHub OAuth App plus two Pages env vars (free).
 
-Short version:
+1. **Create a GitHub OAuth App** (GitHub → Settings → Developer settings → OAuth Apps → New OAuth App):
+   - **Application name:** `Human Science Network CMS`
+   - **Homepage URL:** `https://human-science-network.pages.dev`
+   - **Authorization callback URL:** `https://human-science-network.pages.dev/api/auth`
+2. Copy the **Client ID** and generate a **Client secret**.
+3. In **Cloudflare Pages → this project → Settings → Environment variables**, add for **Production** (and Preview if you use preview deploys):
+   - `GITHUB_CLIENT_ID` = the Client ID
+   - `GITHUB_CLIENT_SECRET` = the Client secret  
+   Then **redeploy** (or retry the latest deployment) so Functions see the vars.
+4. Open https://human-science-network.pages.dev/admin/ → **Login with GitHub**.  
+   You need push access to `Housebuster/human-science-network`.
 
-1. Create a GitHub OAuth App.
-2. `cd workers/decap-oauth && npm i && npx wrangler secret put GITHUB_CLIENT_ID && npx wrangler secret put GITHUB_CLIENT_SECRET && npx wrangler deploy`
-3. Set the OAuth App callback to `https://hsn-decap-oauth.<account>.workers.dev/callback`
-4. Put that Worker URL in `src/admin/config.yml` → `backend.base_url`, commit and push.
-
-After that, open `/admin/` → **Login with GitHub**. You need push access to `Housebuster/human-science-network`.
+When you later attach `humansciencenetwork.com`, add a second callback URL on the OAuth App (`https://humansciencenetwork.com/api/auth`) and optionally set `backend.base_url` in `src/admin/config.yml` to the canonical host.
 
 ### Local editing (no OAuth)
 
@@ -67,11 +81,12 @@ npx decap-server          # another terminal — local Git proxy
 # open http://localhost:8080/admin/
 ```
 
-Saves write into your working tree; commit and push as usual.
+Saves write into your working tree; commit and push as usual. Pages Functions are not run by `eleventy --serve`; use production `/admin/` to test GitHub login.
 
 ### WordPress later?
 
-You do **not** need WordPress for editing. Decap already gives a browser UI. If you ever wanted WordPress again, you’d either reverse-proxy a WP install or rebuild around its REST API — a large step backwards for a static directory. Prefer staying on Decap + git.
+You do **not** need WordPress for editing. Decap already gives a browser UI on top of the same JSON listings file. Prefer staying on Decap + git.
+
 
 ## Build and run locally
 

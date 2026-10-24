@@ -1,16 +1,13 @@
 # Decap CMS (formerly Netlify CMS) — visual editor for this site.
-# Open /admin/ after deploy. Sign-in needs the Cloudflare Worker OAuth proxy
-# (see README → "Decap CMS" and workers/decap-oauth/).
+# Open /admin/ after deploy. Sign-in uses a Pages Function at /api/auth
+# (see README → "Decap CMS"). Set GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET in Pages.
 
 backend:
   name: github
   repo: Housebuster/human-science-network
   branch: main
-  # After you deploy the OAuth Worker, replace PLACEHOLDER with your workers.dev subdomain
-  # (or custom domain). No trailing slash. Example:
-  #   https://hsn-decap-oauth.your-account.workers.dev
-  base_url: https://hsn-decap-oauth.PLACEHOLDER.workers.dev
-  auth_endpoint: auth
+  base_url: https://human-science-network.pages.dev
+  auth_endpoint: api/auth
 
 # Local editing without OAuth: run `npx decap-server` in another terminal, then open /admin/
 local_backend: true
