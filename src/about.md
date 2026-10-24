@@ -1,5 +1,5 @@
 ---
-title: About & vetting criteria
+title: About
 description: How Human Science Network selects and verifies conference listings.
 permalink: /about/
 layout: prose.njk
