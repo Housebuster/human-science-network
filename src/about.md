@@ -1,6 +1,6 @@
 ---
 title: About
-description: How Human Science Network selects and verifies conference listings.
+description: About HSN
 permalink: /about/
 layout: prose.njk
 ---
