@@ -31,6 +31,31 @@ export default function (eleventyConfig) {
     const dt = new Date(Date.UTC(y, m - 1, d));
     return `${WEEKDAYS[dt.getUTCDay()]}, ${d} ${MONTHS_LONG[m - 1]} ${y}`;
   });
+  // Split listing H1 before the event-type phrase; full `name` stays one string in data.
+  eleventyConfig.addFilter("titleBreak", (name) => {
+    const s = String(name ?? "");
+    const phrases = [
+      "Annual Scientific Meeting",
+      "Annual Convention",
+      "Annual Conference",
+      "Annual Meeting",
+      "General Meeting",
+      "International Congress",
+      "Regional Conference",
+      "Teachers' Conference",
+      "Convention",
+      "Congress",
+      "Conference",
+      "Summit",
+    ];
+    for (const p of phrases) {
+      const i = s.lastIndexOf(" " + p);
+      if (i > 0) {
+        return s.slice(0, i) + '<span class="title-break">' + s.slice(i + 1) + "</span>";
+      }
+    }
+    return s;
+  });
   eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(String(s ?? "")));
   eleventyConfig.addFilter("dayNum", (iso) => String(parts(iso).d));
   eleventyConfig.addFilter("monYear", (iso) => { const { y, m } = parts(iso); return `${MONTHS[m - 1]} ${y}`; });

@@ -126,11 +126,13 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
   font-size: .82rem;
   font-weight: 700;
   padding: .28rem .7rem;
-  color: #fff;
-  background: var(--accent);
-  border: 1px solid var(--accent-2);
-  letter-spacing: .02em;
+  color: #f4efe6;
+  background: var(--ink);
+  border: 1px solid #152238;
+  letter-spacing: .03em;
 }
+.listing-title { }
+.listing-title .title-break { display: block; }
 input[readonly] { background: #f3f1ec; color: var(--ink-2); cursor: default; }
 .status { display: inline-block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: .2rem .6rem; border-radius: 6px; margin: 0 0 .8rem; }
 .status-upcoming { background: var(--accent-soft); color: var(--accent-2); }

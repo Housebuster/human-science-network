@@ -114,7 +114,7 @@ collections:
             fields:
               - { label: ID (URL slug), name: id, widget: string, hint: "lowercase-kebab, e.g. spsp-2027. Keep stable." }
               - { label: Full name, name: name, widget: string }
-              - { label: Short name, name: short_name, widget: string, required: false }
+              - { label: Short name / abbreviation, name: short_name, widget: string, required: false, hint: "Stable abbr reused across years (e.g. SPSP), no year." }
               - { label: Organizer, name: organizer, widget: string }
               - label: Organizer type
                 name: organizer_type

@@ -4,7 +4,7 @@
     {
       "id": "adaa-2027",
       "name": "Anxiety and Depression Association of America Annual Conference 2027",
-      "short_name": "ADAA 2027",
+      "short_name": "ADAA",
       "organizer": "Anxiety and Depression Association of America",
       "organizer_type": "society",
       "url": "https://adaa.org/adaa-conference",
@@ -35,7 +35,7 @@
     {
       "id": "scp-2027",
       "name": "Society for Consumer Psychology Annual Conference 2027",
-      "short_name": "SCP 2027",
+      "short_name": "SCP",
       "organizer": "Society for Consumer Psychology",
       "organizer_type": "society",
       "url": "https://myscp.org/events/annual27/",
@@ -66,7 +66,7 @@
     {
       "id": "aps-2027",
       "name": "Association for Psychological Science Annual Convention 2027",
-      "short_name": "APS 2027",
+      "short_name": "APS",
       "organizer": "Association for Psychological Science",
       "organizer_type": "society",
       "url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention",
@@ -96,7 +96,7 @@
     {
       "id": "cpa-2027",
       "name": "Canadian Psychological Association Annual Convention 2027",
-      "short_name": "CPA 2027",
+      "short_name": "CPA",
       "organizer": "Canadian Psychological Association",
       "organizer_type": "society",
       "url": "https://convention.cpa.ca/",
@@ -126,7 +126,7 @@
     {
       "id": "bps-dhp-2026",
       "name": "British Psychological Society Division of Health Psychology Annual Conference 2026",
-      "short_name": "BPS DHP 2026",
+      "short_name": "BPS DHP",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/division-health-psychology-annual-conference-2026",
@@ -156,7 +156,7 @@
     {
       "id": "ispa-2026",
       "name": "International School Psychology Association Annual Conference 2026",
-      "short_name": "ISPA 2026",
+      "short_name": "ISPA",
       "organizer": "International School Psychology Association",
       "organizer_type": "society",
       "url": "https://2026.ispaweb.org/",
@@ -186,7 +186,7 @@
     {
       "id": "aasp-2027",
       "name": "Asian Association of Social Psychology Biennial Conference 2027",
-      "short_name": "AASP 2027",
+      "short_name": "AASP",
       "organizer": "Asian Association of Social Psychology",
       "organizer_type": "society",
       "url": "https://www.asiansocialpsych.org/aasp-2027-conference-news/",
@@ -217,7 +217,7 @@
     {
       "id": "sesp-2026",
       "name": "Society of Experimental Social Psychology Annual Conference 2026",
-      "short_name": "SESP 2026",
+      "short_name": "SESP",
       "organizer": "Society of Experimental Social Psychology",
       "organizer_type": "society",
       "url": "https://www.sesp.org/annualconference",
@@ -247,7 +247,7 @@
     {
       "id": "eawop-2027",
       "name": "European Association of Work and Organizational Psychology Congress 2027",
-      "short_name": "EAWOP 2027",
+      "short_name": "EAWOP",
       "organizer": "European Association of Work and Organizational Psychology",
       "organizer_type": "society",
       "url": "https://eawop.org/upcoming-events/2027-eawop-congress",
@@ -277,7 +277,7 @@
     {
       "id": "easp-gm-2026",
       "name": "European Association of Social Psychology General Meeting 2026",
-      "short_name": "EASP 2026",
+      "short_name": "EASP",
       "organizer": "European Association of Social Psychology",
       "organizer_type": "society",
       "url": "https://easp2026strasbourg.com/",
@@ -338,7 +338,7 @@
     {
       "id": "iaccp-2026",
       "name": "International Association for Cross-Cultural Psychology Congress 2026",
-      "short_name": "IACCP 2026",
+      "short_name": "IACCP",
       "organizer": "International Association for Cross-Cultural Psychology",
       "organizer_type": "society",
       "url": "https://iaccp2026.com/",
@@ -368,7 +368,7 @@
     {
       "id": "icap-2026",
       "name": "31st International Congress of Applied Psychology (ICAP 2026)",
-      "short_name": "ICAP 2026",
+      "short_name": "ICAP",
       "organizer": "International Association of Applied Psychology",
       "organizer_type": "society",
       "url": "https://www.icap2026.org/",
@@ -398,7 +398,7 @@
     {
       "id": "ispp-2027",
       "name": "International Society of Political Psychology Annual Scientific Meeting 2027",
-      "short_name": "ISPP 2027",
+      "short_name": "ISPP",
       "organizer": "International Society of Political Psychology",
       "organizer_type": "society",
       "url": "https://ispp.org/meetings/",
@@ -429,7 +429,7 @@
     {
       "id": "spsp-2027",
       "name": "Society for Personality and Social Psychology Annual Convention 2027",
-      "short_name": "SPSP 2027",
+      "short_name": "SPSP",
       "organizer": "Society for Personality and Social Psychology",
       "organizer_type": "society",
       "url": "https://spsp.org/events/annual-convention",
@@ -460,7 +460,7 @@
     {
       "id": "apa-2027",
       "name": "American Psychological Association Convention 2027",
-      "short_name": "APA 2027",
+      "short_name": "APA",
       "organizer": "American Psychological Association",
       "organizer_type": "society",
       "url": "https://convention.apa.org/",
@@ -491,7 +491,7 @@
     {
       "id": "sjdm-2026",
       "name": "Society for Judgment and Decision Making Annual Meeting 2026",
-      "short_name": "SJDM 2026",
+      "short_name": "SJDM",
       "organizer": "Society for Judgment and Decision Making",
       "organizer_type": "society",
       "url": "https://sjdm.org/",
@@ -522,7 +522,7 @@
     {
       "id": "sips-2027",
       "name": "Society for the Improvement of Psychological Science Annual Conference 2027",
-      "short_name": "SIPS 2027",
+      "short_name": "SIPS",
       "organizer": "Society for the Improvement of Psychological Science",
       "organizer_type": "society",
       "url": "https://www.improvingpsych.org/",
@@ -552,7 +552,7 @@
     {
       "id": "esplat-2027",
       "name": "European Society of Psychology Learning and Teaching Conference 2027",
-      "short_name": "ESPLAT 2027",
+      "short_name": "ESPLAT",
       "organizer": "European Society of Psychology Learning and Teaching",
       "organizer_type": "society",
       "url": "https://www.esplat.org/esplat-2027",
@@ -582,7 +582,7 @@
     {
       "id": "atp-2026",
       "name": "Association for the Teaching of Psychology International Teachers' Conference 2026",
-      "short_name": "ATP 2026",
+      "short_name": "ATP",
       "organizer": "Association for the Teaching of Psychology",
       "organizer_type": "society",
       "url": "https://www.theatp.uk/events/atp-international-teachers-conference-2026/",
@@ -612,7 +612,7 @@
     {
       "id": "iarep-2026",
       "name": "50th IAREP Conference 2026",
-      "short_name": "IAREP 2026",
+      "short_name": "IAREP",
       "organizer": "International Association for Research in Economic Psychology",
       "organizer_type": "society",
       "url": "https://iarep2026.com/",
@@ -642,7 +642,7 @@
     {
       "id": "mb-2027",
       "name": "Measuring Behavior 2027",
-      "short_name": "MB 2027",
+      "short_name": "MB",
       "organizer": "Measuring Behavior",
       "organizer_type": "research-network",
       "url": "https://www.measuringbehavior.org/",
@@ -673,7 +673,7 @@
     {
       "id": "issp-2029",
       "name": "17th ISSP World Congress of Sport Psychology",
-      "short_name": "ISSP 2029",
+      "short_name": "ISSP",
       "organizer": "International Society of Sport Psychology",
       "organizer_type": "society",
       "url": "https://issponline.org/meetings-resources/world-congress/",
@@ -703,7 +703,7 @@
     {
       "id": "sas-2027",
       "name": "Society for Affective Science Annual Conference 2027",
-      "short_name": "SAS 2027",
+      "short_name": "SAS",
       "organizer": "Society for Affective Science",
       "organizer_type": "society",
       "url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
@@ -763,7 +763,7 @@
     {
       "id": "bspa-2027",
       "name": "Behavioral Science & Policy Association Annual Conference 2027",
-      "short_name": "BSPA 2027",
+      "short_name": "BSPA",
       "organizer": "Behavioral Science & Policy Association",
       "organizer_type": "society",
       "url": "https://behavioralpolicy.org/",
@@ -824,7 +824,7 @@
     {
       "id": "iafor-acp-2027",
       "name": "Asian Conference on Psychology & the Behavioral Sciences 2027",
-      "short_name": "ACP 2027",
+      "short_name": "ACP",
       "organizer": "The International Academic Forum (IAFOR)",
       "organizer_type": "commercial",
       "url": "https://acp.iafor.org/",
@@ -858,7 +858,7 @@
     {
       "id": "hbes-2027",
       "name": "Human Behavior and Evolution Society Annual Conference 2027",
-      "short_name": "HBES 2027",
+      "short_name": "HBES",
       "organizer": "Human Behavior and Evolution Society",
       "organizer_type": "society",
       "url": "https://www.hbes.com/conference/",
@@ -889,7 +889,7 @@
     {
       "id": "ces-2026",
       "name": "Cultural Evolution Society Conference 2026",
-      "short_name": "CES 2026",
+      "short_name": "CES",
       "organizer": "Cultural Evolution Society",
       "organizer_type": "society",
       "url": "https://culturalevolutionsociety.org/conference/",
@@ -921,7 +921,7 @@
     {
       "id": "bps-cyber-2026",
       "name": "British Psychological Society Cyberpsychology Section Annual Conference 2026",
-      "short_name": "BPS Cyber 2026",
+      "short_name": "BPS Cyber",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/cyberpsychology-section-annual-conference-2026",
@@ -952,7 +952,7 @@
     {
       "id": "bps-dfp-2026",
       "name": "British Psychological Society Division of Forensic Psychology Annual Conference 2026",
-      "short_name": "BPS DFP 2026",
+      "short_name": "BPS DFP",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/division-forensic-psychology-annual-conference-2026",
@@ -1012,7 +1012,7 @@
     {
       "id": "bps-powes-2026",
       "name": "British Psychological Society Psychology of Women and Equalities Section Conference 2026",
-      "short_name": "BPS POWES 2026",
+      "short_name": "BPS POWES",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/psychology-women-and-equalities-section-annual-conference-2026",
@@ -1043,7 +1043,7 @@
     {
       "id": "bps-pes-2026",
       "name": "British Psychological Society Psychology of Education Section Annual Conference 2026",
-      "short_name": "BPS PES 2026",
+      "short_name": "BPS PES",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/psychology-education-section-annual-conference-2026",
@@ -1134,7 +1134,7 @@
     {
       "id": "bps-cognitive-2026",
       "name": "British Psychological Society Cognitive Section Annual Conference 2026",
-      "short_name": "BPS Cognitive 2026",
+      "short_name": "BPS Cognitive",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/cognitive-section-annual-conference-2026",
@@ -1165,7 +1165,7 @@
     {
       "id": "bps-dev-2025",
       "name": "British Psychological Society Developmental Psychology Section Annual Conference 2025",
-      "short_name": "BPS Developmental 2025",
+      "short_name": "BPS Developmental",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/developmental-psychology-section-annual-conference-2025",
@@ -1256,7 +1256,7 @@
     {
       "id": "bps-decp-2027",
       "name": "British Psychological Society Division of Educational and Child Psychology Annual Conference 2027",
-      "short_name": "BPS DECP 2027",
+      "short_name": "BPS DECP",
       "organizer": "The British Psychological Society",
       "organizer_type": "society",
       "url": "https://www.bps.org.uk/event/division-educational-and-child-psychology-annual-conference-2027",
