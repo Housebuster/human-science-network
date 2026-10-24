@@ -40,6 +40,14 @@ collections:
   - name: pages
     label: Pages
     files:
+      - name: home
+        label: Home page
+        file: src/_data/home.json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string, hint: "Small line above the headline (fields covered)." }
+          - { label: Headline, name: headline, widget: string, hint: "Main H1 on the front page." }
+          - { label: Intro / lede, name: lede, widget: text, hint: "Short paragraph under the headline." }
+          - { label: Description (SEO), name: description, widget: string, hint: "Meta description for the homepage." }
       - name: about
         label: About
         file: src/about.md

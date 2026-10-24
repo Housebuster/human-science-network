@@ -1,13 +1,14 @@
 ---
 layout: base.njk
-description: Find scholarly conferences, congresses and workshops in psychology and the wider human sciences. Every listing is vetted and its dates checked against the official source.
+eleventyComputed:
+  description: "{{ home.description }}"
 ---
 {% from "card.njk" import card %}
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">Psychology · Anthropology · Behavioral economics · Linguistics · and more</p>
-    <h1>Scholarly conferences across the human sciences, vetted and kept up to date.</h1>
-    <p class="lede">A curated directory of meetings hosted by learned societies and universities. No commercial conference mills. Dates are checked against each organizer's official site.</p>
+    <p class="eyebrow">{{ home.eyebrow }}</p>
+    <h1>{{ home.headline }}</h1>
+    <p class="lede">{{ home.lede }}</p>
     <div class="hero-stats">
       <div><strong>{{ catalog.upcoming.length }}</strong><span>upcoming events</span></div>
       <div><strong>{{ catalog.deadlines.length }}</strong><span>open calls for submissions</span></div>
