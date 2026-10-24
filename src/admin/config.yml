@@ -41,7 +41,7 @@ collections:
     label: Pages
     files:
       - name: about
-        label: About & vetting
+        label: About
         file: src/about.md
         fields:
           - { label: Title, name: title, widget: string }

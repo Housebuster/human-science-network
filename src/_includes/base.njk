@@ -23,7 +23,7 @@
     </a>
     <nav aria-label="Main">
       <ul class="nav">
-        {% set nav = [["/", "Conferences"], ["/past/", "Past events"], ["/about/", "About & vetting"], ["/digest/", "Deadline digest"], ["/submit/", "Submit an event"]] %}
+        {% set nav = [["/", "Conferences"], ["/past/", "Past events"], ["/about/", "About"], ["/digest/", "Deadline digest"], ["/submit/", "Submit an event"]] %}
         {% for item in nav %}
         <li><a href="{{ item[0] }}"{% if page.url == item[0] %} aria-current="page"{% endif %}{% if item[0] == "/submit/" %} class="nav-cta"{% endif %}>{{ item[1] }}</a></li>
         {% endfor %}
@@ -41,7 +41,7 @@
       <p>{{ site.tagline }}. Every listing is checked against the organizer's official site. No tracking, no cookies.</p>
     </div>
     <ul class="footer-links">
-      <li><a href="/about/">About & vetting criteria</a></li>
+      <li><a href="/about/">About</a></li>
       <li><a href="/submit/">Submit an event</a></li>
       <li><a href="/contact/">Contact & advertising</a></li>
       <li><a href="/deadlines.ics">Deadlines calendar (ICS)</a></li>
