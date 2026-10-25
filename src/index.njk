@@ -53,9 +53,9 @@ eleventyComputed:
       </select>
     </div>
     <div>
-      <label for="f-orientation">Conference orientation</label>
+      <label for="f-orientation">Focus</label>
       <select id="f-orientation">
-        <option value="">Any orientation</option>
+        <option value="">Any focus</option>
         {% for o in taxonomy.orientations %}<option value="{{ o.id }}">{{ o.label }}</option>{% endfor %}
       </select>
     </div>
@@ -66,16 +66,16 @@ eleventyComputed:
         {% for r in catalog.regionsUsed %}<option value="{{ r.id }}">{{ r.label }}</option>{% endfor %}
       </select>
     </div>
-    <div class="f-check">
-      <input id="f-deadline" type="checkbox">
-      <label for="f-deadline">Open calls only</label>
-    </div>
     <div>
       <label for="f-sort">Sort by</label>
       <select id="f-sort">
         <option value="start">Event date</option>
         <option value="deadline">Submission deadline</option>
       </select>
+    </div>
+    <div class="f-check">
+      <input id="f-deadline" type="checkbox">
+      <label for="f-deadline">Open calls only</label>
     </div>
   </form>
 

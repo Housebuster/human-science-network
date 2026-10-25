@@ -170,7 +170,7 @@
     },
     {
       "id": "latin-america",
-      "label": "Latin America & Caribbean",
+      "label": "Latin America",
       "countries": [
         "MX",
         "BR",
@@ -256,15 +256,15 @@
   "orientations": [
     {
       "id": "research-oriented",
-      "label": "Research-oriented"
+      "label": "Research"
     },
     {
       "id": "balanced",
-      "label": "Balanced"
+      "label": "Mixed"
     },
     {
       "id": "practice-oriented",
-      "label": "Practice-oriented"
+      "label": "Practice"
     }
   ]
 }

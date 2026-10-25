@@ -148,17 +148,17 @@ collections:
                   - { label: "In person", value: "in-person" }
                   - { label: "Hybrid", value: "hybrid" }
                   - { label: "Online", value: "online" }
-              - label: Conference orientation
+              - label: Focus
                 name: orientation
                 widget: select
                 required: false
                 default: ""
-                hint: "Meeting orientation (research vs practice). Leave empty if not yet tagged. Balanced = substantial research + practice, not token research."
+                hint: "Meeting focus (research vs practice). Leave empty if not yet tagged. Mixed = substantial research + practice, not token research."
                 options:
                   - { label: "(not tagged)", value: "" }
-                  - { label: "Research-oriented", value: "research-oriented" }
-                  - { label: "Balanced", value: "balanced" }
-                  - { label: "Practice-oriented", value: "practice-oriented" }
+                  - { label: "Research", value: "research-oriented" }
+                  - { label: "Mixed", value: "balanced" }
+                  - { label: "Practice", value: "practice-oriented" }
               - label: Fields
                 name: fields
                 widget: select
@@ -252,7 +252,7 @@ collections:
             fields:
               - { label: Id, name: id, widget: string }
               - { label: Label, name: label, widget: string }
-          - label: Conference orientations
+          - label: Focus options
             name: orientations
             widget: list
             fields:
