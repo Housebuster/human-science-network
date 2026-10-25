@@ -59,6 +59,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(String(s ?? "")));
   eleventyConfig.addFilter("dayNum", (iso) => String(parts(iso).d));
   eleventyConfig.addFilter("monYear", (iso) => { const { y, m } = parts(iso); return `${MONTHS[m - 1]} ${y}`; });
+  eleventyConfig.addFilter("monAbbr", (iso) => MONTHS[parts(iso).m - 1]);
+  eleventyConfig.addFilter("yearNum", (iso) => String(parts(iso).y));
   // Left-column day span under month/year: "19", "19–22", or "30 Jun – 4 Jul"
   eleventyConfig.addFilter("daySpan", (s, e) => {
     if (!s) return "";
