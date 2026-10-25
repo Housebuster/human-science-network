@@ -105,8 +105,6 @@
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl) dl.checked = params.get("open") !== "0";
   if (showUp) showUp.checked = params.get("up") !== "0";
-  // Open calls is a sub-filter of Upcoming: never active while Upcoming is off.
-  if (dl && showUp && !showUp.checked) dl.checked = false;
   // Home scope: Past and Future Events (TBA) off unless URL says so.
   if (showTbc) showTbc.checked = params.get("tbc") === "1";
   if (showPast) {
@@ -202,9 +200,10 @@
   };
 
   function apply() {
-    if (dl && showUp && !showUp.checked) dl.checked = false;
-    const openOnly = !!dl?.checked;
-    const nextOn = showUp ? !!showUp.checked : true;
+    // Independent toggles: Upcoming shows all upcoming; Open calls shows upcoming with open deadlines.
+    const openOn = !!dl?.checked;
+    const upOn = showUp ? !!showUp.checked : !dl;
+    const nextOn = upOn || openOn;
     const tbcOn = !!showTbc?.checked;
     const pastOn = showPast ? !!showPast.checked : false;
 
@@ -224,7 +223,7 @@
 
     let n = 0;
     if (nextOn) {
-      for (const c of cards) { const ok = matches(c) && (!openOnly || !!c.dataset.deadline); c.hidden = !ok; if (ok) n++; }
+      for (const c of cards) { const ok = matches(c) && (upOn || !!c.dataset.deadline); c.hidden = !ok; if (ok) n++; }
     } else {
       for (const c of cards) c.hidden = true;
     }
@@ -256,7 +255,7 @@
     }
     if (region?.value) p.set("region", region.value);
     if (sort?.value && sort.value !== "start") p.set("sort", sort.value);
-    if (dl && !dl.checked && (!showUp || showUp.checked)) p.set("open", "0");
+    if (dl && !dl.checked) p.set("open", "0");
     if (showUp && !showUp.checked) p.set("up", "0");
     if (showTbc && showTbc.checked) p.set("tbc", "1");
     if (showPast && showPast.checked) p.set("past", "1");
@@ -291,10 +290,6 @@
     closeOtherDrops(null);
   });
 
-  // Checking Open calls implies Upcoming.
-  dl?.addEventListener("change", () => { if (dl.checked && showUp && !showUp.checked) showUp.checked = true; });
-  // Unchecking Upcoming clears Open calls; re-checking Upcoming always turns it back on.
-  showUp?.addEventListener("change", () => { if (dl) dl.checked = showUp.checked; });
   [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
