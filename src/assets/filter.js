@@ -1,12 +1,13 @@
 // Client-side search and filtering. Without JS, every listing is still shown.
 (() => {
   const $ = (id) => document.getElementById(id);
-  const q = $("q"), field = $("f-field"), format = $("f-format"), region = $("f-region"),
-        dl = $("f-deadline"), sort = $("f-sort"), list = $("upcoming-list"), tbc = $("tbc-list");
+  const q = $("q"), field = $("f-field"), format = $("f-format"), orientation = $("f-orientation"),
+        region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
+        list = $("upcoming-list"), tbc = $("tbc-list");
   if (!list) return;
   const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [];
   const params = new URLSearchParams(location.search);
-  const ctrls = { q, field, format, region, sort };
+  const ctrls = { q, field, format, orientation, region, sort };
   for (const [k, el] of Object.entries(ctrls)) if (el && params.get(k)) el.value = params.get(k);
   if (dl && params.get("open") === "1") dl.checked = true;
 
@@ -15,6 +16,8 @@
     if (text && !text.split(/\s+/).every((t) => d.search.includes(t))) return false;
     if (field?.value && !d.fields.split(" ").includes(field.value)) return false;
     if (format?.value && d.format !== format.value) return false;
+    // When an orientation filter is selected, only listings with that non-empty orientation match.
+    if (orientation?.value && d.orientation !== orientation.value) return false;
     if (region?.value && d.region !== region.value) return false;
     if (dl?.checked && !d.deadline) return false;
     return true;
@@ -36,9 +39,9 @@
     if (dl?.checked) p.set("open", "1");
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
   }
-  [q, field, format, region, dl, sort].forEach((el) => el && el.addEventListener("input", apply));
+  [q, field, format, orientation, region, dl, sort].forEach((el) => el && el.addEventListener("input", apply));
   $("reset")?.addEventListener("click", () => {
-    [q, field, format, region].forEach((el) => el && (el.value = ""));
+    [q, field, format, orientation, region].forEach((el) => el && (el.value = ""));
     if (dl) dl.checked = false; if (sort) sort.value = "start"; apply(); q?.focus();
   });
   apply();

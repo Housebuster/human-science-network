@@ -18,6 +18,7 @@ const regionOf = (cc) => {
   return "";
 };
 const fmtLabel = Object.fromEntries(taxonomy.formats.map((f) => [f.id, f.label]));
+const orientLabel = Object.fromEntries((taxonomy.orientations || []).map((o) => [o.id, o.label]));
 
 function effectiveStatus(l) {
   const end = l.end_date || l.start_date;
@@ -35,6 +36,8 @@ const all = listings.map((l) => {
     region,
     region_label: region === "online" ? "Online" : regionById[region]?.label || "",
     format_label: fmtLabel[l.format] || l.format,
+    orientation: l.orientation || "",
+    orientation_label: orientLabel[l.orientation] || "",
     field_labels: l.fields.map((f) => fieldLabel[f] || f),
     deadline_open: !!l.abstract_deadline && l.abstract_deadline >= today,
     deadline_early_open: !!l.deadline_early && l.deadline_early >= today,

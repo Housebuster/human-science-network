@@ -21,6 +21,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-clinical",
         "public-health"
@@ -46,12 +47,13 @@
       "abstract_deadline": "2026-08-15",
       "deadline_late": "",
       "location": {
-        "venue": "JW Marriott Cancún Resort & Spa",
-        "city": "Cancún",
+        "venue": "JW Marriott Canc\u00fan Resort & Spa",
+        "city": "Canc\u00fan",
         "country": "Mexico",
         "country_code": "MX"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-consumer",
         "behavioral-economics"
@@ -83,6 +85,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -113,6 +116,7 @@
         "country_code": "CA"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -143,6 +147,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-health"
       ],
@@ -167,12 +172,13 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Université Lumière Lyon 2",
+        "venue": "Universit\u00e9 Lumi\u00e8re Lyon 2",
         "city": "Lyon",
         "country": "France",
         "country_code": "FR"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-educational"
       ],
@@ -203,6 +209,7 @@
         "country_code": "AU"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-social",
         "psy-cultural"
@@ -228,12 +235,13 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Le Westin Montréal",
-        "city": "Montréal",
+        "venue": "Le Westin Montr\u00e9al",
+        "city": "Montr\u00e9al",
         "country": "Canada",
         "country_code": "CA"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-social"
       ],
@@ -258,12 +266,13 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Centre de Congrès de Lyon",
+        "venue": "Centre de Congr\u00e8s de Lyon",
         "city": "Lyon",
         "country": "France",
         "country_code": "FR"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-io"
       ],
@@ -294,6 +303,7 @@
         "country_code": "FR"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-social"
       ],
@@ -301,7 +311,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://easp2026strasbourg.com/",
       "date_confidence": "verified",
-      "public_note": "Pre-conferences 30 June; main meeting 1–4 July. The General Meeting is held every three years.",
+      "public_note": "Pre-conferences 30 June; main meeting 1\u20134 July. The General Meeting is held every three years.",
       "notes": "Old listing showed '2026 / TBC'. Triennial cadence is general knowledge; recheck the next GM year on easp.eu."
     },
     {
@@ -324,6 +334,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "linguistics",
         "psy-social"
@@ -355,6 +366,7 @@
         "country_code": "BE"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural"
       ],
@@ -385,6 +397,7 @@
         "country_code": "IT"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -415,6 +428,7 @@
         "country_code": "NL"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-political",
         "political-science"
@@ -446,6 +460,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-social",
         "psy-personality"
@@ -477,6 +492,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general",
         "psy-clinical"
@@ -508,6 +524,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "behavioral-economics",
         "psy-cognitive"
@@ -516,7 +533,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://sjdm.org/",
       "date_confidence": "verified",
-      "public_note": "Held alongside the Psychonomic Society annual meeting. 2027 (tentative): New Orleans, 18–20 November.",
+      "public_note": "Held alongside the Psychonomic Society annual meeting. 2027 (tentative): New Orleans, 18\u201320 November.",
       "notes": "Was mislabeled Clinical. After this edition passes, roll forward to 2027 once confirmed."
     },
     {
@@ -539,6 +556,7 @@
         "country_code": "AU"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-methods"
       ],
@@ -569,6 +587,7 @@
         "country_code": ""
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-teaching"
       ],
@@ -576,7 +595,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://www.esplat.org/esplat-2027",
       "date_confidence": "verified",
-      "public_note": "Dates and host to be announced. Previous edition: Münster, 1–3 September 2025.",
+      "public_note": "Dates and host to be announced. Previous edition: M\u00fcnster, 1\u20133 September 2025.",
       "notes": "Format assumed in-person (historic). Was mislabeled Clinical."
     },
     {
@@ -599,6 +618,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-teaching"
       ],
@@ -624,11 +644,12 @@
       "deadline_late": "",
       "location": {
         "venue": "Universitat Jaume I",
-        "city": "Castellón de la Plana",
+        "city": "Castell\u00f3n de la Plana",
         "country": "Spain",
         "country_code": "ES"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "behavioral-economics"
       ],
@@ -654,11 +675,12 @@
       "deadline_late": "",
       "location": {
         "venue": "Clayton Hotel",
-        "city": "Düsseldorf",
+        "city": "D\u00fcsseldorf",
         "country": "Germany",
         "country_code": "DE"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-methods",
         "cognitive-science"
@@ -690,6 +712,7 @@
         "country_code": "DE"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-sport"
       ],
@@ -697,7 +720,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://www.facebook.com/ISSPonline/posts/it-is-with-great-pleasure-that-issp-announces-that-the-2029-world-congress-of-sp/514626807798619/",
       "date_confidence": "medium",
-      "public_note": "Previous congress: Hong Kong, 8–12 December 2025.",
+      "public_note": "Previous congress: Hong Kong, 8\u201312 December 2025.",
       "notes": "MEDIUM CONFIDENCE: dates from ISSP's official Facebook announcement; not yet on issponline.org. Was mislabeled Clinical."
     },
     {
@@ -720,6 +743,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-affective"
       ],
@@ -750,6 +774,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-personality"
       ],
@@ -780,6 +805,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "behavioral-economics",
         "political-science"
@@ -788,7 +814,7 @@
       "last_verified": "2026-10-17",
       "verified_source_url": "https://behavioralpolicy.org/",
       "date_confidence": "verified",
-      "public_note": "Previous edition: Harvard Kennedy School, 7–8 June 2026.",
+      "public_note": "Previous edition: Harvard Kennedy School, 7\u20138 June 2026.",
       "notes": "Organizer name corrected (was 'Behavioral Science in Policy & Application'); old URL behavioralscienceconference.com is a BSPA microsite, replaced with behavioralpolicy.org. From 'save the date' on homepage."
     },
     {
@@ -811,6 +837,7 @@
         "country_code": ""
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural"
       ],
@@ -841,6 +868,7 @@
         "country_code": "JP"
       },
       "format": "hybrid",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -875,6 +903,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "evolutionary",
         "anthropology"
@@ -906,6 +935,7 @@
         "country_code": "MA"
       },
       "format": "hybrid",
+      "orientation": "",
       "fields": [
         "evolutionary",
         "anthropology",
@@ -938,6 +968,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cyber",
         "hci"
@@ -969,6 +1000,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-forensic"
       ],
@@ -999,6 +1031,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-clinical"
       ],
@@ -1029,6 +1062,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "gender-studies",
         "psy-social"
@@ -1060,6 +1094,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-educational",
         "education"
@@ -1091,6 +1126,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-biological"
       ],
@@ -1121,6 +1157,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-social"
       ],
@@ -1151,6 +1188,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1182,6 +1220,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-developmental"
       ],
@@ -1212,6 +1251,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1242,6 +1282,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-biological",
         "psy-clinical"
@@ -1273,6 +1314,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-educational",
         "psy-developmental"
@@ -1304,6 +1346,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1335,6 +1378,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1366,6 +1410,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-developmental"
       ],
@@ -1396,6 +1441,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-io"
       ],
@@ -1426,6 +1472,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science",
@@ -1458,6 +1505,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-clinical",
         "psy-health"
@@ -1489,6 +1537,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1519,6 +1568,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1549,6 +1599,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1579,6 +1630,7 @@
         "country_code": "ES"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cognitive"
@@ -1610,6 +1662,7 @@
         "country_code": "DE"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cultural",
@@ -1642,6 +1695,7 @@
         "country_code": "GB"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cognitive",
@@ -1668,12 +1722,13 @@
       "abstract_deadline": "2026-11-30",
       "deadline_late": "",
       "location": {
-        "venue": "Babeș-Bolyai University",
+        "venue": "Babe\u0219-Bolyai University",
         "city": "Cluj-Napoca",
         "country": "Romania",
         "country_code": "RO"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1705,6 +1760,7 @@
         "country_code": "CZ"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural",
         "evolutionary",
@@ -1737,6 +1793,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural",
         "sociology"
@@ -1768,6 +1825,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-health"
@@ -1777,7 +1835,7 @@
       "verified_source_url": "https://div36.org/mid-year-conference-2027",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
+      "notes": "Theme: Project REED \u2013 Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
     },
     {
       "id": "iapr-2027",
@@ -1794,11 +1852,12 @@
       "deadline_late": "",
       "location": {
         "venue": "",
-        "city": "Brasília",
+        "city": "Bras\u00edlia",
         "country": "Brazil",
         "country_code": "BR"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-social"
@@ -1808,7 +1867,7 @@
       "verified_source_url": "https://www.iaprweb.org/conferences/",
       "date_confidence": "unconfirmed",
       "public_note": "",
-      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Brasília; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
+      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Bras\u00edlia; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
     },
     {
       "id": "asrec-2027",
@@ -1830,6 +1889,7 @@
         "country_code": "US"
       },
       "format": "in-person",
+      "orientation": "",
       "fields": [
         "behavioral-economics",
         "psy-cultural",
@@ -1857,11 +1917,12 @@
       "deadline_late": "",
       "location": {
         "venue": "Ignatianum University",
-        "city": "Kraków",
+        "city": "Krak\u00f3w",
         "country": "Poland",
         "country_code": "PL"
       },
       "format": "hybrid",
+      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-health"
@@ -1871,7 +1932,7 @@
       "verified_source_url": "https://krakow2026.ptprid.org.pl/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?"
+      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness \u2013 A Remedy for Existential Emptiness and Health or a Modern Excess?"
     }
   ]
 }

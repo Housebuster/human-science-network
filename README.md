@@ -9,13 +9,13 @@ site/
 │  ├─ _data/
 │  │  ├─ listings.json    ← THE listings data file (edit this)
 │  │  ├─ excluded.json    ← removed/archived events with reasons (never rendered)
-│  │  ├─ taxonomy.json    ← fields, formats, organizer types, regions
+│  │  ├─ taxonomy.json    ← fields, formats, orientations, organizer types, regions
 │  │  ├─ site.json        ← site URL + form endpoints
 │  │  └─ catalog.js       ← build-time logic: upcoming/past/tbc by date, sorting
 │  ├─ admin/              ← Decap CMS UI (/admin/)
 │  ├─ _includes/          ← layout + components (Nunjucks)
 │  ├─ assets/             ← style.css, filter.js, forms.js
-│  ├─ index.njk           ← home: search + filters (field, format, region, open calls)
+│  ├─ index.njk           ← home: search + filters (field, format, orientation, region, open calls)
 │  ├─ past.njk  listing.njk (one page per listing at /events/<id>/)
 │  ├─ about.md  submit.njk  contact.njk  digest.njk
 │  ├─ deadlines.ics.njk   ← iCalendar feed of deadlines + upcoming events
@@ -125,6 +125,7 @@ Edit `src/_data/listings.json` (an array under `"listings"`), then run `npm run 
 | `abstract_deadline` | | ISO date. Shown as an "open call" until it passes, and included in the ICS/RSS feeds. |
 | `location` | yes | `{ "venue": "", "city": "", "country": "", "country_code": "US" }`. The ISO country code drives the Region filter (mapping in `taxonomy.json`). |
 | `format` | yes | `in-person`, `hybrid` or `online`. |
+| `orientation` | | Conference orientation: `research-oriented`, `balanced`, or `practice-oriented`. Empty string if not yet tagged. Meeting orientation (not “I am a researcher”); Balanced means substantial research + practice. |
 | `fields` | yes | One or more field ids from `taxonomy.json`. There is no default; choose deliberately. |
 | `status` | yes | `upcoming`, `past` or `tbc`. **The site recomputes this from the dates.** The validator warns if the stored value is out of date, so update it when you see the warning. |
 | `last_verified` | yes | Date you last checked the official source. Warns after 6 months. |

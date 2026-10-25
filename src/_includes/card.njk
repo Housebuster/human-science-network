@@ -1,6 +1,6 @@
 {% macro card(l, today) %}
 <li class="card" data-search="{{ (l.name + ' ' + l.short_name + ' ' + l.organizer + ' ' + l.place + ' ' + (l.location.venue or '') + ' ' + (l.field_labels | join(' '))) | lower }}"
-    data-fields="{{ l.fields | join(' ') }}" data-format="{{ l.format }}" data-region="{{ l.region }}"
+    data-fields="{{ l.fields | join(' ') }}" data-format="{{ l.format }}" data-orientation="{{ l.orientation or '' }}" data-region="{{ l.region }}"
     data-start="{{ l.start_date or '9999-12-31' }}" data-deadline="{{ l.abstract_deadline if l.deadline_open else '' }}">
   <div class="card-date">
     {% if l.start_date %}
@@ -16,6 +16,7 @@
       <span>{{ l.start_date | dateRange(l.end_date) }}</span>
       {% if l.place or l.location.venue %}<span>{{ l.place or l.location.venue }}</span>{% endif %}
       <span>{{ l.format_label }}</span>
+      {% if l.orientation %}<span>{{ l.orientation_label }}</span>{% endif %}
     </p>
     {% if l.deadline_open %}
       {% set dleft = l.abstract_deadline | daysUntil(today) %}

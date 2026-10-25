@@ -53,6 +53,13 @@ eleventyComputed:
       </select>
     </div>
     <div>
+      <label for="f-orientation">Conference orientation</label>
+      <select id="f-orientation">
+        <option value="">Any orientation</option>
+        {% for o in taxonomy.orientations %}<option value="{{ o.id }}">{{ o.label }}</option>{% endfor %}
+      </select>
+    </div>
+    <div>
       <label for="f-region">Region</label>
       <select id="f-region">
         <option value="">Anywhere</option>

@@ -4,6 +4,7 @@ const { listings } = JSON.parse(fs.readFileSync("src/_data/listings.json"));
 const tax = JSON.parse(fs.readFileSync("src/_data/taxonomy.json"));
 const fieldIds = new Set(tax.groups.flatMap((g) => g.fields.map((f) => f.id)));
 const formats = new Set(tax.formats.map((f) => f.id));
+const orientations = new Set((tax.orientations || []).map((o) => o.id));
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 const errors = [], warnings = [];
 const ids = new Set();
@@ -20,6 +21,7 @@ for (const l of listings) {
   if (l.start_date && l.end_date && l.end_date < l.start_date) e("end_date before start_date");
   if (!!l.start_date !== !!l.end_date) e("give both start_date and end_date, or neither");
   if (!formats.has(l.format)) e(`unknown format ${l.format}`);
+  if (l.orientation && !orientations.has(l.orientation)) e(`unknown orientation ${l.orientation}`);
   if (!tax.organizer_types.includes(l.organizer_type)) e(`unknown organizer_type ${l.organizer_type}`);
   for (const f of l.fields || []) if (!fieldIds.has(f)) e(`unknown field ${f}`);
   if (!["upcoming", "past", "tbc"].includes(l.status)) e(`bad status ${l.status}`);

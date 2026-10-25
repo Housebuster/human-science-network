@@ -124,7 +124,7 @@
         },
         {
           "id": "hci",
-          "label": "Human–computer interaction"
+          "label": "Human\u2013computer interaction"
         },
         {
           "id": "gender-studies",
@@ -251,6 +251,20 @@
         "AU",
         "NZ"
       ]
+    }
+  ],
+  "orientations": [
+    {
+      "id": "research-oriented",
+      "label": "Research-oriented"
+    },
+    {
+      "id": "balanced",
+      "label": "Balanced"
+    },
+    {
+      "id": "practice-oriented",
+      "label": "Practice-oriented"
     }
   ]
 }

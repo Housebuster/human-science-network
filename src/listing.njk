@@ -30,6 +30,7 @@ eleventyComputed:
       {% endif %}
       <div><dt>Location</dt><dd>{% if l.location.venue %}{{ l.location.venue }}{% if l.place %}<br>{% endif %}{% endif %}{{ l.place or ("To be announced" if not l.location.venue) }}</dd></div>
       <div><dt>Format</dt><dd>{{ l.format_label }}</dd></div>
+      {% if l.orientation %}<div><dt>Orientation</dt><dd>{{ l.orientation_label }}</dd></div>{% endif %}
       <div><dt>Submission deadlines</dt><dd>{% if l.deadline_early or l.abstract_deadline or l.deadline_late %}{% if l.deadline_early %}Early: {{ l.deadline_early | date }}{% if l.deadline_early_open %} <span class="hint">({{ l.deadline_early | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% if l.abstract_deadline or l.deadline_late %}<br>{% endif %}{% endif %}{% if l.abstract_deadline %}Regular: {{ l.abstract_deadline | date }}{% if l.deadline_open %} <span class="hint">({{ l.abstract_deadline | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% if l.deadline_late %}<br>{% endif %}{% endif %}{% if l.deadline_late %}Late: {{ l.deadline_late | date }}{% if l.deadline_late_open %} <span class="hint">({{ l.deadline_late | daysUntil(catalog.today) }} days left)</span>{% else %} <span class="hint">(closed)</span>{% endif %}{% endif %}{% else %}Not announced{% endif %}</dd></div>
       <div><dt>Organized by</dt><dd>{{ l.organizer }}</dd></div>
     </dl>
