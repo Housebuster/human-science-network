@@ -15,7 +15,7 @@ site/
 │  ├─ admin/              ← Decap CMS UI (/admin/)
 │  ├─ _includes/          ← layout + components (Nunjucks)
 │  ├─ assets/             ← style.css, filter.js, forms.js
-│  ├─ index.njk           ← home: search + filters (field, format, orientation, region, open calls)
+│  ├─ index.njk           ← home: search + filters (multi field/format/focus; region; open calls)
 │  ├─ past.njk  listing.njk (one page per listing at /events/<id>/)
 │  ├─ about.md  submit.njk  contact.njk  digest.njk
 │  ├─ deadlines.ics.njk   ← iCalendar feed of deadlines + upcoming events

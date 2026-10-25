@@ -35,29 +35,40 @@ eleventyComputed:
       <input id="q" type="search" placeholder="Conference, society, city…" autocomplete="off">
     </div>
     <div>
-      <label for="f-field">Field</label>
-      <select id="f-field">
-        <option value="">All fields</option>
-        {% for g in catalog.fieldGroups %}
-        <optgroup label="{{ g.label }}">
-          {% for f in g.fields %}<option value="{{ f.id }}">{{ f.label }}</option>{% endfor %}
-        </optgroup>
-        {% endfor %}
-      </select>
+      <span class="f-label" id="lbl-field">Field</span>
+      <details class="f-drop" id="f-field">
+        <summary>All fields</summary>
+        <div class="f-drop-panel" role="group" aria-labelledby="lbl-field">
+          {% for g in catalog.fieldGroups %}
+          <p class="f-drop-group">{{ g.label }}</p>
+          {% for f in g.fields %}
+          <label class="f-drop-opt"><input type="checkbox" value="{{ f.id }}"><span class="f-drop-text">{{ f.label }}</span></label>
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </details>
     </div>
     <div>
-      <label for="f-format">Format</label>
-      <select id="f-format">
-        <option value="">Any format</option>
-        {% for f in taxonomy.formats %}<option value="{{ f.id }}">{{ f.label }}</option>{% endfor %}
-      </select>
+      <span class="f-label" id="lbl-format">Format</span>
+      <details class="f-drop" id="f-format">
+        <summary>Any format</summary>
+        <div class="f-drop-panel" role="group" aria-labelledby="lbl-format">
+          {% for f in taxonomy.formats %}
+          <label class="f-drop-opt"><input type="checkbox" value="{{ f.id }}"><span class="f-drop-text">{{ f.label }}</span></label>
+          {% endfor %}
+        </div>
+      </details>
     </div>
     <div>
-      <label for="f-orientation">Focus</label>
-      <select id="f-orientation">
-        <option value="">Any focus</option>
-        {% for o in taxonomy.orientations %}<option value="{{ o.id }}">{{ o.label }}</option>{% endfor %}
-      </select>
+      <span class="f-label" id="lbl-orientation">Focus</span>
+      <details class="f-drop" id="f-orientation">
+        <summary>Any focus</summary>
+        <div class="f-drop-panel" role="group" aria-labelledby="lbl-orientation">
+          {% for o in taxonomy.orientations %}
+          <label class="f-drop-opt"><input type="checkbox" value="{{ o.id }}"><span class="f-drop-text">{{ o.label }}</span></label>
+          {% endfor %}
+        </div>
+      </details>
     </div>
     <div>
       <label for="f-region">Region</label>
