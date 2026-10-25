@@ -103,7 +103,7 @@
   if (q && params.get("q")) q.value = params.get("q");
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
-  if (dl && params.get("open") === "1") dl.checked = true;
+  if (dl) dl.checked = params.get("open") !== "0";
   if (showUp) showUp.checked = params.get("up") !== "0";
   // Open calls is a sub-filter of Upcoming: never active while Upcoming is off.
   if (dl && showUp && !showUp.checked) dl.checked = false;
@@ -256,7 +256,7 @@
     }
     if (region?.value) p.set("region", region.value);
     if (sort?.value && sort.value !== "start") p.set("sort", sort.value);
-    if (dl?.checked) p.set("open", "1");
+    if (dl && !dl.checked && (!showUp || showUp.checked)) p.set("open", "0");
     if (showUp && !showUp.checked) p.set("up", "0");
     if (showTbc && showTbc.checked) p.set("tbc", "1");
     if (showPast && showPast.checked) p.set("past", "1");
@@ -293,13 +293,8 @@
 
   // Checking Open calls implies Upcoming.
   dl?.addEventListener("change", () => { if (dl.checked && showUp && !showUp.checked) showUp.checked = true; });
-  // Unchecking Upcoming clears Open calls; re-checking Upcoming restores it.
-  let dlRemembered = false;
-  showUp?.addEventListener("change", () => {
-    if (!dl) return;
-    if (!showUp.checked) { dlRemembered = dl.checked; dl.checked = false; }
-    else { dl.checked = dlRemembered; }
-  });
+  // Unchecking Upcoming clears Open calls; re-checking Upcoming always turns it back on.
+  showUp?.addEventListener("change", () => { if (dl) dl.checked = showUp.checked; });
   [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
@@ -309,8 +304,7 @@
     }
     if (allPsy) { allPsy.checked = false; allPsy.indeterminate = false; }
     if (region) region.value = "";
-    if (dl) dl.checked = false;
-    dlRemembered = false;
+    if (dl) dl.checked = true;
     if (sort) sort.value = "start";
     if (showUp) showUp.checked = true;
     if (showTbc) showTbc.checked = false;
