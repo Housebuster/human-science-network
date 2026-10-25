@@ -294,7 +294,12 @@
   // Checking Open calls implies Upcoming.
   dl?.addEventListener("change", () => { if (dl.checked && showUp && !showUp.checked) showUp.checked = true; });
   // Unchecking Upcoming clears Open calls; re-checking Upcoming restores it.
-  showUp?.addEventListener("change", () => { if (dl && !showUp.checked) dl.checked = false; });
+  let dlRemembered = false;
+  showUp?.addEventListener("change", () => {
+    if (!dl) return;
+    if (!showUp.checked) { dlRemembered = dl.checked; dl.checked = false; }
+    else { dl.checked = dlRemembered; }
+  });
   [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
@@ -305,6 +310,7 @@
     if (allPsy) { allPsy.checked = false; allPsy.indeterminate = false; }
     if (region) region.value = "";
     if (dl) dl.checked = false;
+    dlRemembered = false;
     if (sort) sort.value = "start";
     if (showUp) showUp.checked = true;
     if (showTbc) showTbc.checked = false;
