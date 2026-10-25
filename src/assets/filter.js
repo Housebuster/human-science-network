@@ -200,7 +200,7 @@
   };
 
   function apply() {
-    // Independent toggles: Upcoming shows all upcoming; Open calls shows upcoming with open deadlines.
+    // Open calls on → upcoming list limited to open deadlines; Open calls off + Upcoming on → all upcoming.
     const openOn = !!dl?.checked;
     const upOn = showUp ? !!showUp.checked : !dl;
     const nextOn = upOn || openOn;
@@ -223,7 +223,7 @@
 
     let n = 0;
     if (nextOn) {
-      for (const c of cards) { const ok = matches(c) && (upOn || !!c.dataset.deadline); c.hidden = !ok; if (ok) n++; }
+      for (const c of cards) { const ok = matches(c) && (!openOn || !!c.dataset.deadline); c.hidden = !ok; if (ok) n++; }
     } else {
       for (const c of cards) c.hidden = true;
     }
