@@ -4,7 +4,7 @@
     data-start="{{ l.start_date or '9999-12-31' }}" data-deadline="{{ l.abstract_deadline if l.deadline_open else '' }}">
   <div class="card-date">
     {% if l.start_date %}
-      <span class="cd-month">{{ l.start_date | monAbbr }}</span>
+      <span class="cd-month">{{ l.start_date | monAbbr | upper }}</span>
       <span class="cd-year">{{ l.start_date | yearNum }}</span>
       <span class="cd-days">{{ l.start_date | daySpan(l.end_date) }}</span>
     {% else %}

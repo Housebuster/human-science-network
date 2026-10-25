@@ -121,7 +121,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
 .card:hover { border-color: var(--line-2); box-shadow: 0 3px 14px rgba(28,43,69,.07); }
 .card[hidden] { display: none; }
 .card-date { text-align: center; border-right: 1px solid var(--line); padding-right: 1rem; }
-.cd-month { display: block; font: 700 1.45rem/1.05 var(--serif); color: var(--ink); letter-spacing: -0.02em; }
+.cd-month { display: block; font: 600 1.05rem/1.15 var(--serif); color: var(--ink); letter-spacing: .04em; text-transform: uppercase; }
 .cd-year { display: block; font: 600 1.05rem/1.15 var(--serif); color: var(--ink); letter-spacing: -0.01em; margin-top: .12rem; }
 .cd-days { display: block; font-size: .78rem; color: var(--muted); margin-top: .28rem; letter-spacing: .02em; }
 .cd-day { display: block; font: 600 2rem/1 var(--serif); } /* legacy */
@@ -238,7 +238,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 @media (max-width: 560px) {
   .filters, .row-2 { grid-template-columns: 1fr; }
   .card { grid-template-columns: 64px 1fr; gap: .8rem; padding: .9rem; }
-  .cd-month { font-size: 1.25rem; }
+  .cd-month { font-size: .95rem; }
   .cd-year { font-size: .95rem; }
   .facts > div { grid-template-columns: 1fr; gap: .2rem; }
   .hero { padding: 2.2rem 0 2rem; }
