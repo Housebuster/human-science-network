@@ -164,30 +164,32 @@ collections:
                 widget: select
                 multiple: true
                 options:
-                  - { label: "General & multi-area psychology", value: "psy-general" }
-                  - { label: "Clinical & counselling psychology", value: "psy-clinical" }
-                  - { label: "Health psychology", value: "psy-health" }
-                  - { label: "Social psychology", value: "psy-social" }
-                  - { label: "Personality psychology", value: "psy-personality" }
-                  - { label: "Cognitive psychology", value: "psy-cognitive" }
-                  - { label: "Developmental psychology", value: "psy-developmental" }
-                  - { label: "Biological psychology & neuropsychology", value: "psy-biological" }
+                  - { label: "General & multi-area", value: "psy-general" }
+                  - { label: "Clinical & counselling", value: "psy-clinical" }
+                  - { label: "Health", value: "psy-health" }
+                  - { label: "Social", value: "psy-social" }
+                  - { label: "Personality", value: "psy-personality" }
+                  - { label: "Cognitive", value: "psy-cognitive" }
+                  - { label: "Developmental", value: "psy-developmental" }
+                  - { label: "Biological & neuropsychology", value: "psy-biological" }
+                  - { label: "Teaching", value: "psy-teaching" }
                   - { label: "Affective science", value: "psy-affective" }
-                  - { label: "Educational & school psychology", value: "psy-educational" }
-                  - { label: "Work & organizational psychology", value: "psy-io" }
-                  - { label: "Consumer psychology", value: "psy-consumer" }
-                  - { label: "Forensic psychology", value: "psy-forensic" }
-                  - { label: "Sport & exercise psychology", value: "psy-sport" }
-                  - { label: "Cultural & cross-cultural psychology", value: "psy-cultural" }
-                  - { label: "Political psychology", value: "psy-political" }
-                  - { label: "Cyberpsychology", value: "psy-cyber" }
-                  - { label: "Teaching of psychology", value: "psy-teaching" }
+                  - { label: "Educational", value: "psy-educational" }
+                  - { label: "School", value: "psy-school" }
+                  - { label: "Work & organizational", value: "psy-io" }
+                  - { label: "Consumer", value: "psy-consumer" }
+                  - { label: "Cultural & cross-cultural", value: "psy-cultural" }
+                  - { label: "Political", value: "psy-political" }
+                  - { label: "Cyber", value: "psy-cyber" }
                   - { label: "Research methods & meta-science", value: "psy-methods" }
+                  - { label: "Forensic", value: "psy-forensic" }
+                  - { label: "Sport & exercise", value: "psy-sport" }
                   - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
                   - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
                   - { label: "Evolutionary behavioral science", value: "evolutionary" }
                   - { label: "Anthropology", value: "anthropology" }
-                  - { label: "Sociology & demography", value: "sociology" }
+                  - { label: "Sociology", value: "sociology" }
+                  - { label: "Demography", value: "demography" }
                   - { label: "Political science", value: "political-science" }
                   - { label: "Linguistics & communication", value: "linguistics" }
                   - { label: "Education research", value: "education" }

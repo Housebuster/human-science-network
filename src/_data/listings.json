@@ -47,8 +47,8 @@
       "abstract_deadline": "2026-08-15",
       "deadline_late": "",
       "location": {
-        "venue": "JW Marriott Canc\u00fan Resort & Spa",
-        "city": "Canc\u00fan",
+        "venue": "JW Marriott Cancún Resort & Spa",
+        "city": "Cancún",
         "country": "Mexico",
         "country_code": "MX"
       },
@@ -172,7 +172,7 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Universit\u00e9 Lumi\u00e8re Lyon 2",
+        "venue": "Université Lumière Lyon 2",
         "city": "Lyon",
         "country": "France",
         "country_code": "FR"
@@ -180,7 +180,7 @@
       "format": "in-person",
       "orientation": "",
       "fields": [
-        "psy-educational"
+        "psy-school"
       ],
       "status": "past",
       "last_verified": "2026-10-11",
@@ -235,8 +235,8 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Le Westin Montr\u00e9al",
-        "city": "Montr\u00e9al",
+        "venue": "Le Westin Montréal",
+        "city": "Montréal",
         "country": "Canada",
         "country_code": "CA"
       },
@@ -266,7 +266,7 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Centre de Congr\u00e8s de Lyon",
+        "venue": "Centre de Congrès de Lyon",
         "city": "Lyon",
         "country": "France",
         "country_code": "FR"
@@ -311,7 +311,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://easp2026strasbourg.com/",
       "date_confidence": "verified",
-      "public_note": "Pre-conferences 30 June; main meeting 1\u20134 July. The General Meeting is held every three years.",
+      "public_note": "Pre-conferences 30 June; main meeting 1–4 July. The General Meeting is held every three years.",
       "notes": "Old listing showed '2026 / TBC'. Triennial cadence is general knowledge; recheck the next GM year on easp.eu."
     },
     {
@@ -533,7 +533,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://sjdm.org/",
       "date_confidence": "verified",
-      "public_note": "Held alongside the Psychonomic Society annual meeting. 2027 (tentative): New Orleans, 18\u201320 November.",
+      "public_note": "Held alongside the Psychonomic Society annual meeting. 2027 (tentative): New Orleans, 18–20 November.",
       "notes": "Was mislabeled Clinical. After this edition passes, roll forward to 2027 once confirmed."
     },
     {
@@ -595,7 +595,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://www.esplat.org/esplat-2027",
       "date_confidence": "verified",
-      "public_note": "Dates and host to be announced. Previous edition: M\u00fcnster, 1\u20133 September 2025.",
+      "public_note": "Dates and host to be announced. Previous edition: Münster, 1–3 September 2025.",
       "notes": "Format assumed in-person (historic). Was mislabeled Clinical."
     },
     {
@@ -644,7 +644,7 @@
       "deadline_late": "",
       "location": {
         "venue": "Universitat Jaume I",
-        "city": "Castell\u00f3n de la Plana",
+        "city": "Castellón de la Plana",
         "country": "Spain",
         "country_code": "ES"
       },
@@ -675,7 +675,7 @@
       "deadline_late": "",
       "location": {
         "venue": "Clayton Hotel",
-        "city": "D\u00fcsseldorf",
+        "city": "Düsseldorf",
         "country": "Germany",
         "country_code": "DE"
       },
@@ -720,7 +720,7 @@
       "last_verified": "2026-10-11",
       "verified_source_url": "https://www.facebook.com/ISSPonline/posts/it-is-with-great-pleasure-that-issp-announces-that-the-2029-world-congress-of-sp/514626807798619/",
       "date_confidence": "medium",
-      "public_note": "Previous congress: Hong Kong, 8\u201312 December 2025.",
+      "public_note": "Previous congress: Hong Kong, 8–12 December 2025.",
       "notes": "MEDIUM CONFIDENCE: dates from ISSP's official Facebook announcement; not yet on issponline.org. Was mislabeled Clinical."
     },
     {
@@ -814,7 +814,7 @@
       "last_verified": "2026-10-17",
       "verified_source_url": "https://behavioralpolicy.org/",
       "date_confidence": "verified",
-      "public_note": "Previous edition: Harvard Kennedy School, 7\u20138 June 2026.",
+      "public_note": "Previous edition: Harvard Kennedy School, 7–8 June 2026.",
       "notes": "Organizer name corrected (was 'Behavioral Science in Policy & Application'); old URL behavioralscienceconference.com is a BSPA microsite, replaced with behavioralpolicy.org. From 'save the date' on homepage."
     },
     {
@@ -1722,7 +1722,7 @@
       "abstract_deadline": "2026-11-30",
       "deadline_late": "",
       "location": {
-        "venue": "Babe\u0219-Bolyai University",
+        "venue": "Babeș-Bolyai University",
         "city": "Cluj-Napoca",
         "country": "Romania",
         "country_code": "RO"
@@ -1835,7 +1835,7 @@
       "verified_source_url": "https://div36.org/mid-year-conference-2027",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Project REED \u2013 Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
+      "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
     },
     {
       "id": "iapr-2027",
@@ -1852,7 +1852,7 @@
       "deadline_late": "",
       "location": {
         "venue": "",
-        "city": "Bras\u00edlia",
+        "city": "Brasília",
         "country": "Brazil",
         "country_code": "BR"
       },
@@ -1867,7 +1867,7 @@
       "verified_source_url": "https://www.iaprweb.org/conferences/",
       "date_confidence": "unconfirmed",
       "public_note": "",
-      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Bras\u00edlia; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
+      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Brasília; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
     },
     {
       "id": "asrec-2027",
@@ -1917,7 +1917,7 @@
       "deadline_late": "",
       "location": {
         "venue": "Ignatianum University",
-        "city": "Krak\u00f3w",
+        "city": "Kraków",
         "country": "Poland",
         "country_code": "PL"
       },
@@ -1932,7 +1932,7 @@
       "verified_source_url": "https://krakow2026.ptprid.org.pl/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness \u2013 A Remedy for Existential Emptiness and Health or a Modern Excess?"
+      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?"
     }
   ]
 }

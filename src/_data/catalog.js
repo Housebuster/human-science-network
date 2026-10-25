@@ -60,8 +60,8 @@ const fieldGroups = taxonomy.groups
   .map((g) => ({ ...g, fields: g.fields.filter((f) => used.has(f.id)) }))
   .filter((g) => g.fields.length);
 const fieldsCovered = fieldGroups.reduce((n, g) => n + g.fields.length, 0);
-// psy-* ids currently shown in the Field filter (used listings only).
-const psychologyFieldIds = fieldGroups
+// All psy-* ids in the taxonomy (All psychology toggle selects these).
+const psychologyFieldIds = taxonomy.groups
   .flatMap((g) => g.fields.map((f) => f.id))
   .filter((id) => id.startsWith("psy-"));
 const regionsUsed = [...new Set([...upcoming, ...tbc].map((l) => l.region).filter(Boolean))].map((id) => ({

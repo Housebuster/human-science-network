@@ -5,21 +5,61 @@
         list = $("upcoming-list"), tbc = $("tbc-list");
   if (!list) return;
   const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [];
+  const catalogCards = [...cards, ...tbcCards];
   const params = new URLSearchParams(location.search);
 
   // Multi-select facets: OR within each facet. URL: repeated keys (?format=hybrid&format=online).
   const multis = [
-    { id: "f-field", param: "field", empty: "All fields", match: (d, vals) => vals.some((v) => d.fields.split(" ").includes(v)) },
-    { id: "f-format", param: "format", empty: "Any format", match: (d, vals) => vals.includes(d.format) },
-    { id: "f-orientation", param: "orientation", empty: "Any focus", match: (d, vals) => vals.includes(d.orientation) },
+    { id: "f-field", param: "field", empty: "All fields", attr: "fields",
+      match: (d, vals) => vals.some((v) => d.fields.split(" ").includes(v)) },
+    { id: "f-format", param: "format", empty: "Any format", attr: "format",
+      match: (d, vals) => vals.includes(d.format) },
+    { id: "f-orientation", param: "orientation", empty: "Any focus", attr: "orientation",
+      match: (d, vals) => vals.includes(d.orientation) },
   ].map((m) => ({ ...m, root: $(m.id) })).filter((m) => m.root);
+
+  // Hide Field / Format / Focus options that match zero conferences in the current catalog
+  // (cards on this page), based on live data-* attributes.
+  const usedByAttr = {
+    fields: new Set(),
+    format: new Set(),
+    orientation: new Set(),
+  };
+  for (const c of catalogCards) {
+    const d = c.dataset;
+    for (const id of (d.fields || "").split(/\s+/).filter(Boolean)) usedByAttr.fields.add(id);
+    if (d.format) usedByAttr.format.add(d.format);
+    if (d.orientation) usedByAttr.orientation.add(d.orientation);
+  }
+  for (const m of multis) {
+    const used = usedByAttr[m.attr];
+    if (!used) continue;
+    for (const label of m.root.querySelectorAll("label.f-drop-opt")) {
+      const input = label.querySelector("input[type=checkbox]");
+      if (!input || !input.value) continue; // keep All psychology toggle
+      const show = used.has(input.value);
+      label.hidden = !show;
+      if (!show) input.checked = false;
+    }
+    for (const group of m.root.querySelectorAll(".f-drop-group")) {
+      let next = group.nextElementSibling;
+      let any = false;
+      while (next && !next.classList.contains("f-drop-group")) {
+        if (next.matches("label.f-drop-opt") && !next.hidden && next.querySelector("input[value]"))
+          any = true;
+        next = next.nextElementSibling;
+      }
+      group.hidden = !any;
+    }
+  }
 
   const fieldRoot = multis.find((m) => m.id === "f-field")?.root;
   const allPsy = fieldRoot?.querySelector("input[data-all-psy]");
   const psyIds = (fieldRoot?.querySelector(".f-drop-panel")?.dataset.psyIds || "")
     .split(/\s+/).filter(Boolean);
   const psyBoxes = () => fieldRoot
-    ? [...fieldRoot.querySelectorAll("input[type=checkbox]")].filter((i) => i.value && psyIds.includes(i.value))
+    ? [...fieldRoot.querySelectorAll("input[type=checkbox]")].filter((i) =>
+        i.value && psyIds.includes(i.value) && !i.closest("label")?.hidden)
     : [];
 
   const syncAllPsy = () => {
@@ -45,6 +85,7 @@
     const vals = new Set(paramValues(m.param));
     for (const cb of m.root.querySelectorAll("input[type=checkbox]")) {
       if (!cb.value) continue;
+      if (cb.closest("label")?.hidden) { cb.checked = false; continue; }
       cb.checked = vals.has(cb.value);
     }
   }
@@ -62,7 +103,8 @@
       summary.textContent = m.empty;
       return;
     }
-    if (m.id === "f-field" && psyIds.length && psyIds.every((id) => vals.includes(id))
+    const boxes = psyBoxes();
+    if (m.id === "f-field" && boxes.length && boxes.every((b) => b.checked)
         && vals.every((v) => psyIds.includes(v))) {
       summary.textContent = "All psychology";
       return;
