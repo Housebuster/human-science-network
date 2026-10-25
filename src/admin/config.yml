@@ -164,39 +164,39 @@ collections:
                 widget: select
                 multiple: true
                 options:
-                  - { label: "General & multi-area", value: "psy-general" }
+                  - { label: "Biopsychology", value: "psy-biological" }
                   - { label: "Clinical & counselling", value: "psy-clinical" }
-                  - { label: "Social", value: "psy-social" }
-                  - { label: "Personality", value: "psy-personality" }
                   - { label: "Cognitive", value: "psy-cognitive" }
                   - { label: "Developmental", value: "psy-developmental" }
-                  - { label: "Biopsychology", value: "psy-biological" }
-                  - { label: "Teaching", value: "psy-teaching" }
-                  - { label: "Health", value: "psy-health" }
+                  - { label: "General & multi-area", value: "psy-general" }
+                  - { label: "Personality", value: "psy-personality" }
+                  - { label: "Social", value: "psy-social" }
                   - { label: "Affective science", value: "psy-affective" }
-                  - { label: "Educational", value: "psy-educational" }
-                  - { label: "School", value: "psy-school" }
-                  - { label: "Work & organizational", value: "psy-io" }
                   - { label: "Consumer", value: "psy-consumer" }
                   - { label: "Cultural & cross-cultural", value: "psy-cultural" }
-                  - { label: "Political", value: "psy-political" }
                   - { label: "Cyber", value: "psy-cyber" }
-                  - { label: "Research methods & meta-science", value: "psy-methods" }
+                  - { label: "Educational", value: "psy-educational" }
                   - { label: "Forensic", value: "psy-forensic" }
+                  - { label: "Health", value: "psy-health" }
+                  - { label: "Political", value: "psy-political" }
+                  - { label: "Research methods & meta-science", value: "psy-methods" }
+                  - { label: "School", value: "psy-school" }
                   - { label: "Sport & exercise", value: "psy-sport" }
-                  - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
-                  - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
-                  - { label: "Evolutionary behavioral science", value: "evolutionary" }
+                  - { label: "Teaching", value: "psy-teaching" }
+                  - { label: "Work & organizational", value: "psy-io" }
                   - { label: "Anthropology", value: "anthropology" }
-                  - { label: "Sociology", value: "sociology" }
+                  - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
+                  - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
                   - { label: "Demography", value: "demography" }
-                  - { label: "Political science", value: "political-science" }
-                  - { label: "Linguistics & communication", value: "linguistics" }
                   - { label: "Education research", value: "education" }
-                  - { label: "Public health, medicine & psychiatry", value: "public-health" }
-                  - { label: "Human–computer interaction", value: "hci" }
+                  - { label: "Evolutionary behavioral science", value: "evolutionary" }
                   - { label: "Gender & diversity studies", value: "gender-studies" }
                   - { label: "Human geography", value: "geography" }
+                  - { label: "Human–computer interaction", value: "hci" }
+                  - { label: "Linguistics & communication", value: "linguistics" }
+                  - { label: "Political science", value: "political-science" }
+                  - { label: "Public health, medicine & psychiatry", value: "public-health" }
+                  - { label: "Sociology", value: "sociology" }
               - label: Status
                 name: status
                 widget: select

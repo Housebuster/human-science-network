@@ -5,20 +5,12 @@
       "label": "Psychology",
       "fields": [
         {
-          "id": "psy-general",
-          "label": "General & multi-area"
+          "id": "psy-biological",
+          "label": "Biopsychology"
         },
         {
           "id": "psy-clinical",
           "label": "Clinical & counselling"
-        },
-        {
-          "id": "psy-social",
-          "label": "Social"
-        },
-        {
-          "id": "psy-personality",
-          "label": "Personality"
         },
         {
           "id": "psy-cognitive",
@@ -29,12 +21,16 @@
           "label": "Developmental"
         },
         {
-          "id": "psy-biological",
-          "label": "Biopsychology"
+          "id": "psy-general",
+          "label": "General & multi-area"
         },
         {
-          "id": "psy-teaching",
-          "label": "Teaching"
+          "id": "psy-personality",
+          "label": "Personality"
+        },
+        {
+          "id": "psy-social",
+          "label": "Social"
         }
       ]
     },
@@ -43,24 +39,8 @@
       "label": "Subfields",
       "fields": [
         {
-          "id": "psy-health",
-          "label": "Health"
-        },
-        {
           "id": "psy-affective",
           "label": "Affective science"
-        },
-        {
-          "id": "psy-educational",
-          "label": "Educational"
-        },
-        {
-          "id": "psy-school",
-          "label": "School"
-        },
-        {
-          "id": "psy-io",
-          "label": "Work & organizational"
         },
         {
           "id": "psy-consumer",
@@ -71,24 +51,44 @@
           "label": "Cultural & cross-cultural"
         },
         {
-          "id": "psy-political",
-          "label": "Political"
-        },
-        {
           "id": "psy-cyber",
           "label": "Cyber"
         },
         {
-          "id": "psy-methods",
-          "label": "Research methods & meta-science"
+          "id": "psy-educational",
+          "label": "Educational"
         },
         {
           "id": "psy-forensic",
           "label": "Forensic"
         },
         {
+          "id": "psy-health",
+          "label": "Health"
+        },
+        {
+          "id": "psy-political",
+          "label": "Political"
+        },
+        {
+          "id": "psy-methods",
+          "label": "Research methods & meta-science"
+        },
+        {
+          "id": "psy-school",
+          "label": "School"
+        },
+        {
           "id": "psy-sport",
           "label": "Sport & exercise"
+        },
+        {
+          "id": "psy-teaching",
+          "label": "Teaching"
+        },
+        {
+          "id": "psy-io",
+          "label": "Work & organizational"
         }
       ]
     },
@@ -97,48 +97,28 @@
       "label": "Other disciplines",
       "fields": [
         {
-          "id": "cognitive-science",
-          "label": "Cognitive science & neuroscience"
+          "id": "anthropology",
+          "label": "Anthropology"
         },
         {
           "id": "behavioral-economics",
           "label": "Behavioral economics & decision science"
         },
         {
-          "id": "evolutionary",
-          "label": "Evolutionary behavioral science"
-        },
-        {
-          "id": "anthropology",
-          "label": "Anthropology"
-        },
-        {
-          "id": "sociology",
-          "label": "Sociology"
+          "id": "cognitive-science",
+          "label": "Cognitive science & neuroscience"
         },
         {
           "id": "demography",
           "label": "Demography"
         },
         {
-          "id": "political-science",
-          "label": "Political science"
-        },
-        {
-          "id": "linguistics",
-          "label": "Linguistics & communication"
-        },
-        {
           "id": "education",
           "label": "Education research"
         },
         {
-          "id": "public-health",
-          "label": "Public health, medicine & psychiatry"
-        },
-        {
-          "id": "hci",
-          "label": "Human–computer interaction"
+          "id": "evolutionary",
+          "label": "Evolutionary behavioral science"
         },
         {
           "id": "gender-studies",
@@ -147,6 +127,26 @@
         {
           "id": "geography",
           "label": "Human geography"
+        },
+        {
+          "id": "hci",
+          "label": "Human–computer interaction"
+        },
+        {
+          "id": "linguistics",
+          "label": "Linguistics & communication"
+        },
+        {
+          "id": "political-science",
+          "label": "Political science"
+        },
+        {
+          "id": "public-health",
+          "label": "Public health, medicine & psychiatry"
+        },
+        {
+          "id": "sociology",
+          "label": "Sociology"
         }
       ]
     }
