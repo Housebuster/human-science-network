@@ -3,7 +3,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const q = $("q"), region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
-        showTbc = $("f-tbc"), showPast = $("f-past"),
+        showTbc = $("f-tbc"), showUp = $("f-upcoming"), showPast = $("f-past"),
         list = $("upcoming-list"), tbc = $("tbc-list"), past = $("past-list"),
         nextBlock = $("next-block"), pastBlock = $("past-block");
   if (!list) return;
@@ -104,7 +104,8 @@
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl && params.get("open") === "1") dl.checked = true;
-  // Home scope: upcoming always shown; Past and Future Events (TBA) off unless URL says so.
+  if (showUp) showUp.checked = params.get("up") !== "0";
+  // Home scope: Past and Future Events (TBA) off unless URL says so.
   if (showTbc) showTbc.checked = params.get("tbc") === "1";
   if (showPast) {
     if (params.has("past")) showPast.checked = params.get("past") === "1";
@@ -141,7 +142,6 @@
       if (vals.length && !m.match(d, vals)) return false;
     }
     if (region?.value && d.region !== region.value) return false;
-    if (dl?.checked && !d.deadline) return false;
     return true;
   };
 
@@ -177,7 +177,7 @@
 
   const paintPast = () => {
     let pastN = 0;
-    if (showPast?.checked && !dl?.checked) {
+    if (showPast?.checked) {
       for (const c of pastCards) {
         const ok = matches(c);
         c.hidden = !ok;
@@ -201,37 +201,37 @@
 
   function apply() {
     const openOnly = !!dl?.checked;
-    const nextOn = true;
+    const nextOn = showUp ? !!showUp.checked : true;
     const tbcOn = !!showTbc?.checked;
     const pastOn = showPast ? !!showPast.checked : false;
 
     if (nextBlock) nextBlock.hidden = !nextOn;
     if (pastBlock) {
       // Past only when Past is checked; also hide when Open calls only (past has no open calls).
-      pastBlock.hidden = !pastOn || openOnly;
+      pastBlock.hidden = !pastOn;
     }
-    if (pastOn && !openOnly) {
+    if (pastOn) {
       const neededLoad = pastCards.length === 0;
       ensurePastLoaded().then(() => {
-        if (neededLoad && pastCards.length && showPast?.checked && !dl?.checked) apply();
+        if (neededLoad && pastCards.length && showPast?.checked) apply();
       });
     }
 
     let n = 0;
     if (nextOn) {
-      for (const c of cards) { const ok = matches(c); c.hidden = !ok; if (ok) n++; }
+      for (const c of cards) { const ok = matches(c) && (!openOnly || !!c.dataset.deadline); c.hidden = !ok; if (ok) n++; }
     } else {
       for (const c of cards) c.hidden = true;
     }
 
     let m = 0;
     if (tbcOn) {
-      for (const c of tbcCards) { const ok = !openOnly && matches(c); c.hidden = !ok; if (ok) m++; }
+      for (const c of tbcCards) { const ok = matches(c); c.hidden = !ok; if (ok) m++; }
     } else {
       for (const c of tbcCards) c.hidden = true;
     }
     const tbcBlock = $("tbc-block");
-    if (tbcBlock) tbcBlock.hidden = !tbcOn || (tbcCards.length > 0 && m === 0 && openOnly);
+    if (tbcBlock) tbcBlock.hidden = !tbcOn;
 
     paintPast();
 
@@ -252,6 +252,7 @@
     if (region?.value) p.set("region", region.value);
     if (sort?.value && sort.value !== "start") p.set("sort", sort.value);
     if (dl?.checked) p.set("open", "1");
+    if (showUp && !showUp.checked) p.set("up", "0");
     if (showTbc && showTbc.checked) p.set("tbc", "1");
     if (showPast && showPast.checked) p.set("past", "1");
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
@@ -285,7 +286,7 @@
     closeOtherDrops(null);
   });
 
-  [q, region, dl, sort, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
+  [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
     for (const facet of multis) {
@@ -296,6 +297,7 @@
     if (region) region.value = "";
     if (dl) dl.checked = false;
     if (sort) sort.value = "start";
+    if (showUp) showUp.checked = true;
     if (showTbc) showTbc.checked = false;
     if (showPast) showPast.checked = false;
     apply();
