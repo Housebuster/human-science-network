@@ -18,7 +18,7 @@ eleventyComputed:
 </section>
 
 {% if catalog.deadlines.length %}
-<section class="wrap deadlines-strip" aria-labelledby="dl-h">
+<section class="wrap deadlines-strip" id="dl-strip" aria-labelledby="dl-h">
   <h2 id="dl-h" class="section-label">Closing soon</h2>
   <ol class="dl-list">
     {% for l in catalog.deadlines | batch(4) | first %}
@@ -92,15 +92,15 @@ eleventyComputed:
       </span>
       <span class="f-check-item">
         <input id="f-deadline" type="checkbox">
-        <label for="f-deadline">Open Calls</label>
+        <label for="f-deadline">Open calls</label>
       </span>
       <span class="f-check-item">
         <input id="f-past" type="checkbox">
-        <label for="f-past">Past Events</label>
+        <label for="f-past">Past events</label>
       </span>
       <span class="f-check-item">
         <input id="f-tbc" type="checkbox">
-        <label for="f-tbc">Future Events (TBA)</label>
+        <label for="f-tbc">Future events (TBA)</label>
       </span>
     </div>
   </form>
@@ -154,4 +154,4 @@ eleventyComputed:
     <a class="btn btn-ghost" href="/digest/">Join the digest list</a>
   </div>
 </section>
-<script src="/assets/filter.js?v=8" defer></script>
+<script src="/assets/filter.js?v=9" defer></script>

@@ -105,6 +105,8 @@
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl && params.get("open") === "1") dl.checked = true;
   if (showUp) showUp.checked = params.get("up") !== "0";
+  // Open calls is a sub-filter of Upcoming: never active while Upcoming is off.
+  if (dl && showUp && !showUp.checked) dl.checked = false;
   // Home scope: Past and Future Events (TBA) off unless URL says so.
   if (showTbc) showTbc.checked = params.get("tbc") === "1";
   if (showPast) {
@@ -200,12 +202,15 @@
   };
 
   function apply() {
+    if (dl && showUp && !showUp.checked) dl.checked = false;
     const openOnly = !!dl?.checked;
     const nextOn = showUp ? !!showUp.checked : true;
     const tbcOn = !!showTbc?.checked;
     const pastOn = showPast ? !!showPast.checked : false;
 
     if (nextBlock) nextBlock.hidden = !nextOn;
+    const dlStrip = $("dl-strip");
+    if (dlStrip) dlStrip.hidden = !nextOn;
     if (pastBlock) {
       // Past only when Past is checked; also hide when Open calls only (past has no open calls).
       pastBlock.hidden = !pastOn;
@@ -286,6 +291,8 @@
     closeOtherDrops(null);
   });
 
+  // Checking Open calls implies Upcoming.
+  dl?.addEventListener("change", () => { if (dl.checked && showUp && !showUp.checked) showUp.checked = true; });
   [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
