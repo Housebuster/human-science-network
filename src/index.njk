@@ -140,9 +140,9 @@ eleventyComputed:
 
 <section class="wrap cta-row">
   <div class="cta">
-    <h2>Organizing a scholarly meeting?</h2>
-    <p>Society, university and research-network events can be listed for free once they pass our <a href="/about/#criteria">vetting criteria</a>.</p>
-    <a class="btn" href="/submit/">Submit an event</a>
+    <h2>{{ home.cta_heading or "Organizing a scholarly meeting?" }}</h2>
+    <p>{{ (home.cta_body or 'Society, university and research-network events can be listed for free once they pass our <a href="/about/#criteria">vetting criteria</a>.') | safe }}</p>
+    <a class="btn" href="{{ home.cta_button_link or '/submit/' }}">{{ home.cta_button_label or "Submit an event" }}</a>
   </div>
   <div class="cta cta-alt">
     <h2>Never miss a deadline</h2>

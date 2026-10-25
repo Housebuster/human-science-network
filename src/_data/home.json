@@ -2,5 +2,9 @@
   "eyebrow": "Psychology · Cognitive Science · Behavioral Economics · Linguistics · and more",
   "headline": "Find conferences and workshops in psychology and the human sciences",
   "lede": "A curated directory of meetings hosted by professional associations and universities. No commercial conference mills. Emphasis on expanding global footprint of the human sciences.",
-  "description": "Find scholarly conferences, congresses and workshops in psychology and the wider human sciences. Every listing is vetted and its dates checked against the official source."
+  "description": "Find scholarly conferences, congresses and workshops in psychology and the wider human sciences. Every listing is vetted and its dates checked against the official source.",
+  "cta_heading": "Organizing a scholarly meeting?",
+  "cta_body": "Society, university and research-network events can be listed for free once they pass our <a href=\"/about/#criteria\">vetting criteria</a>.",
+  "cta_button_label": "Submit an event",
+  "cta_button_link": "/submit/"
 }

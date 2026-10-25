@@ -48,6 +48,10 @@ collections:
           - { label: Headline, name: headline, widget: string, hint: "Main H1 on the front page." }
           - { label: Intro / lede, name: lede, widget: text, hint: "Short paragraph under the headline." }
           - { label: Description (SEO), name: description, widget: string, hint: "Meta description for the homepage." }
+          - { label: CTA heading, name: cta_heading, widget: string, default: "Organizing a scholarly meeting?", hint: "Heading of the 'submit an event' box near the bottom of the homepage." }
+          - { label: CTA body, name: cta_body, widget: text, default: "Society, university and research-network events can be listed for free once they pass our <a href=\"/about/#criteria\">vetting criteria</a>.", hint: "HTML allowed (e.g. the link to the criteria)." }
+          - { label: CTA button label, name: cta_button_label, widget: string, default: "Submit an event" }
+          - { label: CTA button link, name: cta_button_link, widget: string, default: "/submit/" }
       - name: about
         label: About
         file: src/about.md
