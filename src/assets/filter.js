@@ -1,20 +1,18 @@
 // Client-side search and filtering. Without JS, every listing is still shown
-// (except past on the home page, which stays hidden until Past is checked).
+// (except past/TBC on the home page, hidden until their boxes are checked).
 (() => {
   const $ = (id) => document.getElementById(id);
   const q = $("q"), region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
-        showNext = $("f-next"), showPast = $("f-past"),
+        showTbc = $("f-tbc"), showPast = $("f-past"),
         list = $("upcoming-list"), tbc = $("tbc-list"), past = $("past-list"),
-        nextBlock = $("next-block"), pastBlock = $("past-block"),
-        emptyScope = $("empty-scope");
+        nextBlock = $("next-block"), pastBlock = $("past-block");
   if (!list) return;
   const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [];
   let pastCards = past ? [...past.children] : [];
   // Facet options from cards currently on the page (past cards added after lazy-load).
   const catalogCards = () => [...cards, ...tbcCards, ...pastCards];
   const params = new URLSearchParams(location.search);
-  const isHome = !!(showNext || showPast || nextBlock || pastBlock);
-  let pastLoad = null; // Promise while fetching / pending null when idle/done
+    let pastLoad = null; // Promise while fetching / pending null when idle/done
 
   // Multi-select facets: OR within each facet. URL: repeated keys (?format=hybrid&format=online).
   const multis = [
@@ -106,11 +104,8 @@
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl && params.get("open") === "1") dl.checked = true;
-  // Home scope: Next on by default (upcoming/TBC); Past off. URL can override.
-  if (showNext) {
-    if (params.has("next")) showNext.checked = params.get("next") !== "0";
-    else showNext.checked = true;
-  }
+  // Home scope: upcoming always shown; Past and Unscheduled (TBC) off unless URL says so.
+  if (showTbc) showTbc.checked = params.get("tbc") === "1";
   if (showPast) {
     if (params.has("past")) showPast.checked = params.get("past") === "1";
     else showPast.checked = false;
@@ -206,7 +201,8 @@
 
   function apply() {
     const openOnly = !!dl?.checked;
-    const nextOn = showNext ? !!showNext.checked : true;
+    const nextOn = true;
+    const tbcOn = showTbc ? !!showTbc.checked : true;
     const pastOn = showPast ? !!showPast.checked : false;
 
     if (nextBlock) nextBlock.hidden = !nextOn;
@@ -220,7 +216,6 @@
         if (neededLoad && pastCards.length && showPast?.checked && !dl?.checked) apply();
       });
     }
-    if (emptyScope) emptyScope.hidden = !isHome || nextOn || pastOn;
 
     let n = 0;
     if (nextOn) {
@@ -230,13 +225,13 @@
     }
 
     let m = 0;
-    if (nextOn) {
+    if (tbcOn) {
       for (const c of tbcCards) { const ok = !openOnly && matches(c); c.hidden = !ok; if (ok) m++; }
     } else {
       for (const c of tbcCards) c.hidden = true;
     }
     const tbcBlock = $("tbc-block");
-    if (tbcBlock) tbcBlock.hidden = !nextOn || (tbcCards.length > 0 && m === 0 && openOnly);
+    if (tbcBlock) tbcBlock.hidden = !tbcOn || (tbcCards.length > 0 && m === 0 && openOnly);
 
     paintPast();
 
@@ -257,7 +252,7 @@
     if (region?.value) p.set("region", region.value);
     if (sort?.value && sort.value !== "start") p.set("sort", sort.value);
     if (dl?.checked) p.set("open", "1");
-    if (showNext && !showNext.checked) p.set("next", "0");
+    if (showTbc && showTbc.checked) p.set("tbc", "1");
     if (showPast && showPast.checked) p.set("past", "1");
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
   }
@@ -290,7 +285,7 @@
     closeOtherDrops(null);
   });
 
-  [q, region, dl, sort, showNext, showPast].forEach((el) => el && el.addEventListener("input", apply));
+  [q, region, dl, sort, showTbc, showPast].forEach((el) => el && el.addEventListener("input", apply));
   const resetAll = () => {
     if (q) q.value = "";
     for (const facet of multis) {
@@ -301,16 +296,11 @@
     if (region) region.value = "";
     if (dl) dl.checked = false;
     if (sort) sort.value = "start";
-    if (showNext) showNext.checked = true;
+    if (showTbc) showTbc.checked = false;
     if (showPast) showPast.checked = false;
     apply();
     q?.focus();
   };
   $("reset")?.addEventListener("click", resetAll);
-  $("reset-scope")?.addEventListener("click", () => {
-    if (showNext) showNext.checked = true;
-    if (showPast) showPast.checked = false;
-    apply();
-  });
   apply();
 })();

@@ -88,15 +88,15 @@ eleventyComputed:
     <div class="f-check">
       <span class="f-check-item">
         <input id="f-deadline" type="checkbox">
-        <label for="f-deadline">Open calls only</label>
-      </span>
-      <span class="f-check-item">
-        <input id="f-next" type="checkbox" checked>
-        <label for="f-next">Next</label>
+        <label for="f-deadline">Open Calls Only</label>
       </span>
       <span class="f-check-item">
         <input id="f-past" type="checkbox">
-        <label for="f-past">Past</label>
+        <label for="f-past">Past Events</label>
+      </span>
+      <span class="f-check-item">
+        <input id="f-tbc" type="checkbox">
+        <label for="f-tbc">Future Unscheduled Events</label>
       </span>
     </div>
   </form>
@@ -111,8 +111,10 @@ eleventyComputed:
     </ol>
     <p class="empty" id="empty" hidden>No upcoming events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
 
+  </div>
+
     {% if catalog.tbc.length %}
-    <div id="tbc-block">
+    <div id="tbc-block" hidden>
       <div class="list-head tbc-head">
         <h2 id="tbc-h">Next edition to be confirmed</h2>
         <p class="count" id="count-tbc">{{ catalog.tbc.length }} recurring events</p>
@@ -123,7 +125,6 @@ eleventyComputed:
       </ol>
     </div>
     {% endif %}
-  </div>
 
   {# Past cards are not in the initial home HTML; Past checkbox lazy-loads /past/. #}
   <div id="past-block" hidden data-past-src="/past/" data-past-count="{{ catalog.past.length }}">
@@ -135,7 +136,6 @@ eleventyComputed:
     <ol class="cards cards-compact" id="past-list"></ol>
     <p class="past-link"><a href="/past/">Browse all past events →</a></p>
   </div>
-  <p class="empty" id="empty-scope" hidden>Select <strong>Next</strong> and/or <strong>Past</strong> to show events. <button type="button" class="link-btn" id="reset-scope">Show upcoming</button></p>
 </section>
 
 <section class="wrap cta-row">
