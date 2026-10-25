@@ -15,7 +15,7 @@ Want to list your event? Click on "Submit an Event".
 
 ## Who we are
 
-The site is maintained and updated by is creator, Mark Aveyard (PhD), Associate Professor of Psychology at the American University of Sharjah in the United Arab Emirates.
+Created by Mark Aveyard (PhD), Associate Professor of Psychology at the American University of Sharjah in the United Arab Emirates. 
 
 ## Privacy
 
