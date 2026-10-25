@@ -21,18 +21,17 @@
       match: (d, vals) => vals.includes(d.orientation) },
   ].map((m) => ({ ...m, root: $(m.id) })).filter((m) => m.root);
 
-  // Hide Field / Format / Focus options that match zero conferences in the current catalog
-  // (cards on this page), based on live data-* attributes.
+  // Hide Field / Format options that match zero conferences in the current catalog
+  // (cards on this page), based on live data-* attributes. Focus (orientation) options
+  // always show, even with zero matches.
   const usedByAttr = {
     fields: new Set(),
     format: new Set(),
-    orientation: new Set(),
   };
   for (const c of catalogCards) {
     const d = c.dataset;
     for (const id of (d.fields || "").split(/\s+/).filter(Boolean)) usedByAttr.fields.add(id);
     if (d.format) usedByAttr.format.add(d.format);
-    if (d.orientation) usedByAttr.orientation.add(d.orientation);
   }
   for (const m of multis) {
     const used = usedByAttr[m.attr];
