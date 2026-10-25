@@ -2,7 +2,7 @@
 import fs from "node:fs";
 const { listings } = JSON.parse(fs.readFileSync("src/_data/listings.json"));
 const tax = JSON.parse(fs.readFileSync("src/_data/taxonomy.json"));
-const fieldIds = new Set(tax.groups.flatMap((g) => g.fields.map((f) => f.id)));
+const fieldIds = new Set([...tax.groups.flatMap((g) => g.fields.map((f) => f.id)), ...(tax.hidden_fields || []).map((f) => f.id)]);
 const formats = new Set(tax.formats.map((f) => f.id));
 const orientations = new Set((tax.orientations || []).map((o) => o.id));
 const ISO = /^\d{4}-\d{2}-\d{2}$/;

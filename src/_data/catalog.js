@@ -9,6 +9,7 @@ const today = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
 
 const fieldLabel = {};
 for (const g of taxonomy.groups) for (const f of g.fields) fieldLabel[f.id] = f.label;
+for (const f of taxonomy.hidden_fields || []) fieldLabel[f.id] = f.label;
 const regionList = Array.isArray(taxonomy.regions)
   ? taxonomy.regions
   : Object.entries(taxonomy.regions).map(([id, r]) => ({ id, ...r }));

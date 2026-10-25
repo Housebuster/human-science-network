@@ -67,6 +67,10 @@
           "label": "Health"
         },
         {
+          "id": "hci",
+          "label": "Human–Computer Interaction"
+        },
+        {
           "id": "psy-political",
           "label": "Political"
         },
@@ -102,47 +106,35 @@
         },
         {
           "id": "behavioral-economics",
-          "label": "Behavioral economics & decision science"
+          "label": "Behavioral Economics"
         },
         {
           "id": "cognitive-science",
-          "label": "Cognitive science & neuroscience"
+          "label": "Cognitive Science"
         },
         {
-          "id": "demography",
-          "label": "Demography"
-        },
-        {
-          "id": "education",
-          "label": "Education research"
+          "id": "decision-science",
+          "label": "Decision Science"
         },
         {
           "id": "evolutionary",
-          "label": "Evolutionary behavioral science"
-        },
-        {
-          "id": "gender-studies",
-          "label": "Gender & diversity studies"
-        },
-        {
-          "id": "geography",
-          "label": "Human geography"
-        },
-        {
-          "id": "hci",
-          "label": "Human–computer interaction"
+          "label": "Evolutionary Science"
         },
         {
           "id": "linguistics",
-          "label": "Linguistics & communication"
+          "label": "Linguistics & Communication"
+        },
+        {
+          "id": "neuroscience",
+          "label": "Neuroscience"
         },
         {
           "id": "political-science",
-          "label": "Political science"
+          "label": "Political Science"
         },
         {
-          "id": "public-health",
-          "label": "Public health, medicine & psychiatry"
+          "id": "psychiatry",
+          "label": "Psychiatry"
         },
         {
           "id": "sociology",
@@ -279,6 +271,28 @@
     {
       "id": "practice-oriented",
       "label": "Practice"
+    }
+  ],
+  "hidden_fields": [
+    {
+      "id": "demography",
+      "label": "Demography"
+    },
+    {
+      "id": "education",
+      "label": "Education research"
+    },
+    {
+      "id": "gender-studies",
+      "label": "Gender & diversity studies"
+    },
+    {
+      "id": "geography",
+      "label": "Human geography"
+    },
+    {
+      "id": "public-health",
+      "label": "Public health, medicine & psychiatry"
     }
   ]
 }

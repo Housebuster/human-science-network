@@ -178,6 +178,7 @@ collections:
                   - { label: "Educational", value: "psy-educational" }
                   - { label: "Forensic", value: "psy-forensic" }
                   - { label: "Health", value: "psy-health" }
+                  - { label: "Human–Computer Interaction", value: "hci" }
                   - { label: "Political", value: "psy-political" }
                   - { label: "Research methods & meta-science", value: "psy-methods" }
                   - { label: "School", value: "psy-school" }
@@ -185,17 +186,14 @@ collections:
                   - { label: "Teaching", value: "psy-teaching" }
                   - { label: "Work & organizational", value: "psy-io" }
                   - { label: "Anthropology", value: "anthropology" }
-                  - { label: "Behavioral economics & decision science", value: "behavioral-economics" }
-                  - { label: "Cognitive science & neuroscience", value: "cognitive-science" }
-                  - { label: "Demography", value: "demography" }
-                  - { label: "Education research", value: "education" }
-                  - { label: "Evolutionary behavioral science", value: "evolutionary" }
-                  - { label: "Gender & diversity studies", value: "gender-studies" }
-                  - { label: "Human geography", value: "geography" }
-                  - { label: "Human–computer interaction", value: "hci" }
-                  - { label: "Linguistics & communication", value: "linguistics" }
-                  - { label: "Political science", value: "political-science" }
-                  - { label: "Public health, medicine & psychiatry", value: "public-health" }
+                  - { label: "Behavioral Economics", value: "behavioral-economics" }
+                  - { label: "Cognitive Science", value: "cognitive-science" }
+                  - { label: "Decision Science", value: "decision-science" }
+                  - { label: "Evolutionary Science", value: "evolutionary" }
+                  - { label: "Linguistics & Communication", value: "linguistics" }
+                  - { label: "Neuroscience", value: "neuroscience" }
+                  - { label: "Political Science", value: "political-science" }
+                  - { label: "Psychiatry", value: "psychiatry" }
                   - { label: "Sociology", value: "sociology" }
               - label: Status
                 name: status
