@@ -2,10 +2,13 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const q = $("q"), region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
-        list = $("upcoming-list"), tbc = $("tbc-list");
+        list = $("upcoming-list"), tbc = $("tbc-list"), past = $("past-list"),
+        pastBlock = $("past-block");
   if (!list) return;
-  const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [];
-  const catalogCards = [...cards, ...tbcCards];
+  const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [],
+        pastCards = past ? [...past.children] : [];
+  // Include past so Field/Format/Focus options stay available when only past events use them.
+  const catalogCards = [...cards, ...tbcCards, ...pastCards];
   const params = new URLSearchParams(location.search);
 
   // Multi-select facets: OR within each facet. URL: repeated keys (?format=hybrid&format=online).
@@ -130,16 +133,27 @@
   };
 
   function apply() {
+    const openOnly = !!dl?.checked;
     let n = 0;
     for (const c of cards) { const ok = matches(c); c.hidden = !ok; if (ok) n++; }
     let m = 0;
-    for (const c of tbcCards) { const ok = !dl?.checked && matches(c); c.hidden = !ok; if (ok) m++; }
+    for (const c of tbcCards) { const ok = !openOnly && matches(c); c.hidden = !ok; if (ok) m++; }
+    // Past stays visible unless Open calls only is on (then hide whole past block).
+    let pastN = 0;
+    for (const c of pastCards) {
+      const ok = !openOnly && matches(c);
+      c.hidden = !ok;
+      if (ok) pastN++;
+    }
+    if (pastBlock) pastBlock.hidden = openOnly || (pastCards.length > 0 && pastN === 0);
     if (sort) {
       const key = sort.value === "deadline" ? (c) => c.dataset.deadline || "9999" : (c) => c.dataset.start;
       [...cards].sort((a, b) => key(a).localeCompare(key(b)) || a.dataset.start.localeCompare(b.dataset.start)).forEach((c) => list.appendChild(c));
     }
     $("count").textContent = `${n} event${n === 1 ? "" : "s"}`;
     if ($("count-tbc")) $("count-tbc").textContent = `${m} recurring event${m === 1 ? "" : "s"}`;
+    if ($("count-past")) $("count-past").textContent = `${pastN} event${pastN === 1 ? "" : "s"}`;
+    // Empty state is for upcoming only; past may still show below when open calls is off.
     $("empty").hidden = n > 0;
     const p = new URLSearchParams();
     if (q?.value.trim()) p.set("q", q.value.trim());

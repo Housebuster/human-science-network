@@ -114,7 +114,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
 /* Cards */
 .list-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 2rem 0 .8rem; border-bottom: 1px solid var(--line); padding-bottom: .5rem; }
 .list-head h2 { margin: 0; }
-.tbc-head { margin-top: 3rem; }
+.tbc-head, .past-head { margin-top: 3rem; }
 .count { color: var(--muted); margin: 0; font-size: .92rem; }
 .cards { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
 .card { display: grid; grid-template-columns: 92px 1fr; gap: 1.1rem; padding: 1.1rem 1.2rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .15s, border-color .15s; }

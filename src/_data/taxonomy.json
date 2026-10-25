@@ -13,10 +13,6 @@
           "label": "Clinical & counselling"
         },
         {
-          "id": "psy-health",
-          "label": "Health"
-        },
-        {
           "id": "psy-social",
           "label": "Social"
         },
@@ -34,7 +30,7 @@
         },
         {
           "id": "psy-biological",
-          "label": "Biological & neuropsychology"
+          "label": "Biopsychology"
         },
         {
           "id": "psy-teaching",
@@ -46,6 +42,10 @@
       "id": "subfields",
       "label": "Subfields",
       "fields": [
+        {
+          "id": "psy-health",
+          "label": "Health"
+        },
         {
           "id": "psy-affective",
           "label": "Affective science"

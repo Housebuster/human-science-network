@@ -64,7 +64,7 @@ const fieldsCovered = fieldGroups.reduce((n, g) => n + g.fields.length, 0);
 const psychologyFieldIds = taxonomy.groups
   .flatMap((g) => g.fields.map((f) => f.id))
   .filter((id) => id.startsWith("psy-"));
-const regionsUsed = [...new Set([...upcoming, ...tbc].map((l) => l.region).filter(Boolean))].map((id) => ({
+const regionsUsed = [...new Set([...upcoming, ...tbc, ...past].map((l) => l.region).filter(Boolean))].map((id) => ({
   id,
   label: id === "online" ? "Online" : regionById[id].label,
 }));

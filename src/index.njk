@@ -98,7 +98,7 @@ eleventyComputed:
   <ol class="cards" id="upcoming-list">
     {% for l in catalog.upcoming %}{{ card(l, catalog.today) }}{% endfor %}
   </ol>
-  <p class="empty" id="empty" hidden>No events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
+  <p class="empty" id="empty" hidden>No upcoming events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
 
   {% if catalog.tbc.length %}
   <div class="list-head tbc-head">
@@ -110,7 +110,19 @@ eleventyComputed:
     {% for l in catalog.tbc %}{{ card(l, catalog.today) }}{% endfor %}
   </ol>
   {% endif %}
-  <p class="past-link"><a href="/past/">Browse {{ catalog.past.length }} past events →</a></p>
+
+  {% if catalog.past.length %}
+  <div id="past-block">
+    <div class="list-head past-head" id="past-head">
+      <h2 id="past-h">Past events</h2>
+      <p class="count" id="count-past" aria-live="polite">{{ catalog.past.length }} events</p>
+    </div>
+    <ol class="cards cards-compact" id="past-list">
+      {% for l in catalog.past %}{{ card(l, catalog.today) }}{% endfor %}
+    </ol>
+    <p class="past-link"><a href="/past/">Browse all past events →</a></p>
+  </div>
+  {% endif %}
 </section>
 
 <section class="wrap cta-row">
@@ -125,4 +137,4 @@ eleventyComputed:
     <a class="btn btn-ghost" href="/digest/">Join the digest list</a>
   </div>
 </section>
-<script src="/assets/filter.js?v=4" defer></script>
+<script src="/assets/filter.js?v=5" defer></script>

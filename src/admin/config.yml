@@ -166,13 +166,13 @@ collections:
                 options:
                   - { label: "General & multi-area", value: "psy-general" }
                   - { label: "Clinical & counselling", value: "psy-clinical" }
-                  - { label: "Health", value: "psy-health" }
                   - { label: "Social", value: "psy-social" }
                   - { label: "Personality", value: "psy-personality" }
                   - { label: "Cognitive", value: "psy-cognitive" }
                   - { label: "Developmental", value: "psy-developmental" }
-                  - { label: "Biological & neuropsychology", value: "psy-biological" }
+                  - { label: "Biopsychology", value: "psy-biological" }
                   - { label: "Teaching", value: "psy-teaching" }
+                  - { label: "Health", value: "psy-health" }
                   - { label: "Affective science", value: "psy-affective" }
                   - { label: "Educational", value: "psy-educational" }
                   - { label: "School", value: "psy-school" }
