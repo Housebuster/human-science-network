@@ -1933,6 +1933,194 @@
       "date_confidence": "verified",
       "public_note": "",
       "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?"
+    },
+    {
+      "id": "icis-2026",
+      "name": "International Congress of Infant Studies XXV Biennial Congress 2026",
+      "short_name": "ICIS",
+      "organizer": "International Congress of Infant Studies",
+      "organizer_type": "society",
+      "url": "https://infantstudies.org/2026-congress/",
+      "cfp_url": "",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-09",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Hotel Riu Plaza Panama",
+        "city": "Panama City",
+        "country": "Panama",
+        "country_code": "PA"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://infantstudies.org/2026-panama-city/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Theme: Infancy in Context. First ICIS in the Global South. ~1000 attendees. Biennial.",
+      "orientation": ""
+    },
+    {
+      "id": "issbd-2026",
+      "name": "International Society for the Study of Behavioural Development 28th Biennial Meeting 2026",
+      "short_name": "ISSBD",
+      "organizer": "International Society for the Study of Behavioural Development",
+      "organizer_type": "society",
+      "url": "https://2026biennial.issbd.org/",
+      "cfp_url": "",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-25",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "",
+        "city": "Incheon",
+        "country": "South Korea",
+        "country_code": "KR"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://2026biennial.issbd.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Major international developmental society. Local organizers from Yonsei University. Next meeting 2028 in Québec City.",
+      "orientation": ""
+    },
+    {
+      "id": "isdp-2026",
+      "name": "International Society for Developmental Psychobiology 59th Annual Meeting 2026",
+      "short_name": "ISDP",
+      "organizer": "International Society for Developmental Psychobiology",
+      "organizer_type": "society",
+      "url": "https://isdp.org/current/",
+      "cfp_url": "",
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-13",
+      "deadline_early": "",
+      "abstract_deadline": "2026-06-15",
+      "deadline_late": "",
+      "location": {
+        "venue": "Crowne Plaza New Orleans French Quarter (Astor)",
+        "city": "New Orleans",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental",
+        "psy-biological"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://isdp.org/meetings/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Multidisciplinary developmental psychobiology (human and animal models). Publishes Developmental Psychobiology. ~300-400 attendees.",
+      "orientation": ""
+    },
+    {
+      "id": "bps-dev-2026",
+      "name": "BPS Developmental Psychology Section Annual Conference 2026",
+      "short_name": "BPS Dev Section",
+      "organizer": "British Psychological Society Developmental Psychology Section",
+      "organizer_type": "society",
+      "url": "https://www.bps.org.uk/event/developmental-section-annual-conference-2026",
+      "cfp_url": "",
+      "start_date": "2026-09-03",
+      "end_date": "2026-09-04",
+      "deadline_early": "",
+      "abstract_deadline": "2026-05-15",
+      "deadline_late": "",
+      "location": {
+        "venue": "Durham University",
+        "city": "Durham",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.bps.org.uk/event/developmental-section-annual-conference-2026",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Annual section conference. Pre-conference workshop Sept 2. Abstract deadline May 15 2026 (with extension).",
+      "orientation": ""
+    },
+    {
+      "id": "sra-2026",
+      "name": "Society for Research on Adolescence 2026 Biennial Meeting",
+      "short_name": "SRA",
+      "organizer": "Society for Research on Adolescence",
+      "organizer_type": "society",
+      "url": "https://www.s-r-a.org/biennial-conference",
+      "cfp_url": "",
+      "start_date": "2026-04-15",
+      "end_date": "2026-04-18",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "The Westin Harbour Castle",
+        "city": "Toronto",
+        "country": "Canada",
+        "country_code": "CA"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.s-r-a.org/biennial-conference",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Theme: Each of Us, All of Us: Adolescent Thriving in an Interconnected World. Next biennial April 19-22 2028 Washington DC.",
+      "orientation": ""
+    },
+    {
+      "id": "isdn-2027",
+      "name": "International Society for Developmental Neuroscience 26th Biennial Meeting 2027",
+      "short_name": "ISDN",
+      "organizer": "International Society for Developmental Neuroscience",
+      "organizer_type": "society",
+      "url": "https://www.isdnsociety.org/",
+      "cfp_url": "",
+      "start_date": "2027-02-01",
+      "end_date": "2027-02-05",
+      "deadline_early": "",
+      "abstract_deadline": "2026-09-30",
+      "deadline_late": "",
+      "location": {
+        "venue": "Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR)",
+        "city": "Bengaluru",
+        "country": "India",
+        "country_code": "IN"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-developmental",
+        "psy-biological"
+      ],
+      "status": "upcoming",
+      "last_verified": "2026-10-25",
+      "verified_source_url": "https://www.isdnsociety.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Legitimate society (founded ~1978; publishes International Journal of Developmental Neuroscience via Wiley). Theme: Brain development and disorders: Mechanisms and Interventions. Poster deadline Sept 30 2026. Program includes international speakers from Harvard, UCSD, McGill, etc.",
+      "orientation": ""
     }
   ]
 }
