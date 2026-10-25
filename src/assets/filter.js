@@ -14,19 +14,41 @@
     { id: "f-orientation", param: "orientation", empty: "Any focus", match: (d, vals) => vals.includes(d.orientation) },
   ].map((m) => ({ ...m, root: $(m.id) })).filter((m) => m.root);
 
-  const checked = (root) => [...root.querySelectorAll("input[type=checkbox]:checked")].map((i) => i.value);
+  const fieldRoot = multis.find((m) => m.id === "f-field")?.root;
+  const allPsy = fieldRoot?.querySelector("input[data-all-psy]");
+  const psyIds = (fieldRoot?.querySelector(".f-drop-panel")?.dataset.psyIds || "")
+    .split(/\s+/).filter(Boolean);
+  const psyBoxes = () => fieldRoot
+    ? [...fieldRoot.querySelectorAll("input[type=checkbox]")].filter((i) => i.value && psyIds.includes(i.value))
+    : [];
+
+  const syncAllPsy = () => {
+    if (!allPsy) return;
+    const boxes = psyBoxes();
+    if (!boxes.length) { allPsy.checked = false; allPsy.indeterminate = false; return; }
+    const n = boxes.filter((b) => b.checked).length;
+    allPsy.checked = n === boxes.length;
+    allPsy.indeterminate = n > 0 && n < boxes.length;
+  };
+
+  // Field values only (skip the All psychology toggle, which has an empty value).
+  const checked = (root) => [...root.querySelectorAll("input[type=checkbox]:checked")]
+    .map((i) => i.value).filter(Boolean);
 
   const paramValues = (key) => {
     const raw = params.getAll(key);
     if (!raw.length) return [];
-    // Accept repeated keys and a single comma-separated value.
     return raw.flatMap((v) => v.split(",")).map((v) => v.trim()).filter(Boolean);
   };
 
   for (const m of multis) {
     const vals = new Set(paramValues(m.param));
-    for (const cb of m.root.querySelectorAll("input[type=checkbox]")) cb.checked = vals.has(cb.value);
+    for (const cb of m.root.querySelectorAll("input[type=checkbox]")) {
+      if (!cb.value) continue;
+      cb.checked = vals.has(cb.value);
+    }
   }
+  syncAllPsy();
   if (q && params.get("q")) q.value = params.get("q");
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
@@ -38,6 +60,11 @@
     const vals = checked(m.root);
     if (!vals.length) {
       summary.textContent = m.empty;
+      return;
+    }
+    if (m.id === "f-field" && psyIds.length && psyIds.every((id) => vals.includes(id))
+        && vals.every((v) => psyIds.includes(v))) {
+      summary.textContent = "All psychology";
       return;
     }
     const labels = vals.map((v) => {
@@ -84,9 +111,6 @@
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
   }
 
-  // One open dropdown at a time; close on outside click / Escape.
-  // Use click (not only toggle): toggle alone can leave two open when opening
-  // another summary in the same gesture in some browsers.
   const closeOtherDrops = (keep) => {
     for (const facet of multis) if (facet.root !== keep) facet.root.open = false;
   };
@@ -94,11 +118,19 @@
     facet.root.addEventListener("toggle", () => {
       if (facet.root.open) closeOtherDrops(facet.root);
     });
-    facet.root.addEventListener("change", apply);
+    facet.root.addEventListener("change", (e) => {
+      if (facet.id === "f-field" && e.target === allPsy) {
+        const on = allPsy.checked;
+        for (const cb of psyBoxes()) cb.checked = on;
+        allPsy.indeterminate = false;
+      } else if (facet.id === "f-field" && e.target.matches?.("input[type=checkbox]")) {
+        syncAllPsy();
+      }
+      apply();
+    });
   }
   document.addEventListener("click", (e) => {
     const keep = e.target.closest?.("details.f-drop");
-    // Only manage our filter dropdowns (ignore unrelated <details>).
     const ours = keep && multis.some((m) => m.root === keep) ? keep : null;
     closeOtherDrops(ours);
   });
@@ -114,6 +146,7 @@
       for (const cb of facet.root.querySelectorAll("input[type=checkbox]")) cb.checked = false;
       facet.root.open = false;
     }
+    if (allPsy) { allPsy.checked = false; allPsy.indeterminate = false; }
     if (region) region.value = "";
     if (dl) dl.checked = false;
     if (sort) sort.value = "start";

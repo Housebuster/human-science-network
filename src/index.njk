@@ -12,7 +12,7 @@ eleventyComputed:
     <div class="hero-stats">
       <div><strong>{{ catalog.upcoming.length }}</strong><span>upcoming events</span></div>
       <div><strong>{{ catalog.deadlines.length }}</strong><span>open calls for submissions</span></div>
-      <div><strong>{{ catalog.fieldGroups[0].fields.length + catalog.fieldGroups[1].fields.length }}</strong><span>fields covered</span></div>
+      <div><strong>{{ catalog.fieldsCovered }}</strong><span>fields covered</span></div>
     </div>
   </div>
 </section>
@@ -38,7 +38,8 @@ eleventyComputed:
       <span class="f-label" id="lbl-field">Field</span>
       <details class="f-drop" id="f-field">
         <summary>All fields</summary>
-        <div class="f-drop-panel" role="group" aria-labelledby="lbl-field">
+        <div class="f-drop-panel" role="group" aria-labelledby="lbl-field" data-psy-ids="{{ catalog.psychologyFieldIds | join(' ') }}">
+          <label class="f-drop-opt f-drop-all"><input type="checkbox" data-all-psy value=""><span class="f-drop-text">All psychology</span></label>
           {% for g in catalog.fieldGroups %}
           <p class="f-drop-group">{{ g.label }}</p>
           {% for f in g.fields %}
@@ -124,4 +125,4 @@ eleventyComputed:
     <a class="btn btn-ghost" href="/digest/">Join the digest list</a>
   </div>
 </section>
-<script src="/assets/filter.js?v=2" defer></script>
+<script src="/assets/filter.js?v=3" defer></script>

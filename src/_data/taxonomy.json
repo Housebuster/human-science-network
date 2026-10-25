@@ -53,14 +53,6 @@
           "label": "Consumer psychology"
         },
         {
-          "id": "psy-forensic",
-          "label": "Forensic psychology"
-        },
-        {
-          "id": "psy-sport",
-          "label": "Sport & exercise psychology"
-        },
-        {
           "id": "psy-cultural",
           "label": "Cultural & cross-cultural psychology"
         },
@@ -79,6 +71,20 @@
         {
           "id": "psy-methods",
           "label": "Research methods & meta-science"
+        }
+      ]
+    },
+    {
+      "id": "specialties",
+      "label": "Specialties",
+      "fields": [
+        {
+          "id": "psy-forensic",
+          "label": "Forensic psychology"
+        },
+        {
+          "id": "psy-sport",
+          "label": "Sport & exercise psychology"
         }
       ]
     },
@@ -124,7 +130,7 @@
         },
         {
           "id": "hci",
-          "label": "Human\u2013computer interaction"
+          "label": "Human–computer interaction"
         },
         {
           "id": "gender-studies",

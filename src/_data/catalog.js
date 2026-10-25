@@ -59,9 +59,14 @@ const used = new Set(all.flatMap((l) => l.fields));
 const fieldGroups = taxonomy.groups
   .map((g) => ({ ...g, fields: g.fields.filter((f) => used.has(f.id)) }))
   .filter((g) => g.fields.length);
+const fieldsCovered = fieldGroups.reduce((n, g) => n + g.fields.length, 0);
+// psy-* ids currently shown in the Field filter (used listings only).
+const psychologyFieldIds = fieldGroups
+  .flatMap((g) => g.fields.map((f) => f.id))
+  .filter((id) => id.startsWith("psy-"));
 const regionsUsed = [...new Set([...upcoming, ...tbc].map((l) => l.region).filter(Boolean))].map((id) => ({
   id,
   label: id === "online" ? "Online" : regionById[id].label,
 }));
 
-export default { today, all, upcoming, tbc, past, deadlines, fieldGroups, regionsUsed, fieldLabel };
+export default { today, all, upcoming, tbc, past, deadlines, fieldGroups, fieldsCovered, psychologyFieldIds, regionsUsed, fieldLabel };

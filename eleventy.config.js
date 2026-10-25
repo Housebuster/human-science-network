@@ -59,6 +59,15 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("urlencode", (s) => encodeURIComponent(String(s ?? "")));
   eleventyConfig.addFilter("dayNum", (iso) => String(parts(iso).d));
   eleventyConfig.addFilter("monYear", (iso) => { const { y, m } = parts(iso); return `${MONTHS[m - 1]} ${y}`; });
+  // Left-column day span under month/year: "19", "19–22", or "30 Jun – 4 Jul"
+  eleventyConfig.addFilter("daySpan", (s, e) => {
+    if (!s) return "";
+    const a = parts(s), b = parts(e || s);
+    if (s === e || !e) return String(a.d);
+    if (a.y !== b.y) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]}`;
+    if (a.m !== b.m) return `${a.d} ${MONTHS[a.m - 1]} – ${b.d} ${MONTHS[b.m - 1]}`;
+    return `${a.d}–${b.d}`;
+  });
   eleventyConfig.addFilter("daysUntil", (iso, today) => Math.round((Date.parse(iso) - Date.parse(today)) / 864e5));
   // ICS date (all-day) and exclusive end date
   eleventyConfig.addFilter("icsDate", (iso, addDays = 0) => {

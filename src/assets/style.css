@@ -85,9 +85,21 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
   background: #fff; border: 1px solid var(--line-2); border-radius: 8px; padding: .45rem;
   max-height: min(320px, 60vh); overflow: auto; box-shadow: 0 8px 24px rgba(28,43,69,.12);
 }
-/* Higher specificity than `.filters label` so option rows keep flex + normal weight */
-.filters .f-drop-group { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: .45rem .35rem .25rem; font-weight: 700; }
-.filters .f-drop-group:first-child { margin-top: .15rem; }
+/* Beat `.filters label` / muted chrome: group titles must read clearly bold */
+.filters .f-drop-panel > .f-drop-group {
+  display: block;
+  font-size: .78rem;
+  font-weight: 800;
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--ink);
+  margin: .55rem .35rem .3rem;
+  -webkit-font-smoothing: antialiased;
+}
+.filters .f-drop-panel > .f-drop-group:first-child { margin-top: .15rem; }
+.filters .f-drop-opt.f-drop-all { font-weight: 600; border-bottom: 1px solid var(--line); border-radius: 0; margin-bottom: .25rem; padding-bottom: .55rem; }
+.filters .f-drop-opt.f-drop-all:hover { background: var(--hero); border-radius: 6px; }
 .filters .f-drop-opt { display: flex; align-items: flex-start; gap: .55rem; padding: .4rem .45rem; border-radius: 6px; font-size: .88rem; font-weight: 400; margin: 0; cursor: pointer; color: var(--ink); }
 .filters .f-drop-opt:hover { background: var(--hero); }
 .filters .f-drop-opt input { width: auto; margin: .15rem .15rem 0 0; flex-shrink: 0; accent-color: var(--accent); }
@@ -102,18 +114,19 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
 .tbc-head { margin-top: 3rem; }
 .count { color: var(--muted); margin: 0; font-size: .92rem; }
 .cards { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
-.card { display: grid; grid-template-columns: 84px 1fr; gap: 1.1rem; padding: 1.1rem 1.2rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .15s, border-color .15s; }
+.card { display: grid; grid-template-columns: 92px 1fr; gap: 1.1rem; padding: 1.1rem 1.2rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .15s, border-color .15s; }
 .card:hover { border-color: var(--line-2); box-shadow: 0 3px 14px rgba(28,43,69,.07); }
 .card[hidden] { display: none; }
 .card-date { text-align: center; border-right: 1px solid var(--line); padding-right: 1rem; }
-.cd-day { display: block; font: 600 2rem/1 var(--serif); }
-.cd-month { display: block; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-top: .25rem; }
+.cd-month { display: block; font: 600 1.05rem/1.15 var(--serif); color: var(--ink); letter-spacing: -0.01em; }
+.cd-days { display: block; font-size: .78rem; color: var(--muted); margin-top: .28rem; letter-spacing: .02em; }
+.cd-day { display: block; font: 600 2rem/1 var(--serif); } /* legacy */
 .cd-tbc { display: inline-block; font-size: .8rem; font-weight: 700; color: var(--muted); border: 1px dashed var(--line-2); border-radius: 6px; padding: .3rem .45rem; margin-top: .3rem; }
 .card-title { font-size: 1.18rem; margin: 0 0 .15rem; }
 .card-title a { color: var(--ink); text-decoration: none; }
 .card-title a:hover { color: var(--accent); text-decoration: underline; }
-.card-org { margin: 0 0 .4rem; color: var(--ink-2); font-size: .95rem; }
-.card-meta { margin: 0 0 .5rem; display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-size: .9rem; color: var(--muted); }
+.card-org { margin: 0 0 .4rem; color: var(--muted); font-size: .92rem; }
+.card-meta { margin: 0 0 .5rem; display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-size: .9rem; color: var(--ink); font-weight: 500; }
 .card-meta span + span::before { content: "·"; margin-right: 1rem; margin-left: -.5rem; color: var(--line-2); }
 .card-note { margin: 0 0 .5rem; font-size: .9rem; color: var(--ink-2); }
 .cards-compact .card { padding: .85rem 1.1rem; }
@@ -221,7 +234,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 @media (max-width: 560px) {
   .filters, .row-2 { grid-template-columns: 1fr; }
   .card { grid-template-columns: 64px 1fr; gap: .8rem; padding: .9rem; }
-  .cd-day { font-size: 1.6rem; }
+  .cd-month { font-size: .95rem; }
   .facts > div { grid-template-columns: 1fr; gap: .2rem; }
   .hero { padding: 2.2rem 0 2rem; }
   .nav a { padding: .4rem .55rem; font-size: .9rem; }
