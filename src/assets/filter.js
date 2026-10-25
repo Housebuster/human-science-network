@@ -104,7 +104,7 @@
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl && params.get("open") === "1") dl.checked = true;
-  // Home scope: upcoming always shown; Past and Unscheduled (TBC) off unless URL says so.
+  // Home scope: upcoming always shown; Past and Future Events (TBA) off unless URL says so.
   if (showTbc) showTbc.checked = params.get("tbc") === "1";
   if (showPast) {
     if (params.has("past")) showPast.checked = params.get("past") === "1";
@@ -202,7 +202,7 @@
   function apply() {
     const openOnly = !!dl?.checked;
     const nextOn = true;
-    const tbcOn = showTbc ? !!showTbc.checked : true;
+    const tbcOn = !!showTbc?.checked;
     const pastOn = showPast ? !!showPast.checked : false;
 
     if (nextBlock) nextBlock.hidden = !nextOn;
@@ -285,7 +285,7 @@
     closeOtherDrops(null);
   });
 
-  [q, region, dl, sort, showTbc, showPast].forEach((el) => el && el.addEventListener("input", apply));
+  [q, region, dl, sort, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
     for (const facet of multis) {
