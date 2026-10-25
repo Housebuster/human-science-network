@@ -107,9 +107,11 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); outline
 /* Author display rules beat UA [hidden]; mirror .card[hidden]. */
 .filters .f-drop-opt[hidden],
 .filters .f-drop-panel > .f-drop-group[hidden] { display: none; }
-.f-check { grid-column: 1 / -1; display: flex; align-items: center; gap: .45rem; padding-top: .15rem; white-space: nowrap; }
+.f-check { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: .45rem 1.25rem; padding-top: .15rem; }
+.f-check-item { display: flex; align-items: center; gap: .45rem; white-space: nowrap; }
 .f-check input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--accent); }
 .f-check label { margin: 0; font-size: .92rem; }
+#past-block[hidden], #next-block[hidden], #empty-scope[hidden] { display: none; }
 
 /* Cards */
 .list-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 2rem 0 .8rem; border-bottom: 1px solid var(--line); padding-bottom: .5rem; }

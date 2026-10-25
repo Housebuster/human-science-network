@@ -86,43 +86,56 @@ eleventyComputed:
       </select>
     </div>
     <div class="f-check">
-      <input id="f-deadline" type="checkbox">
-      <label for="f-deadline">Open calls only</label>
+      <span class="f-check-item">
+        <input id="f-deadline" type="checkbox">
+        <label for="f-deadline">Open calls only</label>
+      </span>
+      <span class="f-check-item">
+        <input id="f-next" type="checkbox" checked>
+        <label for="f-next">Next</label>
+      </span>
+      <span class="f-check-item">
+        <input id="f-past" type="checkbox">
+        <label for="f-past">Past</label>
+      </span>
     </div>
   </form>
 
-  <div class="list-head">
-    <h2 id="up-h">Upcoming conferences</h2>
-    <p class="count" id="count" aria-live="polite">{{ catalog.upcoming.length }} events</p>
-  </div>
-  <ol class="cards" id="upcoming-list">
-    {% for l in catalog.upcoming %}{{ card(l, catalog.today) }}{% endfor %}
-  </ol>
-  <p class="empty" id="empty" hidden>No upcoming events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
+  <div id="next-block">
+    <div class="list-head">
+      <h2 id="up-h">Upcoming conferences</h2>
+      <p class="count" id="count" aria-live="polite">{{ catalog.upcoming.length }} events</p>
+    </div>
+    <ol class="cards" id="upcoming-list">
+      {% for l in catalog.upcoming %}{{ card(l, catalog.today) }}{% endfor %}
+    </ol>
+    <p class="empty" id="empty" hidden>No upcoming events match these filters. <button type="button" class="link-btn" id="reset">Clear filters</button></p>
 
-  {% if catalog.tbc.length %}
-  <div class="list-head tbc-head">
-    <h2 id="tbc-h">Next edition to be confirmed</h2>
-    <p class="count" id="count-tbc">{{ catalog.tbc.length }} recurring events</p>
+    {% if catalog.tbc.length %}
+    <div id="tbc-block">
+      <div class="list-head tbc-head">
+        <h2 id="tbc-h">Next edition to be confirmed</h2>
+        <p class="count" id="count-tbc">{{ catalog.tbc.length }} recurring events</p>
+      </div>
+      <p class="muted">These recurring meetings are in our directory, but the organizer hasn't confirmed dates for the next edition yet. We won't guess dates.</p>
+      <ol class="cards cards-compact" id="tbc-list">
+        {% for l in catalog.tbc %}{{ card(l, catalog.today) }}{% endfor %}
+      </ol>
+    </div>
+    {% endif %}
   </div>
-  <p class="muted">These recurring meetings are in our directory, but the organizer hasn't confirmed dates for the next edition yet. We won't guess dates.</p>
-  <ol class="cards cards-compact" id="tbc-list">
-    {% for l in catalog.tbc %}{{ card(l, catalog.today) }}{% endfor %}
-  </ol>
-  {% endif %}
 
-  {% if catalog.past.length %}
-  <div id="past-block">
+  {# Past cards are not in the initial home HTML; Past checkbox lazy-loads /past/. #}
+  <div id="past-block" hidden data-past-src="/past/" data-past-count="{{ catalog.past.length }}">
     <div class="list-head past-head" id="past-head">
       <h2 id="past-h">Past events</h2>
       <p class="count" id="count-past" aria-live="polite">{{ catalog.past.length }} events</p>
     </div>
-    <ol class="cards cards-compact" id="past-list">
-      {% for l in catalog.past %}{{ card(l, catalog.today) }}{% endfor %}
-    </ol>
+    <p class="muted" id="past-loading" hidden>Loading past events…</p>
+    <ol class="cards cards-compact" id="past-list"></ol>
     <p class="past-link"><a href="/past/">Browse all past events →</a></p>
   </div>
-  {% endif %}
+  <p class="empty" id="empty-scope" hidden>Select <strong>Next</strong> and/or <strong>Past</strong> to show events. <button type="button" class="link-btn" id="reset-scope">Show upcoming</button></p>
 </section>
 
 <section class="wrap cta-row">
@@ -137,4 +150,4 @@ eleventyComputed:
     <a class="btn btn-ghost" href="/digest/">Join the digest list</a>
   </div>
 </section>
-<script src="/assets/filter.js?v=5" defer></script>
+<script src="/assets/filter.js?v=7" defer></script>

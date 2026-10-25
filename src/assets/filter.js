@@ -1,15 +1,20 @@
-// Client-side search and filtering. Without JS, every listing is still shown.
+// Client-side search and filtering. Without JS, every listing is still shown
+// (except past on the home page, which stays hidden until Past is checked).
 (() => {
   const $ = (id) => document.getElementById(id);
   const q = $("q"), region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
+        showNext = $("f-next"), showPast = $("f-past"),
         list = $("upcoming-list"), tbc = $("tbc-list"), past = $("past-list"),
-        pastBlock = $("past-block");
+        nextBlock = $("next-block"), pastBlock = $("past-block"),
+        emptyScope = $("empty-scope");
   if (!list) return;
-  const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [],
-        pastCards = past ? [...past.children] : [];
-  // Include past so Field/Format/Focus options stay available when only past events use them.
-  const catalogCards = [...cards, ...tbcCards, ...pastCards];
+  const cards = [...list.children], tbcCards = tbc ? [...tbc.children] : [];
+  let pastCards = past ? [...past.children] : [];
+  // Facet options from cards currently on the page (past cards added after lazy-load).
+  const catalogCards = () => [...cards, ...tbcCards, ...pastCards];
   const params = new URLSearchParams(location.search);
+  const isHome = !!(showNext || showPast || nextBlock || pastBlock);
+  let pastLoad = null; // Promise while fetching / pending null when idle/done
 
   // Multi-select facets: OR within each facet. URL: repeated keys (?format=hybrid&format=online).
   const multis = [
@@ -28,32 +33,37 @@
     fields: new Set(),
     format: new Set(),
   };
-  for (const c of catalogCards) {
-    const d = c.dataset;
-    for (const id of (d.fields || "").split(/\s+/).filter(Boolean)) usedByAttr.fields.add(id);
-    if (d.format) usedByAttr.format.add(d.format);
-  }
-  for (const m of multis) {
-    const used = usedByAttr[m.attr];
-    if (!used) continue;
-    for (const label of m.root.querySelectorAll("label.f-drop-opt")) {
-      const input = label.querySelector("input[type=checkbox]");
-      if (!input || !input.value) continue; // keep All psychology toggle
-      const show = used.has(input.value);
-      label.hidden = !show;
-      if (!show) input.checked = false;
+  const refreshFacetOptions = () => {
+    usedByAttr.fields.clear();
+    usedByAttr.format.clear();
+    for (const c of catalogCards()) {
+      const d = c.dataset;
+      for (const id of (d.fields || "").split(/\s+/).filter(Boolean)) usedByAttr.fields.add(id);
+      if (d.format) usedByAttr.format.add(d.format);
     }
-    for (const group of m.root.querySelectorAll(".f-drop-group")) {
-      let next = group.nextElementSibling;
-      let any = false;
-      while (next && !next.classList.contains("f-drop-group")) {
-        if (next.matches("label.f-drop-opt") && !next.hidden && next.querySelector("input[value]"))
-          any = true;
-        next = next.nextElementSibling;
+    for (const m of multis) {
+      const used = usedByAttr[m.attr];
+      if (!used) continue;
+      for (const label of m.root.querySelectorAll("label.f-drop-opt")) {
+        const input = label.querySelector("input[type=checkbox]");
+        if (!input || !input.value) continue; // keep All psychology toggle
+        const show = used.has(input.value);
+        label.hidden = !show;
+        if (!show) input.checked = false;
       }
-      group.hidden = !any;
+      for (const group of m.root.querySelectorAll(".f-drop-group")) {
+        let next = group.nextElementSibling;
+        let any = false;
+        while (next && !next.classList.contains("f-drop-group")) {
+          if (next.matches("label.f-drop-opt") && !next.hidden && next.querySelector("input[value]"))
+            any = true;
+          next = next.nextElementSibling;
+        }
+        group.hidden = !any;
+      }
     }
-  }
+  };
+  refreshFacetOptions();
 
   const fieldRoot = multis.find((m) => m.id === "f-field")?.root;
   const allPsy = fieldRoot?.querySelector("input[data-all-psy]");
@@ -96,6 +106,15 @@
   if (region && params.get("region")) region.value = params.get("region");
   if (sort && params.get("sort")) sort.value = params.get("sort");
   if (dl && params.get("open") === "1") dl.checked = true;
+  // Home scope: Next on by default (upcoming/TBC); Past off. URL can override.
+  if (showNext) {
+    if (params.has("next")) showNext.checked = params.get("next") !== "0";
+    else showNext.checked = true;
+  }
+  if (showPast) {
+    if (params.has("past")) showPast.checked = params.get("past") === "1";
+    else showPast.checked = false;
+  }
 
   const updateSummary = (m) => {
     const summary = m.root.querySelector("summary");
@@ -131,29 +150,104 @@
     return true;
   };
 
+  const ensurePastLoaded = () => {
+    if (!pastBlock || !past || pastCards.length) return Promise.resolve();
+    if (pastLoad) return pastLoad;
+    const src = pastBlock.dataset.pastSrc || "/past/";
+    const loading = $("past-loading");
+    if (loading) loading.hidden = false;
+    pastLoad = fetch(src)
+      .then((r) => {
+        if (!r.ok) throw new Error("past fetch failed");
+        return r.text();
+      })
+      .then((html) => {
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const srcList = doc.getElementById("upcoming-list");
+        if (!srcList) throw new Error("past list missing");
+        past.replaceChildren(...[...srcList.children].map((c) => document.importNode(c, true)));
+        pastCards = [...past.children];
+        refreshFacetOptions();
+        syncAllPsy();
+      })
+      .catch(() => {
+        // Fallback: keep the browse link; clear failed promise so retry is possible.
+        pastLoad = null;
+      })
+      .finally(() => {
+        if (loading) loading.hidden = true;
+      });
+    return pastLoad;
+  };
+
+  const paintPast = () => {
+    let pastN = 0;
+    if (showPast?.checked && !dl?.checked) {
+      for (const c of pastCards) {
+        const ok = matches(c);
+        c.hidden = !ok;
+        if (ok) pastN++;
+      }
+      if (pastBlock) {
+        // Keep block visible while loading (0 cards) or when matches exist.
+        const loading = !pastCards.length && !!pastLoad;
+        pastBlock.hidden = pastCards.length > 0 && pastN === 0 && !loading;
+      }
+    } else {
+      for (const c of pastCards) c.hidden = true;
+    }
+    if ($("count-past")) {
+      const total = pastBlock?.dataset.pastCount;
+      const labelN = pastCards.length ? pastN : (total || 0);
+      $("count-past").textContent = `${labelN} event${Number(labelN) === 1 ? "" : "s"}`;
+    }
+    return pastN;
+  };
+
   function apply() {
     const openOnly = !!dl?.checked;
-    let n = 0;
-    for (const c of cards) { const ok = matches(c); c.hidden = !ok; if (ok) n++; }
-    let m = 0;
-    for (const c of tbcCards) { const ok = !openOnly && matches(c); c.hidden = !ok; if (ok) m++; }
-    // Past stays visible unless Open calls only is on (then hide whole past block).
-    let pastN = 0;
-    for (const c of pastCards) {
-      const ok = !openOnly && matches(c);
-      c.hidden = !ok;
-      if (ok) pastN++;
+    const nextOn = showNext ? !!showNext.checked : true;
+    const pastOn = showPast ? !!showPast.checked : false;
+
+    if (nextBlock) nextBlock.hidden = !nextOn;
+    if (pastBlock) {
+      // Past only when Past is checked; also hide when Open calls only (past has no open calls).
+      pastBlock.hidden = !pastOn || openOnly;
     }
-    if (pastBlock) pastBlock.hidden = openOnly || (pastCards.length > 0 && pastN === 0);
-    if (sort) {
+    if (pastOn && !openOnly) {
+      const neededLoad = pastCards.length === 0;
+      ensurePastLoaded().then(() => {
+        if (neededLoad && pastCards.length && showPast?.checked && !dl?.checked) apply();
+      });
+    }
+    if (emptyScope) emptyScope.hidden = !isHome || nextOn || pastOn;
+
+    let n = 0;
+    if (nextOn) {
+      for (const c of cards) { const ok = matches(c); c.hidden = !ok; if (ok) n++; }
+    } else {
+      for (const c of cards) c.hidden = true;
+    }
+
+    let m = 0;
+    if (nextOn) {
+      for (const c of tbcCards) { const ok = !openOnly && matches(c); c.hidden = !ok; if (ok) m++; }
+    } else {
+      for (const c of tbcCards) c.hidden = true;
+    }
+    const tbcBlock = $("tbc-block");
+    if (tbcBlock) tbcBlock.hidden = !nextOn || (tbcCards.length > 0 && m === 0 && openOnly);
+
+    paintPast();
+
+    if (sort && nextOn) {
       const key = sort.value === "deadline" ? (c) => c.dataset.deadline || "9999" : (c) => c.dataset.start;
       [...cards].sort((a, b) => key(a).localeCompare(key(b)) || a.dataset.start.localeCompare(b.dataset.start)).forEach((c) => list.appendChild(c));
     }
-    $("count").textContent = `${n} event${n === 1 ? "" : "s"}`;
+    if ($("count")) $("count").textContent = `${n} event${n === 1 ? "" : "s"}`;
     if ($("count-tbc")) $("count-tbc").textContent = `${m} recurring event${m === 1 ? "" : "s"}`;
-    if ($("count-past")) $("count-past").textContent = `${pastN} event${pastN === 1 ? "" : "s"}`;
-    // Empty state is for upcoming only; past may still show below when open calls is off.
-    $("empty").hidden = n > 0;
+    // Empty state is for upcoming only when Next is on.
+    if ($("empty")) $("empty").hidden = !nextOn || n > 0;
     const p = new URLSearchParams();
     if (q?.value.trim()) p.set("q", q.value.trim());
     for (const facet of multis) {
@@ -163,6 +257,8 @@
     if (region?.value) p.set("region", region.value);
     if (sort?.value && sort.value !== "start") p.set("sort", sort.value);
     if (dl?.checked) p.set("open", "1");
+    if (showNext && !showNext.checked) p.set("next", "0");
+    if (showPast && showPast.checked) p.set("past", "1");
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
   }
 
@@ -194,8 +290,8 @@
     closeOtherDrops(null);
   });
 
-  [q, region, dl, sort].forEach((el) => el && el.addEventListener("input", apply));
-  $("reset")?.addEventListener("click", () => {
+  [q, region, dl, sort, showNext, showPast].forEach((el) => el && el.addEventListener("input", apply));
+  const resetAll = () => {
     if (q) q.value = "";
     for (const facet of multis) {
       for (const cb of facet.root.querySelectorAll("input[type=checkbox]")) cb.checked = false;
@@ -205,8 +301,16 @@
     if (region) region.value = "";
     if (dl) dl.checked = false;
     if (sort) sort.value = "start";
+    if (showNext) showNext.checked = true;
+    if (showPast) showPast.checked = false;
     apply();
     q?.focus();
+  };
+  $("reset")?.addEventListener("click", resetAll);
+  $("reset-scope")?.addEventListener("click", () => {
+    if (showNext) showNext.checked = true;
+    if (showPast) showPast.checked = false;
+    apply();
   });
   apply();
 })();
