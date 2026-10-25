@@ -85,21 +85,26 @@
   }
 
   // One open dropdown at a time; close on outside click / Escape.
+  // Use click (not only toggle): toggle alone can leave two open when opening
+  // another summary in the same gesture in some browsers.
+  const closeOtherDrops = (keep) => {
+    for (const facet of multis) if (facet.root !== keep) facet.root.open = false;
+  };
   for (const facet of multis) {
     facet.root.addEventListener("toggle", () => {
-      if (!facet.root.open) return;
-      for (const other of multis) if (other !== facet) other.root.open = false;
+      if (facet.root.open) closeOtherDrops(facet.root);
     });
     facet.root.addEventListener("change", apply);
   }
   document.addEventListener("click", (e) => {
-    for (const facet of multis) {
-      if (facet.root.open && !facet.root.contains(e.target)) facet.root.open = false;
-    }
+    const keep = e.target.closest?.("details.f-drop");
+    // Only manage our filter dropdowns (ignore unrelated <details>).
+    const ours = keep && multis.some((m) => m.root === keep) ? keep : null;
+    closeOtherDrops(ours);
   });
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    for (const facet of multis) facet.root.open = false;
+    closeOtherDrops(null);
   });
 
   [q, region, dl, sort].forEach((el) => el && el.addEventListener("input", apply));
