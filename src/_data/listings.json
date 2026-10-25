@@ -1346,7 +1346,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1356,7 +1355,10 @@
       "verified_source_url": "https://www.psychonomic.org/futuremeetings",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Premier international meeting for experimental cognitive psychology. Keynote Gordon Logan."
+      "notes": "Premier international meeting for experimental cognitive psychology. Keynote Gordon Logan.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Premier experimental cognitive psychology society; program of peer-reviewed empirical papers and posters."
     },
     {
       "id": "psychonomic-2027",
@@ -1378,7 +1380,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1388,7 +1389,10 @@
       "verified_source_url": "https://www.psychonomic.org/futuremeetings",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Confirmed future meeting."
+      "notes": "Confirmed future meeting.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Premier experimental cognitive psychology society; program of peer-reviewed empirical papers and posters."
     },
     {
       "id": "srcd-2027",
@@ -1410,7 +1414,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-developmental"
       ],
@@ -1419,7 +1422,10 @@
       "verified_source_url": "https://www.srcd.org/event/srcd-2027-biennial-meeting",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Biennial meeting. Pre-conference April 7."
+      "notes": "Biennial meeting. Pre-conference April 7.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Leading developmental science society biennial; empirical research presentations dominate."
     },
     {
       "id": "siop-2027",
@@ -1441,7 +1447,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-io"
       ],
@@ -1450,7 +1455,10 @@
       "verified_source_url": "https://www.siop.org/events/the-annual-conference/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "In-person only. Proposal deadline passed."
+      "notes": "In-person only. Proposal deadline passed.",
+      "orientation": "balanced",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "I-O psychology society with strong research track and substantial applied/practice content."
     },
     {
       "id": "cns-2027",
@@ -1472,7 +1480,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science",
@@ -1483,7 +1490,10 @@
       "verified_source_url": "https://www.cogneurosociety.org/meeting-information/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Poster deadline November 3, 2026."
+      "notes": "Poster deadline November 3, 2026.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Cognitive neuroscience society annual meeting focused on empirical research."
     },
     {
       "id": "abct-2026",
@@ -1505,7 +1515,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-clinical",
         "psy-health"
@@ -1515,7 +1524,10 @@
       "verified_source_url": "https://www.abct.org/convention-ce/annual-conventions/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Integrating Compassion and Science."
+      "notes": "Theme: Integrating Compassion and Science.",
+      "orientation": "balanced",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Behavioral/cognitive therapies association; mix of empirical research and clinical practice sessions."
     },
     {
       "id": "epa-2027",
@@ -1537,7 +1549,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1546,7 +1557,10 @@
       "verified_source_url": "https://www.easternpsychological.org/i4a/pages/index.cfm?pageID=3502&activateFull=true",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Oldest US regional psychological association."
+      "notes": "Oldest US regional psychological association.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Regional psychological association annual meeting with empirical research focus."
     },
     {
       "id": "mpa-2027",
@@ -1568,7 +1582,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1577,7 +1590,10 @@
       "verified_source_url": "https://midwesternpsych.org/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Hosts affiliate meetings including Psi Chi."
+      "notes": "Hosts affiliate meetings including Psi Chi.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Regional psychological association annual meeting with empirical research focus."
     },
     {
       "id": "sepa-2027",
@@ -1599,7 +1615,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-general"
       ],
@@ -1608,7 +1623,10 @@
       "verified_source_url": "https://sepaonline.com/upcoming-events/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": ""
+      "notes": "",
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Regional psychological association annual meeting with empirical research focus."
     },
     {
       "id": "cogsci-2027",
@@ -1630,7 +1648,6 @@
         "country_code": "ES"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cognitive"
@@ -1640,7 +1657,10 @@
       "verified_source_url": "https://cognitivesciencesociety.org/cogsci-2027/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Human Cognition in the Age of AI."
+      "notes": "Theme: Human Cognition in the Age of AI.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Cognitive Science Society annual meeting; interdisciplinary empirical research."
     },
     {
       "id": "scsc-2027",
@@ -1662,7 +1682,6 @@
         "country_code": "DE"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cultural",
@@ -1673,7 +1692,10 @@
       "verified_source_url": "https://rptu.de/center-for-cognitive-science/events/scsc2027",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Keynotes include Michael Tomasello. Cognition-culture focus."
+      "notes": "Keynotes include Michael Tomasello. Cognition-culture focus.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Cognitive science of culture society; empirical and theoretical research presentations."
     },
     {
       "id": "ccn-2027",
@@ -1695,7 +1717,6 @@
         "country_code": "GB"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "cognitive-science",
         "psy-cognitive",
@@ -1706,7 +1727,10 @@
       "verified_source_url": "https://www.ccneuro.org/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Intersection of cognitive science, neuroscience, and AI."
+      "notes": "Intersection of cognitive science, neuroscience, and AI.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Cognitive computational neuroscience meeting; research-primary interdisciplinary program."
     },
     {
       "id": "escop-2027",
@@ -1728,7 +1752,6 @@
         "country_code": "RO"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cognitive",
         "cognitive-science"
@@ -1738,7 +1761,10 @@
       "verified_source_url": "https://www.escop.eu/news/news/escop-news/discover-transylvania-the-escop-2027-website-is-officially-live",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Biennial conference. Pre-conference satellites August 30-31."
+      "notes": "Biennial conference. Pre-conference satellites August 30-31.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "European cognitive psychology society biennial; empirical research focus."
     },
     {
       "id": "iacesr-2026",
@@ -1760,7 +1786,6 @@
         "country_code": "CZ"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cultural",
         "evolutionary",
@@ -1771,7 +1796,10 @@
       "verified_source_url": "https://iacesr.com/conferences/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Included per request even though past. Special IAHR Conference status. 2028 not yet announced."
+      "notes": "Included per request even though past. Special IAHR Conference status. 2028 not yet announced.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Cognitive and evolutionary sciences of religion biennial; empirical research presentations."
     },
     {
       "id": "sssr-2026",
@@ -1793,7 +1821,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cultural",
         "sociology"
@@ -1803,7 +1830,10 @@
       "verified_source_url": "https://sssreligion.org/annual-meeting/meeting-info/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Joint with Religious Research Association (RRA). Theme: Rethinking Religion for the 21st Century."
+      "notes": "Joint with Religious Research Association (RRA). Theme: Rethinking Religion for the 21st Century.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Scientific study of religion society annual meeting; empirical social science research."
     },
     {
       "id": "apa-div36-2027",
@@ -1825,7 +1855,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-health"
@@ -1835,7 +1864,10 @@
       "verified_source_url": "https://div36.org/mid-year-conference-2027",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST)."
+      "notes": "Theme: Project REED – Religion for Each & Every Division. Proposal deadline Nov 1, 2026 (EST).",
+      "orientation": "balanced",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "APA Division mid-year conference on psychology of religion/spirituality; mix of research and applied content."
     },
     {
       "id": "iapr-2027",
@@ -1857,7 +1889,6 @@
         "country_code": "BR"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-social"
@@ -1867,7 +1898,10 @@
       "verified_source_url": "https://www.iaprweb.org/conferences/",
       "date_confidence": "unconfirmed",
       "public_note": "",
-      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Brasília; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK."
+      "notes": "Biannual conference of the oldest international psychology-of-religion society. Location confirmed as Brasília; dates not yet announced (coming soon). Previous: August 2025 Birmingham, UK.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Oldest international psychology-of-religion society; empirical research conference."
     },
     {
       "id": "asrec-2027",
@@ -1889,7 +1923,6 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
       "fields": [
         "behavioral-economics",
         "psy-cultural",
@@ -1900,7 +1933,10 @@
       "verified_source_url": "https://www.asrec.org/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Celebrating 25 years. Full papers only (no abstracts). Keynote: Robert J. Barro. Includes graduate workshop March 4-6. Interdisciplinary social science focus on religion, economics, and culture."
+      "notes": "Celebrating 25 years. Full papers only (no abstracts). Keynote: Robert J. Barro. Includes graduate workshop March 4-6. Interdisciplinary social science focus on religion, economics, and culture.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Interdisciplinary society on religion, economics, and culture; full empirical papers."
     },
     {
       "id": "psprs-2026",
@@ -1922,7 +1958,6 @@
         "country_code": "PL"
       },
       "format": "hybrid",
-      "orientation": "",
       "fields": [
         "psy-cultural",
         "psy-health"
@@ -1932,7 +1967,10 @@
       "verified_source_url": "https://krakow2026.ptprid.org.pl/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?"
+      "notes": "Hybrid format. Primary language English (with Polish sessions). Keynotes: Doug Oman (UC Berkeley), Vassilis Saroglou (UCLouvain), Stefania Palmisano (University of Turin). Theme: Spirituality and/or Religiousness – A Remedy for Existential Emptiness and Health or a Modern Excess?",
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Polish society for psychology of religion and spirituality; hybrid conference with keynote empirical researchers."
     },
     {
       "id": "icis-2026",
