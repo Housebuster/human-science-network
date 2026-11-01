@@ -22,6 +22,7 @@ for (const l of listings) {
   if (!!l.start_date !== !!l.end_date) e("give both start_date and end_date, or neither");
   if (!formats.has(l.format)) e(`unknown format ${l.format}`);
   if (l.orientation && !orientations.has(l.orientation)) e(`unknown orientation ${l.orientation}`);
+  if (l.major !== undefined && typeof l.major !== "boolean") e(`major must be boolean`);
   if (!tax.organizer_types.includes(l.organizer_type)) e(`unknown organizer_type ${l.organizer_type}`);
   for (const f of l.fields || []) if (!fieldIds.has(f)) e(`unknown field ${f}`);
   if (!["upcoming", "past", "tbc"].includes(l.status)) e(`bad status ${l.status}`);

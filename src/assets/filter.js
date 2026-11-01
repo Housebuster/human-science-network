@@ -3,7 +3,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const q = $("q"), region = $("f-region"), dl = $("f-deadline"), sort = $("f-sort"),
-        showTbc = $("f-tbc"), showUp = $("f-upcoming"), showPast = $("f-past"),
+        showTbc = $("f-tbc"), showUp = $("f-upcoming"), showPast = $("f-past"), majorOnly = $("f-major"),
         list = $("upcoming-list"), tbc = $("tbc-list"), past = $("past-list"),
         nextBlock = $("next-block"), pastBlock = $("past-block");
   if (!list) return;
@@ -107,6 +107,7 @@
   if (showUp) showUp.checked = params.get("up") !== "0";
   // Home scope: Past and Future Events (TBA) off unless URL says so.
   if (showTbc) showTbc.checked = params.get("tbc") === "1";
+  if (majorOnly) majorOnly.checked = params.get("major") === "1";
   if (showPast) {
     if (params.has("past")) showPast.checked = params.get("past") === "1";
     else showPast.checked = false;
@@ -142,6 +143,7 @@
       if (vals.length && !m.match(d, vals)) return false;
     }
     if (region?.value && d.region !== region.value) return false;
+    if (majorOnly?.checked && d.major !== "1") return false;
     return true;
   };
 
@@ -259,6 +261,7 @@
     if (showUp && !showUp.checked) p.set("up", "0");
     if (showTbc && showTbc.checked) p.set("tbc", "1");
     if (showPast && showPast.checked) p.set("past", "1");
+    if (majorOnly && majorOnly.checked) p.set("major", "1");
     history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
   }
 
@@ -290,7 +293,7 @@
     closeOtherDrops(null);
   });
 
-  [q, region, dl, sort, showUp, showTbc, showPast].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
+  [q, region, dl, sort, showUp, showTbc, showPast, majorOnly].forEach((el) => el && ["input", "change"].forEach((t) => el.addEventListener(t, apply)));
   const resetAll = () => {
     if (q) q.value = "";
     for (const facet of multis) {
@@ -304,6 +307,7 @@
     if (showUp) showUp.checked = true;
     if (showTbc) showTbc.checked = false;
     if (showPast) showPast.checked = false;
+    if (majorOnly) majorOnly.checked = false;
     apply();
     q?.focus();
   };

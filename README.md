@@ -126,6 +126,7 @@ Edit `src/_data/listings.json` (an array under `"listings"`), then run `npm run 
 | `location` | yes | `{ "venue": "", "city": "", "country": "", "country_code": "US" }`. The ISO country code drives the Region filter (mapping in `taxonomy.json`). |
 | `format` | yes | `in-person`, `hybrid` or `online`. |
 | `orientation` | | Conference orientation: `research-oriented`, `balanced`, or `practice-oriented`. Empty string if not yet tagged. Meeting orientation (not “I am a researcher”); Balanced means substantial research + practice. |
+| `major` | | Optional boolean (default false/absent). `true` = flagship meeting of a large international or national society; drives the home **Major conferences only** checkbox (`?major=1`). |
 | `fields` | yes | One or more field ids from `taxonomy.json`. There is no default; choose deliberately. |
 | `status` | yes | `upcoming`, `past` or `tbc`. **The site recomputes this from the dates.** The validator warns if the stored value is out of date, so update it when you see the warning. |
 | `last_verified` | yes | Date you last checked the official source. Warns after 6 months. |

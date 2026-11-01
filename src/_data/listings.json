@@ -67,6 +67,7 @@
     },
     {
       "id": "aps-2027",
+      "major": true,
       "name": "Association for Psychological Science Annual Convention 2027",
       "short_name": "APS",
       "organizer": "Association for Psychological Science",
@@ -98,6 +99,7 @@
     },
     {
       "id": "cpa-2027",
+      "major": true,
       "name": "Canadian Psychological Association Annual Convention 2027",
       "short_name": "CPA",
       "organizer": "Canadian Psychological Association",
@@ -285,6 +287,7 @@
     },
     {
       "id": "easp-gm-2026",
+      "major": true,
       "name": "European Association of Social Psychology General Meeting 2026",
       "short_name": "EASP",
       "organizer": "European Association of Social Psychology",
@@ -379,6 +382,7 @@
     },
     {
       "id": "icap-2026",
+      "major": true,
       "name": "31st International Congress of Applied Psychology (ICAP 2026)",
       "short_name": "ICAP",
       "organizer": "International Association of Applied Psychology",
@@ -442,6 +446,7 @@
     },
     {
       "id": "spsp-2027",
+      "major": true,
       "name": "Society for Personality and Social Psychology Annual Convention 2027",
       "short_name": "SPSP",
       "organizer": "Society for Personality and Social Psychology",
@@ -474,6 +479,7 @@
     },
     {
       "id": "apa-2027",
+      "major": true,
       "name": "American Psychological Association Convention 2027",
       "short_name": "APA",
       "organizer": "American Psychological Association",
@@ -1328,6 +1334,7 @@
     },
     {
       "id": "psychonomic-2026",
+      "major": true,
       "name": "Psychonomic Society 67th Annual Meeting 2026",
       "short_name": "Psychonomic",
       "organizer": "Psychonomic Society",
@@ -1362,6 +1369,7 @@
     },
     {
       "id": "psychonomic-2027",
+      "major": true,
       "name": "Psychonomic Society 68th Annual Meeting 2027",
       "short_name": "Psychonomic",
       "organizer": "Psychonomic Society",
@@ -1396,6 +1404,7 @@
     },
     {
       "id": "srcd-2027",
+      "major": true,
       "name": "Society for Research in Child Development 2027 Biennial Meeting",
       "short_name": "SRCD",
       "organizer": "Society for Research in Child Development",
@@ -1429,6 +1438,7 @@
     },
     {
       "id": "siop-2027",
+      "major": true,
       "name": "Society for Industrial and Organizational Psychology 2027 Annual Conference",
       "short_name": "SIOP",
       "organizer": "Society for Industrial and Organizational Psychology",
@@ -1462,6 +1472,7 @@
     },
     {
       "id": "cns-2027",
+      "major": true,
       "name": "Cognitive Neuroscience Society 2027 Annual Meeting",
       "short_name": "CNS",
       "organizer": "Cognitive Neuroscience Society",
@@ -1497,6 +1508,7 @@
     },
     {
       "id": "abct-2026",
+      "major": true,
       "name": "Association for Behavioral and Cognitive Therapies 60th Annual Convention 2026",
       "short_name": "ABCT",
       "organizer": "Association for Behavioral and Cognitive Therapies",
@@ -1630,6 +1642,7 @@
     },
     {
       "id": "cogsci-2027",
+      "major": true,
       "name": "Cognitive Science Society Annual Meeting 2027 (CogSci 2027)",
       "short_name": "CogSci",
       "organizer": "Cognitive Science Society",
@@ -1734,6 +1747,7 @@
     },
     {
       "id": "escop-2027",
+      "major": true,
       "name": "European Society for Cognitive Psychology 25th Conference 2027",
       "short_name": "ESCoP",
       "organizer": "European Society for Cognitive Psychology",
@@ -2005,6 +2019,7 @@
     },
     {
       "id": "issbd-2026",
+      "major": true,
       "name": "International Society for the Study of Behavioural Development 28th Biennial Meeting 2026",
       "short_name": "ISSBD",
       "organizer": "International Society for the Study of Behavioural Development",
@@ -2099,6 +2114,7 @@
     },
     {
       "id": "sra-2026",
+      "major": true,
       "name": "Society for Research on Adolescence 2026 Biennial Meeting",
       "short_name": "SRA",
       "organizer": "Society for Research on Adolescence",

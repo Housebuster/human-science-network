@@ -152,6 +152,12 @@ collections:
                   - { label: "In person", value: "in-person" }
                   - { label: "Hybrid", value: "hybrid" }
                   - { label: "Online", value: "online" }
+              - label: Major conference
+                name: major
+                widget: boolean
+                required: false
+                default: false
+                hint: "Flagship meeting of a large international or national society"
               - label: Focus
                 name: orientation
                 widget: select
