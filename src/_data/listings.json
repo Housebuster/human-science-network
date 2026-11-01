@@ -249,11 +249,11 @@
       "fields": [
         "psy-social"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-11-01",
       "verified_source_url": "https://www.sesp.org/annualconference",
       "date_confidence": "verified",
-      "public_note": "",
+      "public_note": "2027 edition not yet announced.",
       "notes": "Program committee chaired by Lara Aknin. Preconferences include Person Memory Interest Group. Next meeting 2027 in Minneapolis.",
       "orientation_confidence": "high",
       "orientation_evidence": "Scientific society dedicated to experimental social psychology; annual meeting of research presentations open primarily to faculty, postdocs, and sponsored graduate students."
@@ -740,7 +740,7 @@
       "organizer": "Society for Affective Science",
       "organizer_type": "society",
       "url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
-      "cfp_url": "",
+      "cfp_url": "https://society-for-affective-science.org/abstracts/",
       "start_date": "2027-03-04",
       "end_date": "2027-03-06",
       "deadline_early": "",
@@ -761,7 +761,7 @@
       "last_verified": "2026-11-01",
       "verified_source_url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
       "date_confidence": "verified",
-      "public_note": "",
+      "public_note": "Pre-conferences on 4 March.",
       "notes": "Abstract deadline November 2, 2026. Program chairs Vera Vine and Luis Flores. Pre-conferences include clinical affective science and computational affective linguistics.",
       "orientation_confidence": "high",
       "orientation_evidence": "Dedicated affective science society; annual conference of empirical research presentations, posters, symposia, and methods workshops across psychology, neuroscience, and related fields."
@@ -1982,7 +1982,7 @@
         "psy-cultural",
         "psy-health"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-10-25",
       "verified_source_url": "https://krakow2026.ptprid.org.pl/",
       "date_confidence": "verified",
@@ -2015,7 +2015,7 @@
       "fields": [
         "psy-developmental"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-10-25",
       "verified_source_url": "https://infantstudies.org/2026-panama-city/",
       "date_confidence": "verified",
@@ -2047,7 +2047,7 @@
       "fields": [
         "psy-developmental"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-10-25",
       "verified_source_url": "https://2026biennial.issbd.org/",
       "date_confidence": "verified",
@@ -2110,7 +2110,7 @@
       "fields": [
         "psy-developmental"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-10-25",
       "verified_source_url": "https://www.bps.org.uk/event/developmental-section-annual-conference-2026",
       "date_confidence": "verified",
@@ -2142,7 +2142,7 @@
       "fields": [
         "psy-developmental"
       ],
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-10-25",
       "verified_source_url": "https://www.s-r-a.org/biennial-conference",
       "date_confidence": "verified",
@@ -2208,7 +2208,7 @@
       "orientation": "research-oriented",
       "orientation_confidence": "high",
       "orientation_evidence": "EAPP biennial conference consisting of symposia, paper presentations, poster sessions, and invited lectures on personality psychology research.",
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-11-01",
       "verified_source_url": "https://eapp.org/meetings/conferences/",
       "date_confidence": "verified",
@@ -2241,7 +2241,7 @@
       "orientation": "research-oriented",
       "orientation_confidence": "high",
       "orientation_evidence": "Biennial interdisciplinary conference of the International Society for Research on Emotion; program of papers, symposia, and posters on emotion research across psychology, neuroscience, and related fields.",
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-11-01",
       "verified_source_url": "https://www.isre2026.org/",
       "date_confidence": "verified",
@@ -2274,7 +2274,7 @@
       "orientation": "research-oriented",
       "orientation_confidence": "medium",
       "orientation_evidence": "Annual national social psychology conference with call for empirical papers, parallel research sessions (English and Finnish tracks), and keynotes by international researchers. University-hosted but with clear research focus.",
-      "status": "upcoming",
+      "status": "past",
       "last_verified": "2026-11-01",
       "verified_source_url": "https://events.tuni.fi/sopsy2026/",
       "date_confidence": "verified",
