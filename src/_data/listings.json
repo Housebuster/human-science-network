@@ -871,7 +871,7 @@
       "start_date": "2027-03-31",
       "end_date": "2027-04-04",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-12-11",
       "deadline_late": "",
       "location": {
         "venue": "",
@@ -880,20 +880,16 @@
         "country_code": "JP"
       },
       "format": "hybrid",
-      "orientation": "",
+      "orientation": "balanced",
       "fields": [
         "psy-general"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
+      "last_verified": "2026-11-01",
       "verified_source_url": "https://acp.iafor.org/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Kept pending editorial review.",
-      "review": {
-        "needs_review": true,
-        "reason": "IAFOR runs many generic multi-discipline conferences; not a disciplinary society. Claims double-blind review; not clearly predatory. Apply vetting criteria section A/B before next publish."
-      }
+      "notes": "Kept pending editorial review."
     },
     {
       "id": "hbes-2027",
