@@ -193,11 +193,11 @@
     },
     {
       "id": "aasp-2027",
-      "name": "Asian Association of Social Psychology Biennial Conference 2027",
+      "name": "Asian Association of Social Psychology 2027 Biennial Conference",
       "short_name": "AASP",
       "organizer": "Asian Association of Social Psychology",
       "organizer_type": "society",
-      "url": "https://www.asiansocialpsych.org/aasp-2027-conference-news/",
+      "url": "https://conference.asiansocialpsych.org/",
       "cfp_url": "",
       "start_date": "2027-08-06",
       "end_date": "2027-08-08",
@@ -205,27 +205,29 @@
       "abstract_deadline": "",
       "deadline_late": "",
       "location": {
-        "venue": "Hosted by James Cook University",
+        "venue": "James Cook University Cairns Campus",
         "city": "Cairns",
         "country": "Australia",
         "country_code": "AU"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-social",
         "psy-cultural"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
-      "verified_source_url": "https://www.asiansocialpsych.org/aasp-2027-conference-news/",
+      "last_verified": "2026-11-01",
+      "verified_source_url": "https://www.asiansocialpsych.org/conferences",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": ""
+      "notes": "Theme: Advancing Social Psychology in a Transforming World: Culture, Innovation, Well-being. Keynotes include Pat Dudgeon, Ying-yi Hong, Nick Haslam. Summer School and post-conference immersion also offered.",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Biennial conference of the Asian Association of Social Psychology; empirical social and cultural psychology presentations, symposia, and papers. Hosted by James Cook University."
     },
     {
       "id": "sesp-2026",
-      "name": "Society of Experimental Social Psychology Annual Conference 2026",
+      "name": "Society of Experimental Social Psychology 2026 Annual Conference",
       "short_name": "SESP",
       "organizer": "Society of Experimental Social Psychology",
       "organizer_type": "society",
@@ -234,25 +236,27 @@
       "start_date": "2026-10-01",
       "end_date": "2026-10-03",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-05-23",
       "deadline_late": "",
       "location": {
-        "venue": "Le Westin Montréal",
-        "city": "Montréal",
+        "venue": "Le Westin Montreal",
+        "city": "Montreal",
         "country": "Canada",
         "country_code": "CA"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-social"
       ],
-      "status": "past",
-      "last_verified": "2026-10-11",
+      "status": "upcoming",
+      "last_verified": "2026-11-01",
       "verified_source_url": "https://www.sesp.org/annualconference",
       "date_confidence": "verified",
-      "public_note": "2027 edition not yet announced.",
-      "notes": ""
+      "public_note": "",
+      "notes": "Program committee chaired by Lara Aknin. Preconferences include Person Memory Interest Group. Next meeting 2027 in Minneapolis.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Scientific society dedicated to experimental social psychology; annual meeting of research presentations open primarily to faculty, postdocs, and sponsored graduate students."
     },
     {
       "id": "eawop-2027",
@@ -731,16 +735,16 @@
     },
     {
       "id": "sas-2027",
-      "name": "Society for Affective Science Annual Conference 2027",
+      "name": "Society for Affective Science 2027 Annual Conference",
       "short_name": "SAS",
       "organizer": "Society for Affective Science",
       "organizer_type": "society",
       "url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
-      "cfp_url": "https://society-for-affective-science.org/abstracts/",
+      "cfp_url": "",
       "start_date": "2027-03-04",
       "end_date": "2027-03-06",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-11-02",
       "deadline_late": "",
       "location": {
         "venue": "",
@@ -749,16 +753,18 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-affective"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
+      "last_verified": "2026-11-01",
       "verified_source_url": "https://society-for-affective-science.org/2027-sas-annual-conference/",
       "date_confidence": "verified",
-      "public_note": "Pre-conferences on 4 March.",
-      "notes": "Was mislabeled Clinical. Abstract deadline not captured."
+      "public_note": "",
+      "notes": "Abstract deadline November 2, 2026. Program chairs Vera Vine and Luis Flores. Pre-conferences include clinical affective science and computational affective linguistics.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Dedicated affective science society; annual conference of empirical research presentations, posters, symposia, and methods workshops across psychology, neuroscience, and related fields."
     },
     {
       "id": "arp-2027",
@@ -2175,6 +2181,105 @@
       "public_note": "",
       "notes": "Legitimate society (founded ~1978; publishes International Journal of Developmental Neuroscience via Wiley). Theme: Brain development and disorders: Mechanisms and Interventions. Poster deadline Sept 30 2026. Program includes international speakers from Harvard, UCSD, McGill, etc.",
       "orientation": ""
+    },
+    {
+      "id": "ecp22-2026",
+      "name": "22nd European Conference on Personality (ECP22) 2026",
+      "short_name": "ECP",
+      "organizer": "European Association of Personality Psychology",
+      "organizer_type": "society",
+      "url": "https://www.ecp22edinburgh.org/",
+      "cfp_url": "",
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-24",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "",
+        "city": "Edinburgh",
+        "country": "United Kingdom",
+        "country_code": "GB"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-personality"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "EAPP biennial conference consisting of symposia, paper presentations, poster sessions, and invited lectures on personality psychology research.",
+      "status": "upcoming",
+      "last_verified": "2026-11-01",
+      "verified_source_url": "https://eapp.org/meetings/conferences/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Organizer René Mõttus (University of Edinburgh). Next conference ECP23 2028 in Utrecht, Netherlands. Summer School of Personality Science precedes the conference."
+    },
+    {
+      "id": "isre-2026",
+      "name": "International Society for Research on Emotion 2026 Conference",
+      "short_name": "ISRE",
+      "organizer": "International Society for Research on Emotion",
+      "organizer_type": "society",
+      "url": "https://www.isre2026.org/",
+      "cfp_url": "",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-14",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Brisbane Convention and Exhibition Centre",
+        "city": "Brisbane",
+        "country": "Australia",
+        "country_code": "AU"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-affective"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Biennial interdisciplinary conference of the International Society for Research on Emotion; program of papers, symposia, and posters on emotion research across psychology, neuroscience, and related fields.",
+      "status": "upcoming",
+      "last_verified": "2026-11-01",
+      "verified_source_url": "https://www.isre2026.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Keynotes include Christian von Scheve, Kate Rossmanith, and Ronnie de Sousa. Pre-conferences on July 11. Co-sponsored by University of Queensland, Melbourne, and Adelaide."
+    },
+    {
+      "id": "finnish-social-psych-2026",
+      "name": "Annual Finnish Social Psychology Conference 2026",
+      "short_name": "Finnish Social Psych",
+      "organizer": "Tampere University",
+      "organizer_type": "university",
+      "url": "https://events.tuni.fi/sopsy2026/",
+      "cfp_url": "https://events.tuni.fi/sopsy2026/call-for-papers/",
+      "start_date": "2026-05-07",
+      "end_date": "2026-05-08",
+      "deadline_early": "",
+      "abstract_deadline": "2026-02-15",
+      "deadline_late": "",
+      "location": {
+        "venue": "Linna building, Kalevantie 5",
+        "city": "Tampere",
+        "country": "Finland",
+        "country_code": "FI"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-social"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Annual national social psychology conference with call for empirical papers, parallel research sessions (English and Finnish tracks), and keynotes by international researchers. University-hosted but with clear research focus.",
+      "status": "upcoming",
+      "last_verified": "2026-11-01",
+      "verified_source_url": "https://events.tuni.fi/sopsy2026/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Primarily English with some Finnish sessions. Keynotes: Marylène Gagné, Saul Albert, Fortuna Procentese. Pre-conference PhD workshop May 6. University host is acceptable under updated criteria; Tampere is a respected institution. Included after criteria clarification on national/university conferences with English content."
     }
   ]
 }
