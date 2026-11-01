@@ -27,13 +27,18 @@
     const show = (msgText, err) => { status.hidden = false; status.textContent = msgText; status.classList.toggle("error", !!err); status.focus?.(); };
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const group = form.dataset.requiredGroup;
-      if (group) {
+      let bad = false;
+      for (const group of (form.dataset.requiredGroup || "").split(/\s+/).filter(Boolean)) {
         const fs = form.querySelector(`input[name="${group}"]`)?.closest("fieldset");
         const any = form.querySelector(`input[name="${group}"]:checked`);
         fs?.classList.toggle("invalid", !any);
-        if (!any) { show("Please choose at least one field.", true); fs?.scrollIntoView({ block: "center" }); return; }
+        if (!any && !bad) {
+          bad = true;
+          const what = fs?.querySelector("legend")?.textContent.replace("*", "").trim().toLowerCase() || "option";
+          show(`Please choose at least one option under ${what}.`, true); fs?.scrollIntoView({ block: "center" });
+        }
       }
+      if (bad) return;
       const s = form.querySelector('[name="start_date"]'), en = form.querySelector('[name="end_date"]');
       if (s && en && s.value && en.value && en.value < s.value) { show("The end date is before the start date.", true); en.focus(); return; }
       if (form.querySelector('[name="_gotcha"]')?.value) return;

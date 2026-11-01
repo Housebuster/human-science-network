@@ -1,23 +1,24 @@
 {% from "fieldpicker.njk" import fieldpicker %}
-<form class="form js-form" method="post" action="{{ site.forms.submit }}" data-required-group="fields">
+<form class="form js-form" method="post" action="{{ site.forms.submit }}" data-required-group="fields organizer_type">
   <input type="hidden" name="_subject" value="New event submission">
   <h2 class="form-section">The event</h2>
   <div class="row"><label for="s-name">Conference or workshop name <span class="req">*</span></label><input id="s-name" name="conference_name" required></div>
-  <div class="row"><label for="s-url">Event website <span class="req">*</span></label><input id="s-url" name="conference_url" type="url" required placeholder="https://"></div>
-  <div class="row"><label for="s-desc">Short description <span class="req">*</span></label><textarea id="s-desc" name="description" rows="4" required maxlength="1200"></textarea><p class="help">Up to about 150 words: scope, audience, and what makes it a scholarly meeting.</p></div>
+  <div class="row"><label for="s-url">Event website</label><input id="s-url" name="conference_url" type="url" placeholder="https://"><p class="help">Leave blank if the event page isn't up yet; the organizer website is enough for us to verify it.</p></div>
+  <div class="row"><label for="s-desc">Short description</label><textarea id="s-desc" name="description" rows="3" maxlength="1200"></textarea><p class="help">For our review only, not shown on the site. A sentence or two on the scope and who it's for.</p></div>
+  <div class="row-2">
+    <div class="row"><label for="s-city">City</label><input id="s-city" name="city"></div>
+    <div class="row"><label for="s-country">Country</label><input id="s-country" name="country"></div>
+  </div>
   {{ fieldpicker("fields", "Fields", true) }}
   <div class="row-2">
     <div class="row"><label for="s-start">Start date <span class="req">*</span></label><input id="s-start" name="start_date" type="date" required></div>
     <div class="row"><label for="s-end">End date <span class="req">*</span></label><input id="s-end" name="end_date" type="date" required></div>
   </div>
   <div class="row-2">
-    <div class="row"><label for="s-dl">Abstract or submission deadline</label><input id="s-dl" name="abstract_deadline" type="date"></div>
-    <div class="row"><label for="s-cfp">Call for papers URL</label><input id="s-cfp" name="cfp_url" type="url" placeholder="https://"></div>
+    <div class="row"><label for="s-dl">Main submission deadline</label><input id="s-dl" name="abstract_deadline" type="date"></div>
+    <div class="row"><label for="s-odl">Other deadlines</label><input id="s-odl" name="other_deadlines" placeholder="e.g. symposia 1 Mar 2027; posters 15 Apr 2027"></div>
   </div>
-  <div class="row-2">
-    <div class="row"><label for="s-city">City</label><input id="s-city" name="city"></div>
-    <div class="row"><label for="s-country">Country</label><input id="s-country" name="country"></div>
-  </div>
+  <div class="row"><label for="s-cfp">Call for papers URL</label><input id="s-cfp" name="cfp_url" type="url" placeholder="https://"></div>
   <fieldset class="row radios"><legend>Format <span class="req">*</span></legend>
     {% for f in taxonomy.formats %}<label><input type="radio" name="format" value="{{ f.id }}" required> {{ f.label }}</label>{% endfor %}
   </fieldset>
@@ -25,17 +26,13 @@
   <h2 class="form-section">The organizer</h2>
   <div class="row"><label for="s-org">Organizing body <span class="req">*</span></label><input id="s-org" name="organizer" required><p class="help">For example, the society, university department or research network that owns the event.</p></div>
   <div class="row"><label for="s-orgurl">Organizer website <span class="req">*</span></label><input id="s-orgurl" name="organizer_url" type="url" required placeholder="https://"></div>
-  <div class="row"><label for="s-otype">Organizer type <span class="req">*</span></label>
-    <select id="s-otype" name="organizer_type" required>
-      <option value="">Select…</option>
-      <option value="society">Scholarly society / professional association</option>
-      <option value="university">University or research institute</option>
-      <option value="research-network">Research network or consortium</option>
-      <option value="government">Public research body / funder</option>
-      <option value="other">Other (please explain in description)</option>
-    </select>
-  </div>
-  <div class="row"><label for="s-review">How are submissions reviewed?</label><textarea id="s-review" name="review_process" rows="2" placeholder="For example, double-blind review of abstracts by the programme committee"></textarea></div>
+  <fieldset class="row radios checks"><legend>Organizer type(s) <span class="req">*</span></legend>
+    <label><input type="checkbox" name="organizer_type" value="society"> Scholarly society / professional association</label>
+    <label><input type="checkbox" name="organizer_type" value="university"> University or research institute</label>
+    <label><input type="checkbox" name="organizer_type" value="research-network"> Research network or consortium</label>
+    <label><input type="checkbox" name="organizer_type" value="government"> Public research body / funder</label>
+    <label><input type="checkbox" name="organizer_type" value="other"> Other (please explain in description)</label>
+  </fieldset>
   <div class="row"><label for="s-fees">Registration fees page</label><input id="s-fees" name="fees_url" type="url" placeholder="https://"></div>
 
   <h2 class="form-section">Your details</h2>
