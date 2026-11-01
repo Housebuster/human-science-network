@@ -250,3 +250,4 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media print { .site-header nav, .filters, .cta-row, .site-footer { display: none; } }
+@media (max-width: 640px) { .deadlines-strip { display: none !important; } }
