@@ -5,11 +5,11 @@ eleventyComputed:
 ---
 {% from "card.njk" import card %}
 <section class="hero hero-map">
-  <svg class="hero-net" viewBox="0 0 {{ heroMap.W }} {{ heroMap.H }}" preserveAspectRatio="xMaxYMid slice" role="group" aria-label="Map of upcoming conferences with open calls" focusable="false">
+  <svg class="hero-net" viewBox="0 0 {{ heroMap.W }} {{ heroMap.H }}" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Map of upcoming conferences with open calls" focusable="false">
     <defs><filter id="hn-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.6"/></filter></defs>
     <g class="hn-pan" data-wm="{{ heroMap.WM }}" data-stops="{% for s in heroMap.stops %}{{ s.p }}{% if not loop.last %},{% endif %}{% endfor %}" style="transform: translateX(-{{ heroMap.stops[0].p }}px)">
-    {% for c in heroMap.copies %}<g transform="translate({{ c * heroMap.WM }} 0)"{% if c > 0 %} aria-hidden="true"{% endif %}>
-    <image href="/assets/hero-map.svg?v=4" x="0" y="0" width="{{ heroMap.WM }}" height="{{ heroMap.H }}"/>
+    {% for c in heroMap.copies %}<g transform="translate({{ c * heroMap.WM }} 0)"{% if c != 0 %} aria-hidden="true"{% endif %}>
+    <image href="/assets/hero-map.svg?v=5" x="0" y="0" width="{{ heroMap.WM }}" height="{{ heroMap.H }}"/>
     <g class="hn-arcs">{% for a in heroMap.arcs %}<path d="{{ a }}"/>{% endfor %}</g>
     {% for n in heroMap.nodes %}<a href="/events/{{ n.id }}/" tabindex="-1" class="hn-node{% if n.orange %} hn-soon{% endif %}"><title>{{ n.label }} · {{ n.place }}</title>{% if n.orange %}<circle class="hn-ring" cx="{{ n.x }}" cy="{{ n.y }}" r="8"/>{% endif %}<circle class="hn-halo" cx="{{ n.x }}" cy="{{ n.y }}" r="3.4" filter="url(#hn-glow)"/><circle class="hn-dot" cx="{{ n.x }}" cy="{{ n.y }}" r="3"/><circle class="hn-hit" cx="{{ n.x }}" cy="{{ n.y }}" r="10"/></a>{% endfor %}
     </g>{% endfor %}
@@ -169,4 +169,4 @@ eleventyComputed:
   </div>
 </section>
 <script src="/assets/filter.js?v=17" defer></script>
-<script src="/assets/hero-pan.js?v=3" defer></script>
+<script src="/assets/hero-pan.js?v=4" defer></script>

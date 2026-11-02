@@ -256,11 +256,13 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .hero-map { position: relative; overflow: hidden; color: #f4f1ea; border-bottom-color: #0b1c29;
   background: #12283a; }
 .hero-map::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
-  background: linear-gradient(90deg, #12283a 0, #12283a 26%, rgba(18,40,58,.8) 40%, rgba(18,40,58,.3) 52%, rgba(18,40,58,0) 64%),
-    radial-gradient(ellipse at 82% 45%, rgba(15,107,98,.45), transparent 62%); }
+  /* Fades anchored to the page centre (text column), so they track the title at any width; right fade hides repeated map copies on very wide screens. */
+  background: linear-gradient(90deg, #12283a 0, #12283a calc(50% - 346px), rgba(18,40,58,.8) calc(50% - 144px), rgba(18,40,58,.3) calc(50% + 29px), rgba(18,40,58,0) calc(50% + 202px)),
+    linear-gradient(90deg, rgba(18,40,58,0) calc(50% + 720px), #12283a calc(50% + 960px)),
+    radial-gradient(ellipse at calc(50% + 460px) 45%, rgba(15,107,98,.45), transparent 900px); }
 .hero-map .wrap { position: relative; z-index: 2; pointer-events: none; }
 .hero-map .wrap > * { pointer-events: auto; }
-.hero-net { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+.hero-net { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; overflow: visible; }
 .hn-arcs path { fill: none; stroke: #7fd6c8; stroke-width: 1.1; stroke-opacity: .5; }
 .hn-halo { fill: #a8f0e3; } .hn-dot { fill: #e8fffb; } .hn-hit { fill: transparent; }
 .hn-soon .hn-halo { fill: #f0a35a; } .hn-soon .hn-dot { fill: #ffc58a; } .hn-ring { fill: none; stroke: #f0a35a; stroke-opacity: .6; }

@@ -8,14 +8,16 @@ const proj = JSON.parse(fs.readFileSync(new URL("./heroMapProj.json", import.met
 const W = 1440, H = 470, WM = proj.wm;
 const A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796, M = Math.sqrt(3) / 2;
 // Northern-emphasis warped Equal Earth (base: Savric, Patterson & Jenny 2018). Same as raw() in hsn-design/network/genne.py.
-// Longitude: open Pacific (|lon-lon0| > lonP) smoothly compressed; latitude: south of latS smoothly compressed. Both C1-continuous.
+// Longitude: mid-Atlantic gently squeezed (tanh, lonA/aA/sA); open Pacific (|lon-lon0| > lonP) smoothly compressed; latitude: south of latS smoothly compressed. Both C1-continuous.
 const soft = (u, c, w) => c * u + (1 - c) * w * (1 - Math.exp(-u / w));
 const eeY = (t) => A4 * t ** 9 + A3 * t ** 7 + A2 * t ** 3 + A1 * t;
 const yS = eeY(Math.asin(M * Math.sin(proj.latS * Math.PI / 180)));
 const ee = (lon, lat) => {
   const d = (((lon - proj.lon0 + 180) % 360) + 360) % 360 - 180;
   let a = Math.abs(d); if (a > proj.lonP) a = proj.lonP + soft(a - proj.lonP, proj.cP, proj.wP);
-  const l = Math.sign(d) * a * Math.PI / 180, t = Math.asin(M * Math.sin(lat * Math.PI / 180));
+  let dd = Math.sign(d) * a;
+  dd -= proj.aA * proj.sA * Math.tanh((dd - (proj.lonA - proj.lon0)) / proj.sA); // gentle mid-Atlantic squeeze
+  const l = dd * Math.PI / 180, t = Math.asin(M * Math.sin(lat * Math.PI / 180));
   const x = (2 * Math.sqrt(3) * l * Math.cos(t)) / (3 * (9 * A4 * t ** 8 + 7 * A3 * t ** 6 + 3 * A2 * t ** 2 + A1));
   let y = eeY(t); if (y < yS) y = yS - soft(yS - y, proj.cS, proj.wS);
   return [proj.xE + x * proj.k, proj.y0 + (proj.yTop - y) * proj.k];
@@ -28,7 +30,8 @@ const wdist = (a, b) => Math.hypot(wdx(a, b), b[1] - a[1]);
 const FOCUS_X = 1120;
 const REGIONS = [["americas", -100], ["europe", 15], ["asia", 100]];
 const stops = REGIONS.map(([id, lon]) => ({ id, p: Math.round((((ee(lon, 35)[0] - FOCUS_X) % WM) + WM) % WM * 10) / 10 }));
-const copies = [...Array(Math.ceil(W / WM) + 1).keys()];
+// Copies cover any viewport: the SVG uses 'meet' + overflow visible, so wide screens show strip beyond the viewBox.
+const copies = [-2, -1, 0, 1, 2];
 const MAX_NODES = 30, MIN_DIST = 18, MAX_ORANGE = 6;
 const ORIENT = { "research-oriented": 3, balanced: 2, "practice-oriented": 1 };
 const continent = (l) => (["north-america", "latin-america"].includes(l.region) ? "americas" : l.region || "other");
