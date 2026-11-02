@@ -254,7 +254,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 
 /* Hero network map (dark navy, data-driven nodes from src/_data/heroMap.js) */
 .hero-map { position: relative; overflow: hidden; color: #f4f1ea; border-bottom-color: #0b1c29;
-  background: #12283a url(/assets/hero-map.svg) no-repeat right center / cover; }
+  background: #12283a; }
 .hero-map::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
   background: linear-gradient(90deg, #12283a 0, #12283a 26%, rgba(18,40,58,.8) 40%, rgba(18,40,58,.3) 52%, rgba(18,40,58,0) 64%),
     radial-gradient(ellipse at 82% 45%, rgba(15,107,98,.45), transparent 62%); }
@@ -266,8 +266,12 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .hn-node:hover .hn-dot { fill: #fff; } .hn-node:hover .hn-halo { r: 6; }
 .hero-map h1 { color: #fbfaf7; } .hero-map .eyebrow { color: #7fd6c8; } .hero-map .lede { color: #d9e1e6; }
 .hero-map .hero-stats span { color: #a9b7c2; } .hero-map a { color: #9be3d6; }
+/* One-time slow drift: starts shifted right (reveals North America from under the title fade), eases to rest. */
+@keyframes hn-drift { from { transform: translateX(240px); } to { transform: none; } }
+@media (min-width: 641px) and (prefers-reduced-motion: no-preference) {
+  .hn-pan { animation: hn-drift 8s cubic-bezier(.22,.61,.36,1) both; will-change: transform; }
+}
 @media (max-width: 640px) {
-  .hero-map { background-image: none; }
   .hero-net { display: none; }
   .hero-map::after { background: radial-gradient(ellipse at 90% 10%, rgba(15,107,98,.4), transparent 60%); }
 }
