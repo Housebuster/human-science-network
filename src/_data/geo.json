@@ -1,16 +1,231 @@
 {
   "_doc": "City -> [lat, lon] for the homepage hero map. Key: 'City|CC'. scripts/validate.js warns if a listing city is missing.",
-  "Atlanta|US": [33.75, -84.39], "Cancún|MX": [21.16, -86.85], "Seattle|US": [47.61, -122.33], "Victoria|CA": [48.43, -123.37],
-  "Liverpool|GB": [53.41, -2.98], "Lyon|FR": [45.76, 4.84], "Cairns|AU": [-16.92, 145.77], "Montreal|CA": [45.50, -73.57],
-  "Strasbourg|FR": [48.57, 7.75], "Tucson|US": [32.22, -110.97], "Leuven|BE": [50.88, 4.70], "Florence|IT": [43.77, 11.26],
-  "Amsterdam|NL": [52.37, 4.90], "Philadelphia|US": [39.95, -75.17], "San Francisco|US": [37.77, -122.42], "San Diego|US": [32.72, -117.16],
-  "Melbourne|AU": [-37.81, 144.96], "Winchester|GB": [51.06, -1.31], "Castellón de la Plana|ES": [39.99, -0.05], "Düsseldorf|DE": [51.23, 6.77],
-  "Cologne|DE": [50.94, 6.96], "New York|US": [40.71, -74.01], "Tokyo|JP": [35.68, 139.69], "Rabat|MA": [34.02, -6.84],
-  "Manchester|GB": [53.48, -2.24], "London|GB": [51.51, -0.13], "New Orleans|US": [29.95, -90.07], "National Harbor|US": [38.78, -77.02],
-  "Boston|US": [42.36, -71.06], "Baltimore|US": [39.29, -76.61], "Chicago|US": [41.88, -87.63], "Greenville|US": [34.85, -82.40],
-  "Bilbao|ES": [43.26, -2.93], "Kaiserslautern|DE": [49.44, 7.77], "Edinburgh|GB": [55.95, -3.19], "Cluj-Napoca|RO": [46.77, 23.60],
-  "Brno|CZ": [49.20, 16.61], "Denver|US": [39.74, -104.99], "Salt Lake City|US": [40.76, -111.89], "Brasília|BR": [-15.79, -47.88],
-  "Arlington|US": [38.88, -77.10], "Kraków|PL": [50.06, 19.94], "Panama City|PA": [8.98, -79.52], "Incheon|KR": [37.46, 126.71],
-  "Durham|GB": [54.78, -1.57], "Toronto|CA": [43.65, -79.38], "Bengaluru|IN": [12.97, 77.59], "Brisbane|AU": [-27.47, 153.03],
-  "Tampere|FI": [61.50, 23.76], "Dublin|IE": [53.35, -6.26], "Chiba|JP": [35.61, 140.11], "Warsaw|PL": [52.23, 21.01]
+  "Atlanta|US": [
+    33.75,
+    -84.39
+  ],
+  "Cancún|MX": [
+    21.16,
+    -86.85
+  ],
+  "Seattle|US": [
+    47.61,
+    -122.33
+  ],
+  "Victoria|CA": [
+    48.43,
+    -123.37
+  ],
+  "Liverpool|GB": [
+    53.41,
+    -2.98
+  ],
+  "Lyon|FR": [
+    45.76,
+    4.84
+  ],
+  "Cairns|AU": [
+    -16.92,
+    145.77
+  ],
+  "Montreal|CA": [
+    45.5,
+    -73.57
+  ],
+  "Strasbourg|FR": [
+    48.57,
+    7.75
+  ],
+  "Tucson|US": [
+    32.22,
+    -110.97
+  ],
+  "Leuven|BE": [
+    50.88,
+    4.7
+  ],
+  "Florence|IT": [
+    43.77,
+    11.26
+  ],
+  "Amsterdam|NL": [
+    52.37,
+    4.9
+  ],
+  "Philadelphia|US": [
+    39.95,
+    -75.17
+  ],
+  "San Francisco|US": [
+    37.77,
+    -122.42
+  ],
+  "San Diego|US": [
+    32.72,
+    -117.16
+  ],
+  "Melbourne|AU": [
+    -37.81,
+    144.96
+  ],
+  "Winchester|GB": [
+    51.06,
+    -1.31
+  ],
+  "Castellón de la Plana|ES": [
+    39.99,
+    -0.05
+  ],
+  "Düsseldorf|DE": [
+    51.23,
+    6.77
+  ],
+  "Cologne|DE": [
+    50.94,
+    6.96
+  ],
+  "New York|US": [
+    40.71,
+    -74.01
+  ],
+  "Tokyo|JP": [
+    35.68,
+    139.69
+  ],
+  "Rabat|MA": [
+    34.02,
+    -6.84
+  ],
+  "Manchester|GB": [
+    53.48,
+    -2.24
+  ],
+  "London|GB": [
+    51.51,
+    -0.13
+  ],
+  "New Orleans|US": [
+    29.95,
+    -90.07
+  ],
+  "National Harbor|US": [
+    38.78,
+    -77.02
+  ],
+  "Boston|US": [
+    42.36,
+    -71.06
+  ],
+  "Baltimore|US": [
+    39.29,
+    -76.61
+  ],
+  "Chicago|US": [
+    41.88,
+    -87.63
+  ],
+  "Greenville|US": [
+    34.85,
+    -82.4
+  ],
+  "Bilbao|ES": [
+    43.26,
+    -2.93
+  ],
+  "Kaiserslautern|DE": [
+    49.44,
+    7.77
+  ],
+  "Edinburgh|GB": [
+    55.95,
+    -3.19
+  ],
+  "Cluj-Napoca|RO": [
+    46.77,
+    23.6
+  ],
+  "Brno|CZ": [
+    49.2,
+    16.61
+  ],
+  "Denver|US": [
+    39.74,
+    -104.99
+  ],
+  "Salt Lake City|US": [
+    40.76,
+    -111.89
+  ],
+  "Brasília|BR": [
+    -15.79,
+    -47.88
+  ],
+  "Arlington|US": [
+    38.88,
+    -77.1
+  ],
+  "Kraków|PL": [
+    50.06,
+    19.94
+  ],
+  "Panama City|PA": [
+    8.98,
+    -79.52
+  ],
+  "Incheon|KR": [
+    37.46,
+    126.71
+  ],
+  "Durham|GB": [
+    54.78,
+    -1.57
+  ],
+  "Toronto|CA": [
+    43.65,
+    -79.38
+  ],
+  "Bengaluru|IN": [
+    12.97,
+    77.59
+  ],
+  "Brisbane|AU": [
+    -27.47,
+    153.03
+  ],
+  "Tampere|FI": [
+    61.5,
+    23.76
+  ],
+  "Dublin|IE": [
+    53.35,
+    -6.26
+  ],
+  "Chiba|JP": [
+    35.61,
+    140.11
+  ],
+  "Warsaw|PL": [
+    52.23,
+    21.01
+  ],
+  "Barcelona|ES": [
+    41.39,
+    2.17
+  ],
+  "Halifax|CA": [
+    44.65,
+    -63.58
+  ],
+  "Rotterdam|NL": [
+    51.92,
+    4.48
+  ],
+  "Tempe|US": [
+    33.43,
+    -111.94
+  ],
+  "West Midlands|GB": [
+    52.48,
+    -1.9
+  ]
 }
