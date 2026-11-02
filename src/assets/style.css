@@ -267,9 +267,8 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .hn-node:hover .hn-dot { fill: #fff; } .hn-node:hover .hn-halo { r: 6; }
 .hero-map h1 { color: #fbfaf7; } .hero-map .eyebrow { color: #7fd6c8; } .hero-map .lede { color: #d9e1e6; }
 .hero-map .hero-stats span { color: #a9b7c2; } .hero-map a { color: #9be3d6; }
-/* Cycling regional pan (src/assets/hero-pan.js sets the transform; CSS animates it). */
-.hn-pan { transition: transform 5s ease-in-out; }
-@media (prefers-reduced-motion: reduce) { .hn-pan { transition: none; transform: none !important; } }
+/* Eastward regional pan: src/assets/hero-pan.js drives the transform with requestAnimationFrame. */
+.hn-pan { will-change: transform; }
 @media (max-width: 640px) {
   .hero-net { display: none; }
   .hero-map::after { background: radial-gradient(ellipse at 90% 10%, rgba(15,107,98,.4), transparent 60%); }
