@@ -4,7 +4,12 @@ eleventyComputed:
   description: "{{ home.description }}"
 ---
 {% from "card.njk" import card %}
-<section class="hero">
+<section class="hero hero-map">
+  <svg class="hero-net" viewBox="0 0 {{ heroMap.W }} {{ heroMap.H }}" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+    <defs><filter id="hn-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.6"/></filter></defs>
+    <g class="hn-arcs">{% for a in heroMap.arcs %}<path d="{{ a }}"/>{% endfor %}</g>
+    {% for n in heroMap.nodes %}<a href="/events/{{ n.id }}/" tabindex="-1" class="hn-node{% if n.orange %} hn-soon{% endif %}"><title>{{ n.label }} · {{ n.place }}</title>{% if n.orange %}<circle class="hn-ring" cx="{{ n.x }}" cy="{{ n.y }}" r="8"/>{% endif %}<circle class="hn-halo" cx="{{ n.x }}" cy="{{ n.y }}" r="3.4" filter="url(#hn-glow)"/><circle class="hn-dot" cx="{{ n.x }}" cy="{{ n.y }}" r="3"/><circle class="hn-hit" cx="{{ n.x }}" cy="{{ n.y }}" r="10"/></a>{% endfor %}
+  </svg>
   <div class="wrap">
     <p class="eyebrow">{{ home.eyebrow }}</p>
     <h1>{{ home.headline }}</h1>

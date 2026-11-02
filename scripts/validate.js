@@ -8,6 +8,7 @@ const orientations = new Set((tax.orientations || []).map((o) => o.id));
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 const errors = [], warnings = [];
 const ids = new Set();
+const geo = JSON.parse(fs.readFileSync("src/_data/geo.json"));
 const today = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
 for (const l of listings) {
   const e = (m) => errors.push(`${l.id || "(no id)"}: ${m}`);
@@ -31,6 +32,7 @@ for (const l of listings) {
   if (eff !== l.status) w(`stored status "${l.status}" but dates say "${eff}" (site uses dates; update the file)`);
   const age = (Date.parse(today) - Date.parse(l.last_verified)) / 864e5;
   if (age > 180) w(`last_verified ${l.last_verified} is over 6 months old`);
+  if (l.location?.city && l.format !== "online" && !geo[`${l.location.city}|${l.location.country_code}`]) w(`no coordinates for "${l.location.city}|${l.location.country_code}" in src/_data/geo.json (hero map will skip it)`);
   if (l.review?.needs_review) w(`flagged for editorial review: ${l.review.reason}`);
 }
 warnings.forEach((m) => console.warn("warn:", m));
