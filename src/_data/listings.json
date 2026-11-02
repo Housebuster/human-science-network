@@ -76,9 +76,9 @@
       "cfp_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention/call-for-submissions",
       "start_date": "2027-05-27",
       "end_date": "2027-05-30",
-      "deadline_early": "",
+      "deadline_early": "2026-12-15",
       "abstract_deadline": "2026-12-01",
-      "deadline_late": "",
+      "deadline_late": "2027-04-15",
       "location": {
         "venue": "Hyatt Regency Seattle",
         "city": "Seattle",
@@ -86,16 +86,18 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-general"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-15",
-      "verified_source_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention/call-for-submissions",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://www.psychologicalscience.org/conventions/2027-aps-annual-convention",
       "date_confidence": "verified",
       "public_note": "Submission deadline: 1 December 2026, 5:00 PM ET.",
-      "notes": "Was mislabeled Clinical. Call for submissions confirmed open 2026-10-15."
+      "notes": "Was mislabeled Clinical. Call for submissions confirmed open 2026-10-15. Registration opens 2 Nov 2026. Teaching Institute is a paid preconference add-on. Abstract deadline 1 Dec 2026.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Major international annual convention. Call for submissions open (deadline 1 Dec 2026). Submission types include empirical research, systematic reviews, meta-analyses, and methods. Formats: symposia, submitted talks, flash talks, posters. Core empirical psychological science event."
     },
     {
       "id": "cpa-2027",
@@ -264,12 +266,12 @@
       "short_name": "EAWOP",
       "organizer": "European Association of Work and Organizational Psychology",
       "organizer_type": "society",
-      "url": "https://eawop.org/upcoming-events/2027-eawop-congress",
+      "url": "https://eawop.org/congress/biennial-congress-homepage",
       "cfp_url": "https://eawop2027.inviteo.fr/callfor/",
       "start_date": "2027-05-26",
       "end_date": "2027-05-29",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-11-20",
       "deadline_late": "",
       "location": {
         "venue": "Centre de Congrès de Lyon",
@@ -278,16 +280,18 @@
         "country_code": "FR"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-io"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
-      "verified_source_url": "https://eawop.org/upcoming-events/2027-eawop-congress",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://eawop.org/congress/biennial-congress-homepage",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Old listing named BPS as co-organizer; not verified, removed. Abstract deadline not confirmed."
+      "notes": "Old listing named BPS as co-organizer; not verified, removed. Abstract deadline not confirmed. Abstract deadline extended to November 20 2026. Author notification December 15 2026.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Biennial congress of EAWOP. Theme: Bridging people, organizations and technology. Features oral presentations, symposia, and research on work and organizational psychology."
     },
     {
       "id": "easp-gm-2026",
@@ -310,16 +314,18 @@
         "country_code": "FR"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-social"
       ],
       "status": "past",
-      "last_verified": "2026-10-11",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://easp2026strasbourg.com/",
       "date_confidence": "verified",
       "public_note": "Pre-conferences 30 June; main meeting 1–4 July. The General Meeting is held every three years.",
-      "notes": "Old listing showed '2026 / TBC'. Triennial cadence is general knowledge; recheck the next GM year on easp.eu."
+      "notes": "Old listing showed '2026 / TBC'. Triennial cadence is general knowledge; recheck the next GM year on easp.eu. June 30 – July 4, 2026 in Strasbourg, France.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "General Meeting of the European Association of Social Psychology, organized with ADRIPS. Features research presentations, symposia, and networking for social psychology community."
     },
     {
       "id": "iclasp-2026",
@@ -460,8 +466,8 @@
       "start_date": "2027-02-11",
       "end_date": "2027-02-13",
       "deadline_early": "",
-      "abstract_deadline": "",
-      "deadline_late": "",
+      "abstract_deadline": "2026-07-16",
+      "deadline_late": "2026-09-15",
       "location": {
         "venue": "Pennsylvania Convention Center",
         "city": "Philadelphia",
@@ -469,17 +475,19 @@
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-social",
         "psy-personality"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
-      "verified_source_url": "https://spsp.org/events/past-and-future-conventions",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://spsp.org/events/annual-convention",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Was mislabeled Clinical. Submission deadline not captured (portal opened 2026-06-16; likely closed)."
+      "notes": "Was mislabeled Clinical. Submission deadline not captured (portal opened 2026-06-16; likely closed). Abstract deadlines: podium presentations July 16 2026; posters September 15 2026. Registration opens October 15 2026.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Premier annual convention of SPSP attracting 3500+ personality and social psychologists. Features symposia, single paper presentations, data blitzes, posters, and preconferences on empirical research."
     },
     {
       "id": "apa-2027",
@@ -906,22 +914,24 @@
       "deadline_late": "",
       "location": {
         "venue": "Arizona State University",
-        "city": "",
+        "city": "Tempe",
         "country": "United States",
         "country_code": "US"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "evolutionary",
         "anthropology"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-11",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://indico.global/event/18583/",
       "date_confidence": "verified",
       "public_note": "Call for abstracts open; no deadline published yet.",
-      "notes": "hbes.com/conference still shows 2026 (Rabat) on 2026-10-17; dates from official Indico event page. Was mislabeled Clinical."
+      "notes": "hbes.com/conference still shows 2026 (Rabat) on 2026-10-17; dates from official Indico event page. Was mislabeled Clinical. Hosted at Arizona State University, Tempe.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Annual conference of HBES providing a forum for current research in evolutionary psychology, behavioral ecology, and related fields. Features plenaries, papers, and posters."
     },
     {
       "id": "ces-2026",
@@ -1313,26 +1323,29 @@
       "start_date": "2027-01-07",
       "end_date": "2027-01-08",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-11-05",
       "deadline_late": "",
       "location": {
         "venue": "",
-        "city": "",
+        "city": "West Midlands",
         "country": "United Kingdom",
         "country_code": "GB"
       },
       "format": "in-person",
-      "orientation": "",
+      "orientation": "research-oriented",
       "fields": [
         "psy-educational",
-        "psy-developmental"
+        "psy-developmental",
+        "psy-school"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-17",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://www.bps.org.uk/event/division-educational-and-child-psychology-annual-conference-2027",
       "date_confidence": "verified",
       "public_note": "Held in the West Midlands. Registration deadline: 14 December 2026.",
-      "notes": "Page mentions an application deadline of 22 Oct 2026 (context unclear; possibly bursaries); not entered as abstract deadline. Was mislabeled Clinical."
+      "notes": "Page mentions an application deadline of 22 Oct 2026 (context unclear; possibly bursaries); not entered as abstract deadline. Was mislabeled Clinical. Abstract/bursary deadline 5 November 2026.",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Annual conference of the BPS Division of Educational and Child Psychology. Theme focuses on promoting inclusion, social justice, and better educational and life outcomes. Features research presentations, keynotes, and workshops."
     },
     {
       "id": "psychonomic-2026",
@@ -1360,14 +1373,14 @@
         "cognitive-science"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-25",
-      "verified_source_url": "https://www.psychonomic.org/futuremeetings",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://www.psychonomic.org/2026annualmeeting",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Premier international meeting for experimental cognitive psychology. Keynote Gordon Logan.",
+      "notes": "Premier international meeting for experimental cognitive psychology. Keynote Gordon Logan. Keynote by Gordon D. Logan. Abstract deadline June 1 2026.",
       "orientation": "research-oriented",
       "orientation_confidence": "high",
-      "orientation_evidence": "Premier experimental cognitive psychology society; program of peer-reviewed empirical papers and posters."
+      "orientation_evidence": "Premier international meeting for cognitive psychology researchers (~2000 attendees). Features keynote, symposia, concurrent sessions, workshops, and over 1000 research presentations focused on fundamental behavioral research on the mind."
     },
     {
       "id": "psychonomic-2027",
@@ -1429,14 +1442,14 @@
         "psy-developmental"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-25",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://www.srcd.org/event/srcd-2027-biennial-meeting",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Biennial meeting. Pre-conference April 7.",
+      "notes": "Biennial meeting. Pre-conference April 7. Theme: Prioritizing Children: Innovation, Inclusion, and Impact in Developmental Science. Pre-conference April 7.",
       "orientation": "research-oriented",
       "orientation_confidence": "high",
-      "orientation_evidence": "Leading developmental science society biennial; empirical research presentations dominate."
+      "orientation_evidence": "Biennial meeting of SRCD, the major international gathering of developmental scientists (~6500 attendees historically). Features research presentations, symposia, and pre-conferences on child development."
     },
     {
       "id": "siop-2027",
@@ -1463,14 +1476,14 @@
         "psy-io"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-25",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://www.siop.org/events/the-annual-conference/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "In-person only. Proposal deadline passed.",
-      "orientation": "balanced",
-      "orientation_confidence": "medium",
-      "orientation_evidence": "I-O psychology society with strong research track and substantial applied/practice content."
+      "notes": "In-person only. Proposal deadline passed. Proposal deadline was October 7 2026. Program Chair: Vipanchi Mishra.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Premier annual conference of SIOP bringing together researchers, practitioners, educators, and students in industrial-organizational psychology. Features peer-reviewed research presentations across the full range of I-O topics."
     },
     {
       "id": "cns-2027",
@@ -1520,7 +1533,7 @@
       "start_date": "2026-11-12",
       "end_date": "2026-11-15",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2026-03-13",
       "deadline_late": "",
       "location": {
         "venue": "Hilton Baltimore Inner Harbor / Baltimore Convention Center",
@@ -1534,14 +1547,14 @@
         "psy-health"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-25",
-      "verified_source_url": "https://www.abct.org/convention-ce/annual-conventions/",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://www.abct.org/2026-convention/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Integrating Compassion and Science.",
-      "orientation": "balanced",
-      "orientation_confidence": "medium",
-      "orientation_evidence": "Behavioral/cognitive therapies association; mix of empirical research and clinical practice sessions."
+      "notes": "Theme: Integrating Compassion and Science. Submission deadline March 13 2026. Next: ABCT 2027 in New Orleans (Nov 18–21).",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "60th Annual Convention of ABCT. Theme: Integrating Compassion and Science. Features symposia, clinical round tables, workshops, panels, and poster sessions on evidence-based cognitive-behavioral research and practice."
     },
     {
       "id": "epa-2027",
@@ -1668,14 +1681,14 @@
         "psy-cognitive"
       ],
       "status": "upcoming",
-      "last_verified": "2026-10-25",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://cognitivesciencesociety.org/cogsci-2027/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Theme: Human Cognition in the Age of AI.",
+      "notes": "Theme: Human Cognition in the Age of AI. Program chairs: Marta Kryven, Tianmin Shu, Chris Lucas, Bonan Zhao, Ilia Sucholutsky.",
       "orientation": "research-oriented",
       "orientation_confidence": "high",
-      "orientation_evidence": "Cognitive Science Society annual meeting; interdisciplinary empirical research."
+      "orientation_evidence": "Annual meeting of the Cognitive Science Society bringing together interdisciplinary researchers on the nature of the human mind. Features papers, posters, and invited talks."
     },
     {
       "id": "scsc-2027",
@@ -2031,10 +2044,10 @@
       "start_date": "2026-06-21",
       "end_date": "2026-06-25",
       "deadline_early": "",
-      "abstract_deadline": "",
+      "abstract_deadline": "2025-12-20",
       "deadline_late": "",
       "location": {
-        "venue": "",
+        "venue": "Songdo Convensia",
         "city": "Incheon",
         "country": "South Korea",
         "country_code": "KR"
@@ -2044,12 +2057,14 @@
         "psy-developmental"
       ],
       "status": "past",
-      "last_verified": "2026-10-25",
+      "last_verified": "2026-11-02",
       "verified_source_url": "https://2026biennial.issbd.org/",
       "date_confidence": "verified",
       "public_note": "",
-      "notes": "Major international developmental society. Local organizers from Yonsei University. Next meeting 2028 in Québec City.",
-      "orientation": ""
+      "notes": "Major international developmental society. Local organizers from Yonsei University. Next meeting 2028 in Québec City. Theme: Navigating Human Development in a Changing World. Next biennial: 2028 in Québec City.",
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Biennial meeting of ISSBD bringing together ~2000 developmental scientists from 80+ countries. Features keynotes, workshops, symposia, and research presentations on human development across the lifespan."
     },
     {
       "id": "isdp-2026",
@@ -2514,6 +2529,204 @@
       "date_confidence": "verified",
       "public_note": "",
       "notes": "Abstract/symposium deadline 8 March 2027. Local organizer University of Warsaw / Polish Psychological Association. Website fesncongress.org in progress."
+    },
+    {
+      "id": "aps-annual-2026",
+      "name": "2026 APS Annual Convention",
+      "short_name": "APS",
+      "organizer": "Association for Psychological Science",
+      "organizer_type": "society",
+      "url": "https://www.psychologicalscience.org/conventions/2026-aps-annual-convention",
+      "cfp_url": "",
+      "start_date": "2026-05-28",
+      "end_date": "2026-05-30",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Centro de Convenciones Internacional de Barcelona (CCIB)",
+        "city": "Barcelona",
+        "country": "Spain",
+        "country_code": "ES"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-general"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Major international annual convention of the Association for Psychological Science. Features integrative science symposia, submitted talks, flash talks, posters, plenaries, and workshops across all areas of psychological science. Strong empirical research track.",
+      "status": "past",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://www.psychologicalscience.org/conventions/2026-aps-annual-convention",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Held in Barcelona. Included Teaching Institute preconference and Industry Day. Final program available."
+    },
+    {
+      "id": "aps-global-summit-2026-27",
+      "name": "APS Global Psychological Science Summit 2026–27",
+      "short_name": "APS Global Summit",
+      "organizer": "Association for Psychological Science",
+      "organizer_type": "society",
+      "url": "https://www.psychologicalscience.org/conventions/global-summit",
+      "cfp_url": "",
+      "start_date": "2026-12-08",
+      "end_date": "2027-02-03",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Virtual (three regional dates)",
+        "city": "",
+        "country": "",
+        "country_code": ""
+      },
+      "format": "online",
+      "fields": [
+        "psy-general"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "medium",
+      "orientation_evidence": "Third annual Global Psychological Science Summit. Theme: Challenges in Creating a Global Psychological Science. Features plenaries, workshops, panels, and open discussions. Free for APS members; attendance fee for non-members. Involves review of submissions. Research-focused virtual event with regional scheduling.",
+      "status": "upcoming",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://www.psychologicalscience.org/conventions/global-summit",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Three regional virtual dates: Asia/Pacific 8 Dec 2026; Americas 21 Jan 2027; Europe/Middle East/Africa 3 Feb 2027. Free for members; non-member fee applies. Research-oriented summit format."
+    },
+    {
+      "id": "scp-div12-2026",
+      "name": "Society of Clinical Psychology (APA Division 12) Conference 2026",
+      "short_name": "SCP Conference",
+      "organizer": "Society of Clinical Psychology (APA Division 12)",
+      "organizer_type": "society",
+      "url": "https://societyofclinicalpsychology.org/scp-events/scp-conference/",
+      "cfp_url": "",
+      "start_date": "2026-02-12",
+      "end_date": "2026-02-14",
+      "deadline_early": "",
+      "abstract_deadline": "2025-10-24",
+      "deadline_late": "",
+      "location": {
+        "venue": "Emory Conference Center",
+        "city": "Atlanta",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-clinical"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Biennial independent conference of APA Division 12 (Society of Clinical Psychology). Theme: Emerging Trends in Clinical Psychology: Practice, Science, and Education. Features keynotes, oral presentations, posters, and CE sessions with a clear empirical research track.",
+      "status": "past",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://societyofclinicalpsychology.org/scp-events/scp-conference/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Second biennial conference. Emory Conference Center, Atlanta. Next planned: 2028 in Atlanta."
+    },
+    {
+      "id": "spr-2026",
+      "name": "Society for Psychophysiological Research 66th Annual Meeting 2026",
+      "short_name": "SPR",
+      "organizer": "Society for Psychophysiological Research",
+      "organizer_type": "society",
+      "url": "https://sprweb.org/futurepastmeetings/",
+      "cfp_url": "",
+      "start_date": "2026-10-14",
+      "end_date": "2026-10-17",
+      "deadline_early": "",
+      "abstract_deadline": "2026-04-28",
+      "deadline_late": "2026-07-01",
+      "location": {
+        "venue": "Halifax Convention Centre",
+        "city": "Halifax",
+        "country": "Canada",
+        "country_code": "CA"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-biological"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Annual meeting of SPR featuring symposia, poster sessions, plenary talks, and pre-conference workshops on psychophysiological research interrelating physiological and psychological aspects of behavior.",
+      "status": "past",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://sprweb.org/futurepastmeetings/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Keynotes include Beatriz Luna, Michael J. Frank, Wendy Berry Mendes. Pre-conference workshops October 14."
+    },
+    {
+      "id": "spr-2027",
+      "name": "Society for Psychophysiological Research 67th Annual Meeting 2027",
+      "short_name": "SPR",
+      "organizer": "Society for Psychophysiological Research",
+      "organizer_type": "society",
+      "url": "https://sprweb.org/futurepastmeetings/",
+      "cfp_url": "",
+      "start_date": "2027-10-13",
+      "end_date": "2027-10-16",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Postillion Hotel & Convention Centre WTC Rotterdam",
+        "city": "Rotterdam",
+        "country": "Netherlands",
+        "country_code": "NL"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-biological"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "Annual meeting of the Society for Psychophysiological Research. Continues the society's tradition of empirical research presentations on physiological-psychological interrelationships.",
+      "status": "upcoming",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://sprweb.org/futurepastmeetings/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "October 13–16, 2027 in Rotterdam."
+    },
+    {
+      "id": "wccbt-2026",
+      "name": "11th World Confederation of Cognitive and Behavioural Therapies Congress 2026",
+      "short_name": "WCCBT",
+      "organizer": "World Confederation of Cognitive and Behavioural Therapies",
+      "organizer_type": "society",
+      "url": "https://wccbt2026.org/",
+      "cfp_url": "https://wccbt2026.org/call-for-abstracts/",
+      "start_date": "2026-06-25",
+      "end_date": "2026-06-28",
+      "deadline_early": "",
+      "abstract_deadline": "",
+      "deadline_late": "",
+      "location": {
+        "venue": "Marriott Marquis San Francisco",
+        "city": "San Francisco",
+        "country": "United States",
+        "country_code": "US"
+      },
+      "format": "in-person",
+      "fields": [
+        "psy-clinical"
+      ],
+      "orientation": "research-oriented",
+      "orientation_confidence": "high",
+      "orientation_evidence": "World Congress of WCCBT, co-sponsored with ABCT. Theme: Health for All: Affirming, Equitable, and Sustainable CBT. Features global research and practice presentations in cognitive and behavioural therapies.",
+      "status": "past",
+      "last_verified": "2026-11-02",
+      "verified_source_url": "https://wccbt2026.org/",
+      "date_confidence": "verified",
+      "public_note": "",
+      "notes": "Co-conveners: Steven A. Safren and Jill Ehrenreich-May. Post-congress workshops June 28."
     }
   ]
 }
